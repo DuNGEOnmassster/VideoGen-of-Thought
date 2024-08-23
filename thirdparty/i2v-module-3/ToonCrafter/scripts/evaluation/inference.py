@@ -347,7 +347,7 @@ def run_inference(args, gpu_num, gpu_no):
 def get_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("--savedir", type=str, default=None, help="results saving path")
-    parser.add_argument("--ckpt_path", type=str, default=None, help="checkpoint path")
+    parser.add_argument("--ckpt_path", type=str, default="/remote_shome/zhengmz/pretrained_models/pretrained/Doubiiu/ToonCrafter", help="checkpoint path")
     parser.add_argument("--config", type=str, help="config (yaml) path")
     parser.add_argument("--prompt_dir", type=str, default=None, help="a data dir containing videos and prompts")
     parser.add_argument("--n_samples", type=int, default=1, help="num of samples per prompt",)

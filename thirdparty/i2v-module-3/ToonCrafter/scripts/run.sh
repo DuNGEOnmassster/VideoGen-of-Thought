@@ -1,5 +1,6 @@
 
-ckpt=checkpoints/tooncrafter_512_interp_v1/model.ckpt
+# ckpt=checkpoints/tooncrafter_512_interp_v1/model.ckpt
+ckpt=/remote_shome/zhengmz/pretrained_models/pretrained/Doubiiu/ToonCrafter/model.ckpt
 config=configs/inference_512_v1.0.yaml
 
 prompt_dir=prompts/512_interp/
@@ -11,7 +12,7 @@ FS=10 ## This model adopts FPS=5, range recommended: 5-30 (smaller value -> larg
 
 seed=123
 name=tooncrafter_512_interp_seed${seed}
-CUDA_VISIBLE_DEVICES=0 python3 scripts/evaluation/inference.py \
+CUDA_VISIBLE_DEVICES=1 python3 scripts/evaluation/inference.py \
 --seed ${seed} \
 --ckpt_path $ckpt \
 --config $config \
