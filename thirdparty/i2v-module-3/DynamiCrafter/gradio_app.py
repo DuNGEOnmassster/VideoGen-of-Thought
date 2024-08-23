@@ -193,5 +193,5 @@ if __name__ == "__main__":
     result_dir = os.path.join('./', 'results')
     dynamicrafter_iface = dynamicrafter_demo(result_dir, args.res)
     dynamicrafter_iface.queue(max_size=12)
-    dynamicrafter_iface.launch(max_threads=1)
+    dynamicrafter_iface.launch(max_threads=1, share=True)
     # dynamicrafter_iface.launch(server_name='0.0.0.0', server_port=80, max_threads=1)
