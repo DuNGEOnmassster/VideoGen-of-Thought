@@ -14,7 +14,7 @@ i2v_examples_interp_512 = [
 
 
 
-def dynamicrafter_demo(result_dir='./tmp/', res=1024):
+def dynamicrafter_demo(result_dir='./tmp/', res=512):
     if res == 1024:
         resolution = '576_1024'
         css = """#input_img {max-width: 1024px !important} #output_vid {max-width: 1024px; max-height:576px}"""
