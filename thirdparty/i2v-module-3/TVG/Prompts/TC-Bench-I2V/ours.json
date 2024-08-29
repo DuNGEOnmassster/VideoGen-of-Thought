@@ -1,0 +1,1075 @@
+{
+    "data": [
+        {
+            "name": 0,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A pink chameleon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A green chameleon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00000-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00000-00000/frame_0124.png"
+        },
+        {
+            "name": 1,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A bloomed pink flower, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bloomed white flower, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00001-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00001-00000/frame_0149.png"
+        },
+        {
+            "name": 2,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A vibrant green leaf, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A rich autumn red leaf, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00002-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00002-00000/frame_0048.png"
+        },
+        {
+            "name": 3,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A white car, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A purple car, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00003-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00003-00000/frame_0089.png"
+        },
+        {
+            "name": 4,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A bird with black head feathers, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bird with pink head feathers, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00004-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00004-00000/frame_0053.png"
+        },
+        {
+            "name": 5,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A cake with a gradient of yellow, orange, and pink frosting, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cake with a gradient of purple, cyan, and green frosting, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00005-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00005-00000/frame_0128.png"
+        },
+        {
+            "name": 6,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A green apple, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A red apple, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00006-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00006-00000/frame_0809.png"
+        },
+        {
+            "name": 7,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A woman's dress in light metallic gray, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A woman's dress in darker metallic gray, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00007-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00007-00000/frame_0089.png"
+        },
+        {
+            "name": 8,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A rose with white petals, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A rose with red petals, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00008-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00008-00000/frame_0032.png"
+        },
+        {
+            "name": 9,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A yellow banana, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A brown banana, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00009-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00009-00000/frame_0240.png"
+        },
+        {
+            "name": 10,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A translucent squid, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A deep red squid, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00010-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00010-00000/frame_0050.png"
+        },
+        {
+            "name": 11,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Purple liquid in a transparent cup, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Red liquid in a transparent cup, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00011-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00011-00000/frame_0054.png"
+        },
+        {
+            "name": 12,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A white strawberry, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A red strawberry, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00012-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00012-00000/frame_0135.png"
+        },
+        {
+            "name": 14,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Green cactus with flower buds, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Green cactus with red flowers, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00014-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00014-00000/frame_0120.png"
+        },
+        {
+            "name": 15,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Purple liquid in a glass, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Green liquid in a glass, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00015-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00015-00000/frame_0074.png"
+        },
+        {
+            "name": 16,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A green chameleon behind pink sunglasses, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A pink chameleon behind pink sunglasses, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00016-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00016-00000/frame_0135.png"
+        },
+        {
+            "name": 17,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A pink chameleon with green sunglasses, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A green chameleon with green sunglasses, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00017-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00017-00000/frame_0173.png"
+        },
+        {
+            "name": 18,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A green ring, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A blue ring, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00018-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00018-00000/frame_0119.png"
+        },
+        {
+            "name": 19,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A cartoon character with beige skin, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cartoon character with metallic skin, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00019-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00019-00000/frame_0089.png"
+        },
+        {
+            "name": 20,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A black cup, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cup with a collage of photos, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00020-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00020-00000/frame_0239.png"
+        },
+        {
+            "name": 21,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A doll toy's face with a white base and black and red patterns, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A doll toy's face with a yellow base and black patterns, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00021-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00021-00000/frame_0021.png"
+        },
+        {
+            "name": 22,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A Chinese opera actor's face with red color, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A Chinese opera actor's face with blue color, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00022-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00022-00000/frame_0047.png"
+        },
+        {
+            "name": 23,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A transparent window, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "An opaque window, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00023-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00023-00000/frame_0059.png"
+        },
+        {
+            "name": 24,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A stretched spring, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A compressed spring, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00024-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00024-00000/frame_0038.png"
+        },
+        {
+            "name": 25,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "The nine of hearts card, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "The six of spades card, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00025-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00025-00000/frame_0026.png"
+        },
+        {
+            "name": 26,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A white wall, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A white wall with a grey 'W', high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00026-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00026-00000/frame_0090.png"
+        },
+        {
+            "name": 27,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Solid candle wax, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Liquid candle wax, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00027-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00027-00000/frame_0192.png"
+        },
+        {
+            "name": 28,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A yellow spoon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A green spoon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00028-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00028-00000/frame_0059.png"
+        },
+        {
+            "name": 29,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A solid scoop of ice cream, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A liquid puddle of ice cream, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00029-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00029-00000/frame_0225.png"
+        },
+        {
+            "name": 30,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A deflated balloon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A fully inflated balloon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00030-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00030-00000/frame_0119.png"
+        },
+        {
+            "name": 31,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A long tube-shaped balloon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A small round-shaped balloon, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00031-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00031-00000/frame_0120.png"
+        },
+        {
+            "name": 32,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A short shadow, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A long shadow, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00032-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00032-00000/frame_0219.png"
+        },
+        {
+            "name": 33,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A flat piece of paper, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A crane-shaped piece of paper, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00033-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00033-00000/frame_2818.png"
+        },
+        {
+            "name": 34,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A flat dough, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A puffy dough, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00034-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00034-00000/frame_0119.png"
+        },
+        {
+            "name": 35,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "An incomplete small snowflake, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A large intricate snowflake, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00035-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00035-00000/frame_0137.png"
+        },
+        {
+            "name": 36,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A structured snowman, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "An unrecognizable heap of snow, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00036-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00036-00000/frame_1050.png"
+        },
+        {
+            "name": 37,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A smooth eggshell, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cracked eggshell, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00037-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00037-00000/frame_0419.png"
+        },
+        {
+            "name": 38,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A wet road, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A dry road, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00038-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00038-00000/frame_0179.png"
+        },
+        {
+            "name": 39,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A sunset painting, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bright day painting, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00039-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00039-00000/frame_0083.png"
+        },
+        {
+            "name": 40,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A smooth metal surface, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A corroded metal surface, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00040-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00040-00000/frame_0510.png"
+        },        {
+            "name": 41,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Liquid cake batter, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Cake with a crispy top, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00041-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00041-00000/frame_0330.png"
+        },
+        {
+            "name": 42,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Solid, smooth ice cream, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Liquid ice cream, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00042-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00042-00000/frame_0300.png"
+        },
+        {
+            "name": 43,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A smooth green leaf, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A dried, wrinkled leaf, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00043-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00043-00000/frame_0264.png"
+        },
+        {
+            "name": 44,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Rough sand, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Smooth glass, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00044-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00044-00000/frame_0150.png"
+        },
+        {
+            "name": 45,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A rough green avocado, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A smooth black avocado, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00045-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00045-00000/frame_0660.png"
+        },
+        {
+            "name": 46,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A dim lantern, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bright lantern, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00046-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00046-00000/frame_0069.png"
+        },
+        {
+            "name": 47,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A bright candle, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A dim candle, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00047-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00047-00000/frame_0033.png"
+        },
+        {
+            "name": 48,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Bioluminescent algae, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Brightened bioluminescent algae, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00048-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00048-00000/frame_0089.png"
+        },
+        {
+            "name": 49,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A dark lighthouse, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bright lighthouse, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00049-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00049-00000/frame_0060.png"
+        },
+        {
+            "name": 50,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A wire sculpture of two giraffes, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A wire sculpture of an elephant, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00050-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00050-00000/frame_0330.png"
+        },
+        {
+            "name": 51,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A spotlight stage light, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A wide wash of color stage light, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00051-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00051-00000/frame_0074.png"
+        },
+        {
+            "name": 52,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A daddy pig with a newspaper, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A daddy pig with a paper boat, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00052-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00052-00000/frame_0082.png"
+        },
+        {
+            "name": 53,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A girl with her natural look, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A girl with an ice look, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00053-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00053-00000/frame_0031.png"
+        },
+        {
+            "name": 54,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A girl with modest attire, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A girl in a grand ball gown, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00054-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00054-00000/frame_0096.png"
+        },
+        {
+            "name": 55,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A man with a basketball in his left hand, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A man with a basketball in his right hand, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00055-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00055-00000/frame_0047.png"
+        },
+        {
+            "name": 56,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A woman picking an apple from a tree, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A woman placing an apple in a basket, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00056-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00056-00000/frame_0034.png"
+        },
+        {
+            "name": 57,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A frog on a lily pad, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A frog on the bank of a pond, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00057-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00057-00000/frame_0026.png"
+        },
+        {
+            "name": 58,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A bird with a blue bottle cap, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bird placing a blue bottle cap on the ground, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00058-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00058-00000/frame_0027.png"
+        },
+        {
+            "name": 59,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A monkey with a toy train, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A monkey placing a toy train on a toy track, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00059-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00059-00000/frame_0021.png"
+        },
+        {
+            "name": 60,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A stack of pancakes on a griddle, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A stack of pancakes on a white plate, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00060-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00060-00000/frame_0059.png"
+        },
+        {
+            "name": 61,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A hand with a pen, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A hand placing a pen on crossed-out text, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00061-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00061-00000/frame_0060.png"
+        },
+        {
+            "name": 62,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A person with a red apple in the right hand, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A person with a yellow apple in the left hand, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00062-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00062-00000/frame_0074.png"
+        },
+        {
+            "name": 63,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A person with a small pot, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A person with a garden bed, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00063-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00063-00000/frame_0075.png"
+        },
+        {
+            "name": 64,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A hand rolling two dice, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Two dice hitting the wall, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00064-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00064-00000/frame_0037.png"
+        },
+        {
+            "name": 65,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A cat on the floor, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cat on the countertop, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00065-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00065-00000/frame_0060.png"
+        },
+        {
+            "name": 66,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Three cats on a chair, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Two cats on a table, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00066-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00066-00000/frame_0080.png"
+        },
+        {
+            "name": 67,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A ball on a table, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A ball on the floor, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00067-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00067-00000/frame_0074.png"
+        },
+        {
+            "name": 68,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A tornado on the right side, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A tornado on the left side, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00068-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00068-00000/frame_0120.png"
+        },
+        {
+            "name": 69,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A gazelle with a trophy, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A rabbit with a trophy, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00069-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00069-00000/frame_0063.png"
+        },
+        {
+            "name": 70,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A whole cucumber, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Two pieces of cucumber, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00070-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00070-00000/frame_0055.png"
+        },
+        {
+            "name": 71,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A bird with blue scissors on a table, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bird with blue scissors in a drawer, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00071-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00071-00000/frame_0044.png"
+        },
+        {
+            "name": 72,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Five balloons in a row, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Popped balloons, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00072-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00072-00000/frame_0049.png"
+        },
+        {
+            "name": 73,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A tennis ball hitting a racket, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A tennis ball bouncing upwards, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00073-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00073-00000/frame_0064.png"
+        },
+        {
+            "name": 74,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A bird on a tree branch, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bird on another tree branch, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00074-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00074-00000/frame_0071.png"
+        },
+        {
+            "name": 75,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A paper airplane in a child's hand, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A paper airplane on the grass, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00075-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00075-00000/frame_0048.png"
+        },
+        {
+            "name": 76,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Three balls at the top of three curved slopes, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Three balls at the base of three curved slopes, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00076-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00076-00000/frame_0091.png"
+        },
+        {
+            "name": 77,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A man with a toy truck at the beach, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A man scooping sand into a toy truck, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00077-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00077-00000/frame_0045.png"
+        },
+        {
+            "name": 78,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A red rose on a bush, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A person with a red rose, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00078-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00078-00000/frame_0141.png"
+        },
+        {
+            "name": 79,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Both hands with toy train tracks on a table, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Both hands picking up toy train tracks, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00079-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00079-00000/frame_0023.png"
+        },
+        {
+            "name": 80,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A monkey with a yellow boat on a train trestle bridge, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A monkey with a yellow boat in a lake, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00080-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00080-00000/frame_0035.png"
+        },
+        {
+            "name": 81,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A butterfly on a flower, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A butterfly on another flower, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00081-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00081-00000/frame_0057.png"
+        },
+        {
+            "name": 82,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A man with a frisbee, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A dog with a frisbee, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00082-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00082-00000/frame_0054.png"
+        },
+        {
+            "name": 83,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A dog on a grass field, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A dog on a man's back, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00083-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00083-00000/frame_0039.png"
+        },
+        {
+            "name": 84,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A person on the left with a basketball, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A person on the right with a basketball, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00084-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00084-00000/frame_0044.png"
+        },
+        {
+            "name": 85,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A robot arm takes a plant from a white basket, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A robot arm places a plant into the ground, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00085-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00085-00000/frame_0317.png"
+        },
+        {
+            "name": 86,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A man in red with a soccer ball, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A man in blue with a soccer ball, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00086-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00086-00000/frame_0039.png"
+        },
+        {
+            "name": 87,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A yellow disk on the left rod, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A yellow disk on the middle rod, on top of a red disk, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00087-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00087-00000/frame_0066.png"
+        },
+        {
+            "name": 88,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A kid with a paper boat, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A paper boat on the water, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00088-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00088-00000/frame_0049.png"
+        },
+        {
+            "name": 89,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A person holding a hat, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A hat on a snowman's head, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00089-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00089-00000/frame_0059.png"
+        },
+        {
+            "name": 90,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A robot arm with a black glove, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A black glove in the snow, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00090-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00090-00000/frame_0116.png"
+        },
+        {
+            "name": 91,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A man reaching for a ball in a dog's mouth, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A man holding a ball from a dog's mouth, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00091-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00091-00000/frame_0044.png"
+        },
+        {
+            "name": 92,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A cartoon rabbit on the right side, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cartoon rabbit jumping over a pig's head, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00092-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00092-00000/frame_0049.png"
+        },
+        {
+            "name": 93,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A basketball falling through a hoop, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A basketball on the ground, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00093-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00093-00000/frame_0033.png"
+        },
+        {
+            "name": 94,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A yellow leaf falling from a tree, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A yellow leaf on some plants, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00094-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00094-00000/frame_0148.png"
+        },
+        {
+            "name": 95,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A hand picks up a cookie from a plate, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A hand dipping a cookie in milk, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00095-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00095-00000/frame_0051.png"
+        },
+        {
+            "name": 96,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A spider on a leaf on the right, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A spider on a stem on the left, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00096-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00096-00000/frame_0057.png"
+        },
+        {
+            "name": 97,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A man dropping a cookie into a glass of milk from above, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A man picking up a phone before the cookie touches the milk, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00097-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00097-00000/frame_0113.png"
+        },
+        {
+            "name": 98,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Four people stand in a line with a white baton, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A person holding a white baton on the leftmost, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00098-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00098-00000/frame_0045.png"
+        },
+        {
+            "name": 99,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A cartoon rabbit takes a paper boat from a pig's hand, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cartoon rabbit places a paper boat on the water next to it, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00099-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00099-00000/frame_0060.png"
+        },
+        {
+            "name": 100,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "An elephant picking up a wood log with its trunk, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "An elephant holding a wood log with its trunk, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00100-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00100-00000/frame_0047.png"
+        },
+        {
+            "name": 101,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A cityscape at sunset, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cityscape at night, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00101-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00101-00000/frame_0180.png"
+        },
+        {
+            "name": 102,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A forest in summer greenery, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A forest in winter snow, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00102-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00102-00000/frame_0074.png"
+        },
+        {
+            "name": 103,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A sunny afternoon scene, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A serene sunset scene, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00103-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00103-00000/frame_0135.png"
+        },
+        {
+            "name": 104,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A toy desk lamp from Pixar, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A toy desk lamp on the letter I, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00104-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00104-00000/frame_0059.png"
+        },
+        {
+            "name": 105,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A meteor streaks from upper left of the sky, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A meteor streaks to lower right of the sky, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00105-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00105-00000/frame_0041.png"
+        },
+        {
+            "name": 106,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A rainy sky, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A rainbow appearing in the sky, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00106-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00106-00000/frame_0104.png"
+        },
+        {
+            "name": 107,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A girl as an ice statue, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A girl in her original appearance, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00107-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00107-00000/frame_0168.png"
+        },
+        {
+            "name": 108,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A girl looking at a bird, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A bird flying from right to the left of the sky, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00108-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00108-00000/frame_0034.png"
+        },
+        {
+            "name": 109,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "The Rockefeller Center view with the Christmas tree lying on the ground, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "The Rockefeller Center view with the Christmas tree upright, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00109-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00109-00000/frame_0179.png"
+        },
+        {
+            "name": 110,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Two tall trees covered with snow, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Two tall trees after the snow melted, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00110-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00110-00000/frame_0168.png"
+        },
+        {
+            "name": 111,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A cartoon candelabra swings in front of a big golden chandelier, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A cartoon candelabra in front of the camera, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00111-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00111-00000/frame_0018.png"
+        },
+        {
+            "name": 112,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A purple bunny watching a rainbow stream from a bottle on the right, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A rainbow stream shaping as an arc above a purple bunny's head, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00112-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00112-00000/frame_0035.png"
+        },
+        {
+            "name": 113,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A lighthouse at night, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A lighthouse at sunrise, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00113-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00113-00000/frame_0105.png"
+        },
+        {
+            "name": 114,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A firework trail sweeps over a Disney castle from right to left, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A luminous arc of fireworks above a Disney castle, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00114-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00114-00000/frame_0041.png"
+        },
+        {
+            "name": 115,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Crowds watching an airplane flying from a distance, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "An airplane flying toward the camera, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00115-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00115-00000/frame_0072.png"
+        },
+        {
+            "name": 116,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "An empty street view, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A busy street view, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00116-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00116-00000/frame_0096.png"
+        },
+        {
+            "name": 117,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "An In-N-Out burger sign, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "An airplane flying over an In-N-Out burger sign, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00117-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00117-00000/frame_0049.png"
+        },
+        {
+            "name": 118,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "A space dog watching a robot arm, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "A robot arm picking up a stone from the ground, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00118-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00118-00000/frame_0048.png"
+        },
+        {
+            "name": 119,
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "Crowds cheering as fireworks explode, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "Fireworks over a huge Christmas tree, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/TC-Bench/youtube_videos_frames/00119-00000/frame_0000.png",
+            "video_dir_2": "EvalData/TC-Bench/youtube_videos_frames/00119-00000/frame_0043.png"
+        }
+ 
+    ]
+}

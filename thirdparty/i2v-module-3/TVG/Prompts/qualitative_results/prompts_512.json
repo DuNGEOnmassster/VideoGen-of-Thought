@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "name": "clouds_fields",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a vast sea of clouds, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a winding river through patchwork fields, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/clouds_fields_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/clouds_fields_1.png"
+        },
+        {
+            "name": "man_spiderman",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a man, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a spiderman, high quality, 4k, slow motion, capturing every detail in sharp focu",
+            "video_dir_1": "EvalData/Qualitative_results/images/man_spiderman_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/man_spiderman_1.png"
+        },
+        {
+            "name": "leo_cat",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a leopard sitting confidently in the wild, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a cat sits peacefully, surrounded by blooming flowers, high quality, 4k, slow motion, capturing every detail in sharp focu",
+            "video_dir_1": "EvalData/Qualitative_results/images/leo_cat_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/leo_cat_1.png"
+        },
+        {
+            "name": "wukong",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "The character, surrounded by darkness, with light subtly illuminating his face and armor, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "The character stands in near darkness, with only a single light source illuminating his face and upper torso, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/wukong_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/wukong_1.png"
+        }
+    ]
+}

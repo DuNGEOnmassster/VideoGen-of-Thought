@@ -1,0 +1,221 @@
+{
+    "data": [
+      {
+        "name": "drag_girl",
+        "prompts": "A girl looks forward then turns to look to the side, high quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a girl looks forward, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a girl looks side, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/drag_girl_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/drag_girl_1.png"
+      },
+      {
+        "name": "drag_realgirl",
+        "prompts": "A beautiful girl's face with curly hair looks forward then turns to the side. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a beautiful girl's face with curly hair looks forward, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a beautiful girl's face with curly hair looks side, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/drag_realgirl_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/drag_realgirl_1.png"
+      },
+      {
+        "name": "chair",
+        "prompts": "A blue upholstered chair with a semi-circular backrest and wooden legs transforms into a blue upholstered chair with a larger cutout in the backrest. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a blue upholstered chair with a semi-circular backrest and wooden legs, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a blue upholstered chair with a larger cutout in the backrest and wooden legs, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/chair_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/chair_1.png"
+      },
+      {
+        "name": "dog_sit",
+        "prompts": "A dog standing on the grass sits down. High quality, high resolution background, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a dog standing on the grass, high quality, high resolution background, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a dog sitting on the grass, high quality, high resolution background, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/dog_sit_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/dog_sit_1.png"
+      },
+      {
+        "name": "mushroom",
+        "prompts": "A short mushroom grows taller. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "short mushroom, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "tall mushroom, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/mushroom_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/mushroom_1.png"
+      },
+      {
+        "name": "bulb",
+        "prompts": "A small bulb becomes a big bulb. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "small bulb, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "big bulb, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/bulb_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/bulb_1.png"
+      },
+      {
+        "name": "fuji",
+        "prompts": "Mount Fuji with a snow-capped peak under a clear blue sky, seen from a distance with some trees in the foreground, changes to a view from a slightly different angle with more visible tree branches in the foreground. High resolution, 8k, best quality, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Mount Fuji with a snow-capped peak under a clear blue sky, seen from a distance with some trees in the foreground, high resolution, 8k, best quality, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "Mount Fuji with a snow-capped peak under a clear blue sky, viewed from a slightly different angle and with more visible tree branches in the foreground, high resolution, 8k, best quality, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/fuji_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/fuji_1.png"
+      },
+      {
+        "name": "dog_jump",
+        "prompts": "A dog stands up in a lush green field and then jumps. High quality, 4k, the camera slowly pans from left to right, slow motion.",
+        "prompt_inverse": null,
+        "prompt_1": "a dog stand up in a lush green field, high quality, 4k, the camera slowly pans from left to right, slow motion",
+        "prompt_2": "a dog jump from a lush green field, high quality, 4k, the camera slowly pans from left to right, slow motion",
+        "video_dir_1": "EvalData/MorphBench/Animation/dog_jump_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/dog_jump_1.png"
+      },
+      {
+        "name": "laser_sculp",
+        "prompts": "A laser sculpture looks forward then turns to the side. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "laser sculp looks side, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "laser sculp looks forward, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/laser_sculp_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/laser_sculp_1.png"
+      },
+      {
+        "name": "counterfeit",
+        "prompts": "A cartoon of a beautiful Japanese girl with brown hair tied up adorned with flowers, wearing a traditional kimono, looking to the side in an outdoor setting, transforms into a gentle expression. Soft sunlight filtering through trees, creating dappled light on the path behind her. Vibrant colors, detailed floral hairpieces, high-quality anime style, Studio Ghibli influence, hd quality, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cartoon of a beautiful Japanese girl with brown hair tied up adorned with flowers, wearing a traditional kimono, looking to the side in an outdoor setting, soft sunlight filtering through trees, creating dappled light on the path behind her, vibrant colors, detailed floral hairpieces, serene expression, high-quality anime style, Studio Ghibli influence, hd quality, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cartoon of a beautiful Japanese girl with brown hair tied up adorned with flowers, wearing a traditional kimono, looking to the side in an outdoor setting, soft sunlight filtering through trees, creating dappled light on the path behind her, vibrant colors, detailed floral hairpieces, gentle expression, high-quality anime style, Studio Ghibli influence, hd quality, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/counterfeit_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/counterfeit_1.png"
+      },
+      {
+        "name": "drag_sculp",
+        "prompts": "A sculpture's head looks forward then turns to the side. High quality, high resolution, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a sculpture's head looks forward, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a sculpture's head looks side, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/drag_sculp_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/drag_sculp_1.png"
+      },
+      {
+        "name": "woman",
+        "prompts": "A woman in a headscarf and period clothing, holding a blue bowl, with a serene expression, transforms into a similar scene with soft lighting illuminating her face. Intricate details in the fabric, dark background, rich and warm color palette, Baroque style, hd quality, realistic textures, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a woman in a headscarf and period clothing, holding a blue bowl, with a serene expression, soft lighting illuminating her face, intricate details in the fabric, dark background, rich and warm color palette, Baroque style, hd quality, realistic textures, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a woman in a headscarf and period clothing, holding a blue bowl, with a serene expression, soft lighting illuminating her face, intricate details in the fabric, dark background, rich and warm color palette, Baroque style, hd quality, realistic textures, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/woman_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/woman_1.png"
+      },
+      {
+        "name": "duck",
+        "prompts": "A duck with its beak slightly open then opens its beak wide. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a duck with its beak slightly open, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a duck with its beak wide open, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/duck_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/duck_1.png"
+      },
+      {
+        "name": "scene",
+        "prompts": "An aerial view of a straight coastline with lush green and autumn-colored trees on one side and clear blue water on the other changes to a curved coastline with the same features. Slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "an aerial view of a straight coastline with lush green and autumn-colored trees on one side and clear blue water on the other, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "an aerial view of a curved coastline with lush green and autumn-colored trees on one side and clear blue water on the other, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/scene_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/scene_1.png"
+      },
+      {
+        "name": "boy_and_girl",
+        "prompts": "A boy and a girl, high quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a boy and a girl, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a boy and a girl, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/boy_and_girl_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/boy_and_girl_1.png"
+      },
+      {
+        "name": "drag_dog",
+        "prompts": "A dog looks forward then turns to the side. High quality, high resolution, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a dog looks forward, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a dog looks side, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/drag_dog_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/drag_dog_1.png"
+      },
+      {
+        "name": "david",
+        "prompts": "A marble bust of a young man, classical style, curly hair, finely crafted, front-facing view, turns to show a side view. Detailed facial features, intricate hair, cinematic lighting, hd quality, realistic textures, sharp focus, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Marble bust of a young man, classical style, curly hair, finely crafted, front-facing view, detailed facial features, intricate hair, cinematic lighting, hd quality, realistic textures, sharp focus, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "Marble bust of a young man, classical style, curly hair, finely crafted, front-facing view, detailed facial features, intricate hair, cinematic lighting, hd quality, realistic textures, sharp focus , slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/david_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/david_1.png"
+      },
+      {
+        "name": "alpaca",
+        "prompts": "An alpaca looks right then turns to look forward. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "an alpaca look right, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "an alpaca look forward, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/alpaca_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/alpaca_1.png"
+      },
+      {
+        "name": "cake",
+        "prompts": "A cake, high quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cake, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cake, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/cake_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/cake_1.png"
+      },
+      {
+        "name": "imagic_cake",
+        "prompts": "A cake becomes a cake with strawberry. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cake, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cake with strawberry, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/imagic_cake_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/imagic_cake_1.png"
+      },
+      {
+        "name": "cocktail",
+        "prompts": "A cocktail, high quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "cocktail, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "cocktail, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/cocktail_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/cocktail_1.png"
+      },
+      {
+        "name": "masa_oldman",
+        "prompts": "An old man looking serious becomes happy. High quality, high resolution, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "an oldman looking serious, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "an oldman looking happy, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/masa_oldman_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/masa_oldman_1.png"
+      },
+      {
+        "name": "masa_bird",
+        "prompts": "The bird perched on a branch starts to spread its wings. A sweeping camera motion circles around the bird, showcasing the graceful unfurling of its wings with the forest in soft focus behind it. Sunlight filters through the trees, casting a golden glow on the bird. Serene, enchanting, high quality, high resolution, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "the bird perched on a branch starts to spread its wings. A sweeping camera motion circles around the bird, showcasing the graceful unfurling of its wings with the forest in soft focus behind it. Sunlight filters through the trees, casting a golden glow on the bird. Serene, enchanting, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "the bird spreads its wings as the camera circles around it, creating a dynamic view of the unfolding wings. Sunlight filters through the trees, casting a dappled light on the bird. The forest background is softly focused, adding depth and serenity to the scene. Enchanting, elegant, high quality, high resolution, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Animation/masa_bird_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/masa_bird_1.png"
+      },
+      {
+        "name": "masa_boy",
+        "prompts": "a boy looking serious turn to happy and to the left turn to forward, high quality, high resolution, slow motion",
+        "prompt_inverse": null,
+        "prompt_1": null,
+        "prompt_2": null,
+        "video_dir_1": "EvalData/MorphBench/Animation/masa_boy_0.png",
+        "video_dir_2": "EvalData/MorphBench/Animation/masa_boy_1.png"
+    }
+    ]
+  }
+  

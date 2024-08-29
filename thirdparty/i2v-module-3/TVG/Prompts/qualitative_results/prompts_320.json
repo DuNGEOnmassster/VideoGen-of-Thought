@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "name": "skier_eagle",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a professional skier racing down a steep, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a majestic eagle soaring through the sky, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/skier_eagle_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/skier_eagle_1.png"
+        },
+        {
+            "name": "running_leo",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a sprinter launching from the starting blocks, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a cheetah sprinting at full speed across the savannah, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/running_leo_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/running_leo_1.png"
+        },
+        {
+            "name": "leo_liuxiaong",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a cheetah leaping forward, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "an athlete mid-air above the hurdle, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/leo_liuxiaong_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/leo_liuxiaong_1.png"
+        },
+        {
+            "name": "skiing_flying",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": " a skier launching off a snow-covered ramp, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a hang glider’s colorful wings as it glides near the cliff, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/skiing_flying_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/skiing_flying_1.png"
+        },
+        {
+            "name": "sun_set",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a glowing sunset, capturing the sun's rays piercing through the clouds, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a darkening sky, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/sunset_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/sunset_1.png"
+        },
+        {
+            "name": "tooncrafter",
+            "prompts": null,
+            "prompt_inverse": null,
+            "prompt_1": "a girl, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "prompt_2": "a girl, high quality, 4k, slow motion, capturing every detail in sharp focus",
+            "video_dir_1": "EvalData/Qualitative_results/images/tooncrafter_0.png",
+            "video_dir_2": "EvalData/Qualitative_results/images/tooncrafter_1.png"
+        }                      
+    ]
+}

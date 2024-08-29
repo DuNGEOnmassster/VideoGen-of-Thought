@@ -1,0 +1,599 @@
+{
+    "data": [
+      {
+        "name": "dog_wolf",
+        "prompts": "A dog becomes a wolf. High quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a dog, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a wolf, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/dog_wolf_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/dog_wolf_1.png"
+      },
+      {
+        "name": "jay",
+        "prompts": "Jay Chou's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Jay Chou's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "Jay Chou's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/jay_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/jay_1.png"
+      },
+      {
+        "name": "chair02",
+        "prompts": "A chair, high quality, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a chair, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a chair, high quality, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/chair02_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/chair02_1.png"
+      },
+      {
+        "name": "chair13",
+        "prompts": "A green velvet sofa with wooden legs becomes a white modern chair with wooden legs and black metal supports. High quality, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a green velvet sofa with wooden legs becomes a white modern chair with wooden legs and black metal supports, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a white modern chair with wooden legs and black metal supports becomes a green velvet sofa with wooden legs, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/chair13_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/chair13_1.png"
+      },
+      {
+        "name": "scream",
+        "prompts": "A boy screaming with two men in the background turns into a figure screaming with an agonized expression on a bridge. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a boy screaming, with two men in the background, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a figure screaming with an agonized expression on a bridge, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/scream_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/scream_1.png"
+      },
+      {
+        "name": "wc",
+        "prompts": "A restroom sign becomes a slightly more detailed depiction of the same male and female figures, now with a bit more definition and posture that suggests movement, a woman and a man dancing on the street at night. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a restroom sign, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a slightly more detailed depiction of the same male and female figures, now with a bit more definition and posture that suggests movement, a woman and a man dancing on the street at night, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/wc_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/wc_1.png"
+      },
+      {
+        "name": "cat_rabbit",
+        "prompts": "An orange and white cat becomes a fluffy brown rabbit. Hyper-realistic, high quality, high resolution, 8k.",
+        "prompt_inverse": null,
+        "prompt_1": "a orange and white cat becomes a fluffy brown rabbit, Hyper-realistic, high quality, high resolution, 8k",
+        "prompt_2": "a fluffy brown rabbit becomes a orange and white cat, Hyper-realistic, looking to the side, high quality, high resolution, 8k",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/cat_rabbit_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/cat_rabbit_1.png"
+      },
+      {
+        "name": "cake_burger",
+        "prompts": "A cake becomes a burger. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cake, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a burger, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/cake_burger_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/cake_burger_1.png"
+      },
+      {
+        "name": "castle",
+        "prompts": "A Mont Saint Michel Castle in daylight becomes a Mont Saint Michel Castle at night. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a Mont Saint Michel Castle in daylight, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a Mont Saint Michel Castle in night, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/castle_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/castle_1.png"
+      },
+      {
+        "name": "sculp",
+        "prompts": "A white ancient Greek sculpture, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a white ancient Greek sculpture, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a white ancient Greek sculpture, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/sculp_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/sculp_1.png"
+      },
+      {
+        "name": "leo",
+        "prompts": "A young Leonardo DiCaprio with a youthful face and bangs becomes an older Leonardo DiCaprio with a mature face. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a young Leonardo DiCaprio with a youthful face and bangs, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "an older Leonardo DiCaprio with a mature face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/leo_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/leo_1.png"
+      },
+      {
+        "name": "house_left",
+        "prompts": "A small, dilapidated wooden house with peeling paint, broken windows, and a sagging roof becomes a well-maintained wooden barn with weathered but sturdy wooden walls and a red tiled roof. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a small, dilapidated wooden house with peeling paint, broken windows, and a sagging roof, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a well-maintained wooden barn with weathered but sturdy wooden walls and a red tiled roof, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/house_left_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/house_left_1.png"
+      },
+      {
+        "name": "girl12",
+        "prompts": "A cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/girl12_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/girl12_1.png"
+      },
+      {
+        "name": "girl13",
+        "prompts": "A cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/girl13_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/girl13_1.png"
+      },
+      {
+        "name": "girl23",
+        "prompts": "A cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/girl23_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/girl23_1.png"
+      },
+      {
+        "name": "obama_putin",
+        "prompts": "A white man's face becomes a black man's face. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a white man's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a black man's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/obama_putin_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/obama_putin_1.png"
+      },
+      {
+        "name": "pika",
+        "prompts": "Pichu becomes Pikachu with long ears and a large body. The camera slowly zooms out. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Pichu, capturing its cute, expressive face, the camera slowly zooms out, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "Pikachu with long ears, and large body, the camera slowly zooms out, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/pika_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/pika_1.png"
+      },
+      {
+        "name": "Trump_Biden",
+        "prompts": "An American man, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "an American man, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "an American man, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/Trump_Biden_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/Trump_Biden_1.png"
+      },
+      {
+        "name": "boy03",
+        "prompts": "A cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy03_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy03_1.png"
+      },
+      {
+        "name": "thu_mit",
+        "prompts": "An auditorium, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "an auditorium, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "an auditorium, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/thu_mit_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/thu_mit_1.png"
+      },
+      {
+        "name": "house_right",
+        "prompts": "A wooden house becomes a red wooden house with snow. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a wooden house, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a red wooden house with snow, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/house_right_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/house_right_1.png"
+      },
+      {
+        "name": "Musk_Trump",
+        "prompts": "A white man's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a white man's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a white man's face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/Musk_Trump_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/Musk_Trump_1.png"
+      },
+      {
+        "name": "whitehouse_church",
+        "prompts": "A white house with dome becomes a great church with dome. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "white house with dome, the structure slowly change, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "great church with dome, the structure slowly change, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/whitehouse_church_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/whitehouse_church_1.png"
+      },
+      {
+        "name": "mona_pearl",
+        "prompts": "Mona Lisa’s face, highlighting her enigmatic smile, her features and the background start to transform into the face of the Girl with a Pearl Earring. High quality, high resolution, 8k, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Mona Lisa’s face, highlighting her enigmatic smile, her features and the background start to transform, high quality, high resolution, 8k, capturing every detail in sharp focus",
+        "prompt_2": "the face of the Girl with a Pearl Earring, her features and the background start to transform, high quality, high resolution, 8k, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/mona_pearl_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/mona_pearl_1.png"
+      },
+      {
+        "name": "boy_girl_0",
+        "prompts": "A cool boy becomes a cool girl. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy_girl_0_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy_girl_0_1.png"
+      },
+      {
+        "name": "boy_girl_1",
+        "prompts": "A cool boy becomes a cool girl. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy_girl_1_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy_girl_1_1.png"
+      },
+      {
+        "name": "boy_girl_3",
+        "prompts": "A cool boy becomes a cool girl. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy_girl_3_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy_girl_3_1.png"
+      },
+      {
+        "name": "vangogh",
+        "prompts": "A self-portrait of Vincent van Gogh with a greenish complexion and a wavy, textured background in shades of blue and green becomes a self-portrait of Vincent van Gogh in a transitional style, blending cool and warm tones. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a self-portrait of Vincent van Gogh with a greenish complexion and a wavy, textured background in shades of blue and green, the camera slowly zooms in on his face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a self-portrait of Vincent van Gogh in a transitional style, blending cool and warm tones, the camera slowly zooms in on his face, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/vangogh_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/vangogh_1.png"
+      },
+      {
+        "name": "girl03",
+        "prompts": "A cool girl with wavy blonde hair becomes a cool girl with messy light brown hair. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool girl with wavy blonde hair, high quality, high resolution, 8k, slow motion slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl with messy light brown hair, high quality, high resolution, 8k, slow motion, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/girl03_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/girl03_1.png"
+      },
+      {
+        "name": "chair23",
+        "prompts": "A chair, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a chair, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a chair, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/chair23_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/chair23_1.png"
+      },
+      {
+        "name": "anakin",
+        "prompts": "Anakin Skywalker's face, showing his determined and conflicted expression becomes Darth Vader's mask. The camera slowly zooms in on his eyes, capturing the intensity of his emotions. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Anakin Skywalker's face, showing his determined and conflicted expression. The camera slowly zooms in on his eyes, capturing the intensity of his emotions, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "Darth Vader's mask, in the same position, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/anakin_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/anakin_1.png"
+      },
+      {
+        "name": "house_lr",
+        "prompts": "A wooden house, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a wooden house, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a wooden house, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/house_lr_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/house_lr_1.png"
+      },
+      {
+        "name": "boy_girl_2",
+        "prompts": "A young boy with tousled hair and a sad expression becomes a young girl with wavy hair. The camera slowly zooms in on their faces. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a young boy with tousled hair and a sad expression, the camera slowly zooms in on his face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a young girl with wavy hair, the camera slowly zooms in on her face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy_girl_2_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy_girl_2_1.png"
+      },
+      {
+        "name": "boy01",
+        "prompts": "A cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy01_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy01_1.png"
+      },
+      {
+        "name": "boy02",
+        "prompts": "A cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy02_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy02_1.png"
+      },
+      {
+        "name": "boy12",
+        "prompts": "A young boy with tousled hair and a serious expression, the camera slowly zooms in on his face. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a young boy with tousled hair and a serious expression, the camera slowly zooms in on his face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a young boy, high quality, the camera slowly zooms in on his face, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy12_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy12_1.png"
+      },
+      {
+        "name": "boy13",
+        "prompts": "A cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy13_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy13_1.png"
+      },
+      {
+        "name": "taylor_yifei",
+        "prompts": "A white woman with blonde hair and red lipstick, set against a dark, neutral background becomes a beautiful yellow woman with black hair and a soft smile, against a brighter, outdoor background. The camera slowly zooms in on their faces. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a white woman with blonde hair and red lipstick, set against a dark, neutral background, the camera slowly zooms in on her face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a beautiful yellow woman with black hair and a soft smile, against a brighter, outdoor background, the camera slowly zooms in on her face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/taylor_yifei_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/taylor_yifei_1.png"
+      },
+      {
+        "name": "boy23",
+        "prompts": "A cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool boy, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/boy23_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/boy23_1.png"
+      },
+      {
+        "name": "girl01",
+        "prompts": "A cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/girl01_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/girl01_1.png"
+      },
+      {
+        "name": "raccoon",
+        "prompts": "A cute raccoon, the camera slowly pans from left to right. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cute raccoon, the camera slowly pans from left to right, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cute raccoon, the camera slowly pans from left to right, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/raccoon_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/raccoon_1.png"
+      },
+      {
+        "name": "girl",
+        "prompts": "A cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a cool girl, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/girl_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/girl_1.png"
+      },
+      {
+        "name": "man_van",
+        "prompts": "An oil painting of a man wearing a hat, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "an oil painting of a man wearing hat, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "an oil painting of a man wearing hat, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/man_van_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/man_van_1.png"
+      },
+      {
+        "name": "wave",
+        "prompts": "A powerful ocean wave captured mid-crest, with vibrant blue water and a clear sky backdrop becomes an ocean wave that blends realistic and stylized elements, transforming into a traditional Japanese woodblock print depicting a large wave with boats caught in it, with Mount Fuji visible in the background. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a powerful ocean wave captured mid-crest, with vibrant blue water and a clear sky backdrop",
+        "prompt_2": "an ocean wave that blends realistic and stylized elements becomes a traditional Japanese woodblock print depicting a large wave with boats caught in it, with Mount Fuji visible in the background",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/wave_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/wave_1.png"
+      },
+      {
+        "name": "arya",
+        "prompts": "A young woman with brown hair and intense blue eyes, her features begin to morph into a more stylized and animated form. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a young woman with brown hair and intense blue eyes, her features begin to morph, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a more stylized and animated form young woman, her features begin to morph, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/arya_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/arya_1.png"
+      },
+      {
+        "name": "carr_cars",
+        "prompts": "A red Maserati convertible sports car parked on a modern platform with a sky backdrop becomes a sleek silver Mercedes-AMG race car with yellow accents, bearing the number 1, speeding on a race track. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a red Maserati convertible sports car parked on a modern platform with a sky backdrop, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a sleek silver Mercedes-AMG race car with yellow accents, bearing the number 1, speeding on a race track, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/carr_cars_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/carr_cars_1.png"
+      },
+      {
+        "name": "cars_van",
+        "prompts": "A sleek silver Mercedes-AMG race car with yellow accents, bearing the number 1, speeding on a race track becomes a compact silver Mini Cooper car with a modern design, shown in a studio setting. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a sleek silver Mercedes-AMG race car with yellow accents, bearing the number 1, speeding on a race track, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a compact silver Mini Cooper car with a modern design, shown in a studio setting, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/cars_van_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/cars_van_1.png"
+      },
+      {
+        "name": "dog",
+        "prompts": "A cheerful dog with a smooth coat, primarily white with black and brown patches becomes a dog with a longer, fluffier coat, predominantly black with white and brown markings, showing a combination of smooth and slightly longer fur. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a cheerful dog with a smooth coat, primarily white with black and brown patches, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a dog with a longer, fluffier coat, predominantly black with white and brown markings, showing a combination of smooth and slightly longer fur, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/dog_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/dog_1.png"
+      },
+      {
+        "name": "gandalf",
+        "prompts": "Gandalf the Grey with his pipe, set in a serene forest becomes Santa Claus with his warm smile and twinkling eyes. The camera slowly zooms in on their faces. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Gandalf the Grey with his pipe, set in a serene forest, the camera slowly zooms in on his face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "Santa Claus with his warm smile and twinkling eyes, the camera slowly zooms in on his face, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/gandalf_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/gandalf_1.png"
+      },
+      {
+        "name": "girl02",
+        "prompts": "A young girl with long, wavy blonde hair becomes a young girl with shoulder-length, voluminous blonde hair styled in soft waves. The camera slowly zooms in on their faces. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a young girl with long, wavy blonde hair, the camera slowly zooms in on her face, high quality, high resolution, 8k, slow motion slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a young girl with shoulder-length, voluminous blonde hair styled in soft waves, the camera slowly zooms in on her face, high quality, high resolution, 8k, slow motion, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/girl02_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/girl02_1.png"
+      },
+      {
+        "name": "lion_tiger",
+        "prompts": "A lion becomes a tiger. High quality, high resolution, 8k, slow motion slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a lion becomes a tiger, high quality, high resolution, 8k, slow motion slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a tiger becomes a lion, high quality, high resolution, 8k, slow motion slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/lion_tiger_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/lion_tiger_1.png"
+      },
+      {
+        "name": "Musk_Feifei",
+        "prompts": "A man with short, slightly messy dark hair and a fair complexion becomes a beautiful yellow woman's face. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a man with short, slightly messy dark hair and a fair complexion, high quality, high resolution, 8k, slow motion, no rotate, capturing every detail in sharp focus",
+        "prompt_2": "a beautiful yellow woman's face becomes a American man, high quality, high resolution, 8k, slow motion, no rotate, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/Musk_Feifei_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/Musk_Feifei_1.png"
+      },
+      {
+        "name": "Musk_Obama",
+        "prompts": "A man with short, slightly messy dark hair and a fair complexion becomes a man with short, neatly trimmed dark hair and a warm, medium complexion. Detailed skin texture, clear facial features, and realistic facial pores. High quality, high resolution, 8k, slow motion, steady view, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a man with short, slightly messy dark hair and a fair complexion, detailed skin texture, clear facial features, and realistic facial pores, high quality, high resolution, 8k, slow motion, Steady view",
+        "prompt_2": "a man with short, neatly trimmed dark hair and a warm, medium complexion, detailed skin texture, clear facial features, and realistic facial pores, high quality, high resolution, 8k, slow motion, Steady view",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/Musk_Obama_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/Musk_Obama_1.png"
+      },
+      {
+        "name": "Obama_Trump",
+        "prompts": "A man with short, neatly trimmed black hair and a warm, medium complexion becomes a man with slightly longer, light blond hair and a warm, fair complexion. Detailed skin texture, clear facial features, and realistic facial pores. High quality, high resolution, 8k, slow motion, steady view, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a man with short, neatly trimmed black hair and a warm, medium complexion, detailed skin texture, clear facial features, and realistic facial pores, high quality, high resolution, 8k, slow motion, Steady view",
+        "prompt_2": "a man with slightly longer, light blond hair and a warm, fair complexion, detailed skin texture, clear facial features, and realistic facial pores, high quality, high resolution, 8k, slow motion, Steady view",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/Obama_Trump_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/Obama_Trump_1.png"
+      },
+      {
+        "name": "realdog_cat",
+        "prompts": "A fluffy golden retriever puppy with soft, light golden fur becomes an orange and white cat. High quality, high resolution, 8k, slow motion, high detail, fine texture.",
+        "prompt_inverse": null,
+        "prompt_1": "a fluffy golden retriever puppy with soft, light golden fur, high quality, high resolution, 8k, slow motion, high detail, fine texture",
+        "prompt_2": "an orange and white cat becomes a puppy, high quality, high resolution, 8k, slow motion, high detail, fine texture",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/realdog_cat_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/realdog_cat_1.png"
+      },
+      {
+        "name": "red_car",
+        "prompts": "A sleek red convertible sports car parked on a modern, metallic surface becomes a vintage red compact city car parked on a busy urban street, that combines features of both a sleek convertible sports car and a compact city car. High quality, high resolution, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a sleek red convertible sports car parked on a modern, metallic surface, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a vintage red compact city car parked on a busy urban street,that combines features of both a sleek convertible sports car and a compact city car, high quality, high resolution, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/red_car_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/red_car_1.png"
+      },
+      {
+        "name": "snow_mountain",
+        "prompts": "A stunning daytime view of a snow-covered mountain range, with rugged peaks bathed in the warm light of the setting sun becomes the same mountain range transitioning from day to night. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a stunning daytime view of a snow-covered mountain range, with rugged peaks bathed in the warm light of the setting sun, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "the same mountain range transitioning from day to night, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/snow_mountain_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/snow_mountain_1.png"
+      },
+      {
+        "name": "thanos",
+        "prompts": "A 3D animated depiction of a powerful superhero with a muscular build, wearing elaborate armor and a helmet becomes a classic comic book depiction of a superhero, with bold, dynamic lines and vibrant colors. The superhero begins to transition from a 3D animated style to a more stylized comic book appearance. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a 3D animated depiction of a powerful superhero with a muscular build, wearing elaborate armor and a helmet, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a classic comic book depiction of a superhero, with bold, dynamic lines and vibrant colors, the superhero begins to transition from a 3D animated style to a more stylized comic book appearance, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/thanos_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/thanos_1.png"
+      },
+      {
+        "name": "van_jeep",
+        "prompts": "A van becomes a jeep. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a van, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a jeep, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/van_jeep_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/van_jeep_1.png"
+      },
+      {
+        "name": "van_mona",
+        "prompts": "A portrait of Vincent van Gogh with a distinctive style characterized by bold brushstrokes and vibrant colors becomes a portrait of a woman with a serene expression, dark hair, and a subtle smile, blending the expressive brushstrokes of Van Gogh with the softer, more realistic approach of Renaissance portraiture. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a portrait of Vincent van Gogh with a distinctive style characterized by bold brushstrokes and vibrant colors, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a portrait of a woman with a serene expression, dark hair, and a subtle smile, blends the expressive brushstrokes of Van Gogh with the softer, more realistic approach of Renaissance portraiture, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/van_mona_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/van_mona_1.png"
+      },
+      {
+        "name": "van_pearl",
+        "prompts": "Vincent van Gogh's self-portrait, highlighting the texture and brushstrokes of the painting becomes the face of the Girl with a Pearl Earring, focusing on her serene gaze. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "Vincent van Gogh's self-portrait, highlighting the texture and brushstrokes of the painting, as the camera remains fixed, her features and the background start to transform,  extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "the face of the Girl with a Pearl Earring, focusing on her serene gaze, as the camera remains fixed, her features and the background start to transform, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/van_pearl_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/van_pearl_1.png"
+      },
+      {
+        "name": "van_self",
+        "prompts": "A self-portrait of Vincent van Gogh characterized by bold, expressive brushstrokes and a limited color palette becomes a self-portrait of Vincent van Gogh with intricate brushstrokes and a rich, varied color palette. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a self-portrait of Vincent van Gogh characterized by bold, expressive brushstrokes and a limited color palette, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a self-portrait of Vincent van Gogh with intricate brushstrokes and a rich, varied color palette, in a transitional state, where the bold brushstrokes start to blend with more detailed and nuanced colors, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/van_self_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/van_self_1.png"
+      },
+      {
+        "name": "wolf_tiger",
+        "prompts": "A gray wolf with piercing yellow eyes and thick fur becomes a powerful tiger with striking orange fur and bold black stripes, the sleek, agile body of a wolf, covered in a mix of grey and orange fur with bold black stripes reminiscent of a tiger. Extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a gray wolf with piercing yellow eyes and thick fur, extremely high quality, high resolution, 4k, slow motion, detailed",
+        "prompt_2": "a powerful tiger with striking orange fur and bold black stripes, the sleek, agile body of a wolf, covered in a mix of grey and orange fur with bold black stripes reminiscent of a tiger, detailed, extremely high quality, high resolution, 4k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/wolf_tiger_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/wolf_tiger_1.png"
+      },
+      {
+        "name": "chair01",
+        "prompts": "A chair becomes a green velvet sofa with wooden legs. High quality, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a chair, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a green velvet sofa with wooden legs, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/chair01_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/chair01_1.png"
+      },
+      {
+        "name": "chair03",
+        "prompts": "A chair, high quality, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a chair, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a chair, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/chair03_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/chair03_1.png"
+      },
+      {
+        "name": "chair12",
+        "prompts": "A green velvet sofa with wooden legs becomes a chair. High quality, 8k, slow motion, capturing every detail in sharp focus.",
+        "prompt_inverse": null,
+        "prompt_1": "a green velvet sofa with wooden legs, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "prompt_2": "a chair, high quality, 8k, slow motion, capturing every detail in sharp focus",
+        "video_dir_1": "EvalData/MorphBench/Metamorphosis/chair12_0.png",
+        "video_dir_2": "EvalData/MorphBench/Metamorphosis/chair12_1.png"
+      }
+    ]
+  }
+  
