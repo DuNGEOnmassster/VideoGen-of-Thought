@@ -17,13 +17,19 @@ from utils.utils import instantiate_from_config
 import random
 
 
+import re
+
+def natural_sort_key(s):
+    return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
+
 def get_filelist(data_dir, postfixes):
     patterns = [os.path.join(data_dir, f"*.{postfix}") for postfix in postfixes]
     file_list = []
     for pattern in patterns:
         file_list.extend(glob.glob(pattern))
-    file_list.sort()
+    file_list.sort(key=natural_sort_key)  # 使用自然排序
     return file_list
+
 
 def load_model_checkpoint(model, ckpt):
     state_dict = torch.load(ckpt, map_location="cpu")
@@ -291,6 +297,8 @@ def run_inference(args, gpu_num, gpu_no):
     prompt_list_rank = [prompt_list[i] for i in indices]
     data_list_rank = [data_list[i] for i in indices]
     filename_list_rank = [filename_list[i] for i in indices]
+
+    # import pdb; pdb.set_trace()
 
     start = time.time()
     with torch.no_grad(), torch.cuda.amp.autocast():
