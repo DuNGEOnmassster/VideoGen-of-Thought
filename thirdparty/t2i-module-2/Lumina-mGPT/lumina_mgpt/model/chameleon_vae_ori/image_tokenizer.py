@@ -10,6 +10,9 @@ import torch
 import yaml
 
 from .vqgan import VQModel
+from typing import Union
+
+
 
 
 class ImageTokenizer:
@@ -17,7 +20,8 @@ class ImageTokenizer:
         self,
         cfg_path: str,
         ckpt_path: str,
-        device: str | torch.device | None = None,
+        # device: str | torch.device | None = None,
+        device: Union[str, torch.device, None] = None,
     ):
         with open(cfg_path) as f:
             config = yaml.safe_load(f)

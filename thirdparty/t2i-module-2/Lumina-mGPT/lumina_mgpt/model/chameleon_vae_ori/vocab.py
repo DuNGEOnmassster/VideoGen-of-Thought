@@ -6,7 +6,7 @@
 from functools import cached_property
 
 import torch
-
+from typing import Union
 
 class VocabInfo:
     def __init__(self, vocab_map: dict[str, int]):
@@ -65,7 +65,7 @@ class VocabInfo:
 
 
 class VocabTranslation:
-    def __init__(self, vocab_info: VocabInfo, device: str | None = None):
+    def __init__(self, vocab_info: VocabInfo, device: Union[str, None] = None):
         self._vocab = vocab_info
         self._device = device
 

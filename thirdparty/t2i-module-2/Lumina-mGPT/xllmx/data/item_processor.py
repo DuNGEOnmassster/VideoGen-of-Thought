@@ -33,7 +33,7 @@ class MMConvItemProcessor(ItemProcessorBase):
         self,
         transform: Dict[str, Callable[[Any], Dict]],
         media_symbols: List[str],
-        tokenizer: str | Tokenizer,
+        tokenizer: Union[str, Tokenizer],
         conv_template,
     ):
         self.transform = transform

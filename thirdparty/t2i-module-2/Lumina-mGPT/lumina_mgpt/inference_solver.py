@@ -9,7 +9,7 @@ import transformers
 from transformers import GenerationConfig, TextStreamer
 from transformers.generation.logits_process import LogitsProcessor, LogitsProcessorList, LogitsWarper
 
-from data.item_processor import FlexARItemProcessor
+from mydata.item_processor import FlexARItemProcessor
 from model.chameleon import ChameleonForConditionalGeneration
 
 
@@ -291,7 +291,8 @@ class FlexARInferenceSolver:
     @torch.no_grad()
     def generate(
         self,
-        images: Image.Image | str | List[Union[Image.Image, str]],
+        # images: Image.Image | str | List[Union[Image.Image, str]],
+        images: Union[Image.Image, str, List[Union[Image.Image, str]]],
         qas,
         max_gen_len,
         temperature,
