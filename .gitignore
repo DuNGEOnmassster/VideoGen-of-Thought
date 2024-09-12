@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# pretrained_ckpts
+pretrained_ckpts/
+weights/
+
 # C extensions
 *.so
 
