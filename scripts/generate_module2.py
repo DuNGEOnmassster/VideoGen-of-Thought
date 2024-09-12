@@ -14,8 +14,8 @@ import argparse
 # Argument parsing function
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate images using paired image paths and prompts from JSON.")
-    parser.add_argument('--json_path', type=str, default="data_ip/image_prompt_pairs.json", help='Path to the JSON file with image-path and prompt pairs.')
-    parser.add_argument('--output_path', type=str, default="results", help='Directory to save the generated images.')
+    parser.add_argument('--json_path', type=str, default="data/data_ip/image_prompt_pairs.json", help='Path to the JSON file with image-path and prompt pairs.')
+    parser.add_argument('--output_path', type=str, default="results/a1", help='Directory to save the generated images.')
     parser.add_argument('--seed', type=int, default=3407, help='Random seed for reproducibility.')
     return parser.parse_args()
 
@@ -29,12 +29,14 @@ def set_seed(seed):
 def load_image_prompt_pairs(json_path):
     with open(json_path, 'r') as f:
         data = json.load(f)
-    return {item['ip_img_path']: item['prompt'] for item in data}
+    
+    return {idx: {'image_path': item['ip_img_path'], 'prompt': item['prompt']} 
+            for idx, item in enumerate(data)}
 
 # Prepare model pipeline
 def prepare_model():
-    # root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    root_dir = "."
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    # root_dir = "."
     ckpt_dir = f'{root_dir}/weights/Kolors'
 
     text_encoder = ChatGLMModel.from_pretrained(f'{ckpt_dir}/text_encoder', torch_dtype=torch.float16).half()
@@ -71,7 +73,10 @@ def run(args):
     image_prompt_dict = load_image_prompt_pairs(args.json_path)
     os.makedirs(args.output_path, exist_ok=True)
 
-    for idx, (ip_img_path, prompt) in enumerate(image_prompt_dict.items()):
+    for idx, item in image_prompt_dict.items():
+        ip_img_path = item['image_path']
+        prompt = item['prompt']
+        
         ip_img = Image.open(ip_img_path)
         pipe.set_ip_adapter_scale([0.5])  # Example scale, adjust as needed
         image = pipe(

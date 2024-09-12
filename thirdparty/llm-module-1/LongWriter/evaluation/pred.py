@@ -61,8 +61,10 @@ def seed_everything(seed):
 
 if __name__ == '__main__':
     seed_everything(42)
-    model = 'LongWriter-glm4-9b' # LongWriter-llama3.1-8b
-    path = "THUDM/LongWriter-glm4-9b" # THUDM/LongWriter-llama3.1-8b
+    # model = 'LongWriter-glm4-9b' # LongWriter-llama3.1-8b
+    model = 'LongWriter-llama3.1-8b'
+    # path = "THUDM/LongWriter-glm4-9b" # THUDM/LongWriter-llama3.1-8b
+    path = '/remote_shome/zhengmz/pretrained_models/pretrained/THUDM/LongWriter-llama3.1-8b'
     os.makedirs(f"models/{model}", exist_ok=True)
     fout = open(f"models/{model}/pred.jsonl", 'w', encoding='utf-8')
 
