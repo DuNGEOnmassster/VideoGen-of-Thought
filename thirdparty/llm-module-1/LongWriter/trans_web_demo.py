@@ -26,7 +26,8 @@ from transformers import (
 ModelType = Union[PreTrainedModel]
 TokenizerType = Union[PreTrainedTokenizer, PreTrainedTokenizerFast]
 
-MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/LongWriter-glm4-9b')
+# MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/LongWriter-glm4-9b')
+MODEL_PATH = '/remote_shome/zhengmz/pretrained_models/pretrained/THUDM/LongWriter-glm4-9b'
 TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
 
 

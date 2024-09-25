@@ -1,7 +1,7 @@
 from vllm import LLM, SamplingParams
 
 model = LLM(
-    model= "THUDM/LongWriter-glm4-9b",
+    model= "/remote_shome/zhengmz/pretrained_models/pretrained/THUDM/LongWriter-glm4-9b",
     dtype="auto",
     trust_remote_code=True,
     tensor_parallel_size=1,
