@@ -1,0 +1,118 @@
+[
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, clutching an ancient map, inspecting it with intense focus. Background: A dense, misty jungle with ancient trees towering overhead. Relation: Mike, deep in thought, traces a line on the map with his finger, revealing the path to the pyramid. Camera Pose: Over-the-shoulder shot, with the map in the foreground and Mike’s focused expression in the background. HDR Description: The soft jungle mist diffuses the sunlight, casting delicate shadows across Mike's face and hands as he inspects the map."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, packing her gear into a sturdy backpack. Background: A lush jungle campsite with scattered supplies and gear ready for the adventure. Relation: Jane moves swiftly, securing ropes, water, and other equipment with practiced ease. Camera Pose: Medium shot of Jane from the side, her face turned slightly away as she concentrates on packing. HDR Description: The warm light of the jungle sun creates a rich contrast between the green foliage and the dusty brown earth, highlighting the details of Jane's gear."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, crouching behind thick foliage, spying on Mike and Jane. Background: Dense jungle with vines and low-hanging branches, moonlight filtering through the canopy. Relation: Tom hides quietly, a sly smile on his face as he watches his rivals from afar. Camera Pose: Low-angle shot from behind Tom, showing his silhouette against the backdrop of the dimly lit jungle. HDR Description: The dim light from the moon casts soft shadows, blending Tom into the jungle while highlighting his piercing eyes as he watches."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, standing before a hidden temple's entrance, gazing up at the stone gargoyles. Background: A towering temple covered in vines, with stone gargoyles perched on either side of the entrance. Relation: Jane stares up, her eyes wide with amazement and caution, as if calculating her next move. Camera Pose: Low-angle shot from Jane’s feet, making the temple and gargoyles appear imposing while showing her head tilted up. HDR Description: The light filtering through the thick canopy casts long, dramatic shadows, creating a mix of cool and warm tones on the ancient stone and Jane's determined face."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, kneeling beside ancient glyphs etched into a stone tablet. Background: The temple interior, dimly lit by flickering torches mounted on the walls. Relation: Mike studies the glyphs carefully, deciphering their meaning as he reveals the pyramid’s location. Camera Pose: Over-the-shoulder shot of Mike as his hand hovers over the glyphs, deep concentration etched on his face. HDR Description: The warm, flickering torchlight accentuates the worn stone surface, casting soft shadows across the intricate glyphs and Mike's weathered features."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, scaling a steep cliff face with ease. Background: A rocky cliff with treacherous terrain, with the jungle far below and mist in the air. Relation: Jane, focused and agile, pulls herself upward, nearing the top of the cliff. Camera Pose: High-angle shot, capturing Jane from above as she ascends the cliff with determination. HDR Description: The bright sunlight highlights the sharp edges of the rocks, with Jane’s determined expression shadowed by the cliff's overhang."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, crouching near Mike and Jane's campsite, tampering with their equipment. Background: A jungle clearing at night, illuminated by the soft glow of a dying campfire. Relation: Tom smirks as he messes with their gear, ensuring their journey will be more difficult. Camera Pose: Low-angle shot from the side, focusing on Tom’s hands as he sabotages the equipment, with a mischievous glint in his eyes. HDR Description: The flickering campfire casts moving shadows across Tom’s face, adding a sinister glow to his actions."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, standing at the edge of a raging river, scanning for a solution. Background: A wild, fast-flowing river, with thick jungle trees crowding the banks. Relation: Jane surveys the surroundings, calculating how they’ll cross the river and build a raft. Camera Pose: Wide shot from behind Jane, capturing the intensity of the river and her pensive posture as she assesses the situation. HDR Description: The sunlight glints off the rapidly moving water, casting bright highlights against the darker jungle backdrop."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, covered in mud, struggling to escape from quicksand. Background: A jungle clearing filled with damp, muddy terrain and tangled roots. Relation: Mike, frantic and sinking fast, reaches out desperately as he is pulled to safety by Jane. Camera Pose: Close-up of Mike’s hand grasping Jane’s, his expression a mixture of relief and panic. HDR Description: Harsh sunlight filters through the trees, casting a dappled pattern of light across the quicksand and Mike's sweat-drenched face."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, gazing at the pyramid’s golden peak in the distance. Background: A dense jungle with the pyramid rising above the canopy, its peak gleaming in the sunlight. Relation: Jane’s face lights up with awe and excitement as she sees the long-sought pyramid. Camera Pose: Medium shot from the side, showing Jane’s profile as she gazes toward the distant structure. HDR Description: The sunlight strikes the golden pyramid, casting warm light onto Jane’s face, while the surrounding jungle is bathed in a soft, diffused glow."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, running ahead through a narrow corridor in the pyramid, triggering traps. Background: A dimly lit stone corridor, lined with intricate carvings and hidden traps. Relation: Tom glances behind him, oblivious to the traps activating as he races ahead. Camera Pose: Low-angle shot from behind, focusing on Tom’s frantic movements as the corridor begins to shift. HDR Description: The dim, ambient light flickers as traps trigger, creating sharp contrasts between Tom’s shadowed figure and the illuminated stone walls."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, quickly disarming a poison dart trap. Background: A tight stone corridor filled with small holes where the darts shoot from, lit by flickering torchlight. Relation: Jane’s nimble fingers work swiftly to disable the trap before it can fire. Camera Pose: Medium shot focusing on Jane’s hands, with her face in the background showing determination and focus. HDR Description: The torchlight creates sharp shadows on the wall, and the gleam of metal darts contrasts with the rough stone surface."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, solving an ancient riddle on a massive stone door. Background: The pyramid’s grand entrance, with large stone pillars and faint torchlight illuminating the intricate carvings. Relation: Mike deciphers the ancient symbols, aligning them correctly to unlock the door. Camera Pose: Over-the-shoulder shot of Mike as his hand hovers over the symbols, his expression intense with concentration. HDR Description: The faint, golden glow of the torchlight casts deep shadows on the massive door, highlighting the carved symbols as Mike works."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, stepping cautiously into a chamber filled with treasures. Background: A large room brimming with golden artifacts, precious gems, and towering statues, dimly lit by an overhead shaft of light. Relation: Jane’s expression is a mixture of awe and caution as she surveys the room for traps. Camera Pose: Wide shot from behind, capturing the grand scope of the chamber as Jane steps forward. HDR Description: The dim golden light reflects off the treasure, creating a magical glow around Jane and casting long, faint shadows on the walls."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, locking Mike and Jane inside a collapsing room. Background: A dark, stone chamber with walls slowly closing in and dust falling from the ceiling. Relation: Tom smirks as he pulls the heavy stone door shut, trapping his rivals inside. Camera Pose: Low-angle shot of Tom from inside the chamber, his silhouette backlit by the crumbling room. HDR Description: Dust and debris float through the air, catching the light as Tom’s figure is illuminated by the faint glow from the closing room behind him."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, finding a hidden passage behind an ancient statue. Background: A dim room cluttered with ancient relics and statues covered in dust, one of which hides a secret door. Relation: Jane carefully pushes aside the statue, revealing a narrow passageway leading to their escape. Camera Pose: Medium shot of Jane, framed by the statue as she peers into the passage with cautious determination. HDR Description: The dim lighting creates long shadows across the statue and Jane’s focused face, with a faint glow emanating from the hidden door."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, leaping across rotating platforms suspended over a bottomless pit. Background: A vast, dark chasm filled with ancient mechanisms and rotating platforms. Relation: Mike leaps from platform to platform, his expression focused as he navigates the dangerous path. Camera Pose: Wide-angle shot from the side, capturing Mike mid-leap with the chasm stretching below him. HDR Description: The dim, flickering light from the ancient torches casts deep shadows across the platforms, emphasizing the depth and danger of the pit."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, standing defiantly as he confronts the pyramid’s guardian mummy. Background: A dark, dusty burial chamber with the sarcophagus slowly opening, revealing the ancient mummy inside. Relation: Tom readies himself, standing his ground as the mummy rises. Camera Pose: Low-angle shot from behind the sarcophagus, showing Tom’s defiant stance as the mummy looms overhead. HDR Description: The faint torchlight casts long, flickering shadows across the mummy’s decaying figure and Tom’s tense form, heightening the suspense."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, using her knowledge of astronomy to align celestial symbols. Background: A stone altar engraved with intricate celestial designs, bathed in soft moonlight streaming through a crack in the ceiling. Relation: Jane carefully adjusts the symbols, aligning them to unlock the next step in their journey. Camera Pose: Close-up of Jane’s hands as she moves the stone pieces into place, with her face partially illuminated by the moonlight. HDR Description: The cool moonlight creates a serene glow, casting soft shadows on the altar and highlighting Jane’s concentration."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, holding an enchanted amulet that glows faintly in the darkness. Background: A shadowy chamber with ancient symbols carved into the walls, faint light filtering through cracks. Relation: Mike examines the amulet, realizing it grants temporary invisibility, as he prepares to use it. Camera Pose: Close-up of Mike’s hand holding the glowing amulet, with his face partially in shadow. HDR Description: The soft glow from the amulet contrasts with the dim light of the chamber, casting delicate shadows on Mike’s hand and face."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, panicking as the pyramid begins to shake violently. Background: The stone walls crack, and chunks of debris fall as the ancient curse begins to activate. Relation: Tom looks around in shock, realizing the pyramid is on the verge of collapse. Camera Pose: Wide shot of Tom standing in the middle of the room, surrounded by falling debris. HDR Description: The chaotic movement of falling debris creates sharp, dramatic shadows, with the dim light from the ceiling cracks adding tension to the scene."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, sprinting through a narrow corridor as the pyramid collapses around her. Background: Stone walls crumble, and debris falls from the ceiling as the structure caves in. Relation: Jane runs at full speed, dodging falling rocks as she races toward safety. Camera Pose: Side-view shot of Jane in motion, her expression focused as she weaves through the collapsing corridor. HDR Description: The flickering light from the collapsing walls and falling debris creates sharp, moving shadows across the narrow passage."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, translating an ancient warning about the curse carved into the pyramid wall. Background: A dark stone wall covered in intricate hieroglyphs, illuminated by flickering torchlight. Relation: Mike reads the warning aloud, his expression tense as he realizes the full extent of the danger. Camera Pose: Close-up of Mike’s face as he studies the hieroglyphs, lit by the warm glow of the torch. HDR Description: The torchlight flickers across the stone, casting dramatic shadows on Mike’s face and emphasizing the intricate carvings."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, reluctantly extending a hand to Mike and Jane as the pyramid begins to crumble. Background: The interior of the pyramid shakes violently, with dust and debris filling the air. Relation: Tom’s face shows hesitation but resolution as he offers his hand, realizing they must work together to escape. Camera Pose: Medium shot of Tom’s outstretched hand, with his conflicted expression partially visible. HDR Description: The soft light from the crumbling walls casts long shadows across Tom’s tense face and hand, emphasizing the dramatic moment."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, fighting off an animated stone statue in the burial chamber. Background: The chamber is filled with towering stone statues, their eyes glowing as they spring to life. Relation: Jane dodges the swing of one statue’s arm, using her quick reflexes to avoid its crushing blow. Camera Pose: Wide-angle shot showing Jane mid-dodge, with the massive stone statue looming overhead. HDR Description: The glow from the statues’ eyes casts eerie shadows, creating stark contrasts between Jane’s swift movements and the statues' rigid forms."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_mike.jpg",
+    "prompt": "Character: Mike, using the amulet’s invisibility to retrieve the pyramid’s heart gem. Background: The heart gem glows faintly on a pedestal, surrounded by ancient traps ready to spring at any moment. Relation: Mike, now invisible, carefully moves through the traps toward the glowing gem. Camera Pose: Medium shot of Mike reaching for the gem, his body fading into invisibility as he approaches. HDR Description: The faint light from the gem contrasts with the dark surroundings, casting soft reflections on the stone traps and highlighting the tension in the air."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, rigging a counterweight system to escape the collapsing pyramid. Background: The walls crack and the ceiling threatens to cave in as Jane swiftly works to balance the system. Relation: Jane pulls ropes and sets up the counterweight system with focused determination, allowing them a chance to escape. Camera Pose: Medium shot of Jane from the side, her hands moving quickly as she adjusts the ropes. HDR Description: The dim light flickers across the scene, creating sharp contrasts between Jane’s movements and the chaotic background of the crumbling pyramid."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_tom.jpg",
+    "prompt": "Character: Tom, panicking as he sinks into a pit of hieroglyphic quicksand. Background: The pyramid’s collapsing interior, with dust swirling and the pit of quicksand glowing faintly beneath him. Relation: Tom, frantic and struggling, tries to pull himself free but sinks further into the quicksand. Camera Pose: Low-angle shot from the edge of the pit, capturing Tom’s desperate struggle as he reaches for solid ground. HDR Description: The eerie glow from the quicksand casts soft, ominous light across Tom’s panicked face, while the surrounding dust creates a tense, claustrophobic atmosphere."
+  },
+  {
+    "ip_img_path": "data/data_pymarid/avatar_jane.jpg",
+    "prompt": "Character: Jane, emerging victorious from the collapsing pyramid. Background: The sun sets behind the sealed pyramid, its golden peak catching the last rays of sunlight. Relation: Jane walks away from the pyramid with Mike, the sense of triumph on her face as the magic is sealed within. Camera Pose: Wide shot from behind, capturing Jane and Mike silhouetted against the glowing sunset, with the pyramid in the background. HDR Description: The warm, golden light of the sunset casts a serene glow over the scene, contrasting with the dark shadows of the sealed pyramid."
+  }
+]
