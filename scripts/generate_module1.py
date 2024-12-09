@@ -1,27 +1,30 @@
-from vllm import LLM, SamplingParams
-model = LLM(
-    model= "/remote_shome/zhengmz/pretrained_models/pretrained/THUDM/LongWriter-glm4-9b",
-    dtype="auto",
-    trust_remote_code=True,
-    tensor_parallel_size=1,
-    max_model_len=32768,
-    gpu_memory_utilization=1,
+import os
+import openai
+
+# 从 configs/config.txt 中读取 API KEY
+CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'configs', 'config.txt')
+
+with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
+    api_key = f.read().strip()
+
+openai.api_key = api_key
+
+# 要向 GPT-4 提交的请求
+prompt = "Describe a set of one-sentence prompts, 30 shots, describe a story of a classic American woman Mary's life, from birth to death."
+
+# 调用GPT-4接口
+response = openai.ChatCompletion.create(
+    model="gpt-4",
+    messages=[{"role":"user","content": prompt}],
+    temperature=0.7,  # 可根据需求调整
+    max_tokens=1500,  # 根据需求调整，确保足够长以容纳30句
 )
-tokenizer = model.get_tokenizer()
-stop_token_ids = [tokenizer.eos_token_id, tokenizer.get_command("<|user|>"), tokenizer.get_command("<|observation|>")]
-generation_params = SamplingParams(
-    temperature=0.5,
-    top_p=0.8,
-    top_k=50,
-    max_tokens=32768,
-    repetition_penalty=1,
-    stop_token_ids=stop_token_ids
-)
-query = "Write a 10000-word China travel guide"
-input_ids = tokenizer.build_chat_input(query, history=[], role='user').input_ids[0].tolist()
-outputs = model.generate(
-    sampling_params=generation_params,
-    prompt_token_ids=[input_ids],
-)
-output = outputs[0]
-print(output.outputs[0].text)
+
+result_content = response['choices'][0]['message']['content']
+
+# 将结果保存到 results/module1.txt
+RESULT_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'results', 'module1.txt')
+with open(RESULT_PATH, 'w', encoding='utf-8') as result_file:
+    result_file.write(result_content)
+
+print("Result saved to results/module1.txt")
