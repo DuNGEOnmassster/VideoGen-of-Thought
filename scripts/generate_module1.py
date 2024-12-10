@@ -60,9 +60,9 @@ print("short_shot_description saved to results/tmp/short_shot_description.txt")
 
 system_prompt_2 = f"""You are a master character concept artist and fashion designer. You have been given a narrative (30 short shot descriptions) about a protagonist's life. 
 From the user prompt, the protagonist's name is {story_name} (story_name = "{story_name}"). 
-You need to create avatar images for this protagonist at exactly five distinct life stages: Child, Teen, Mid, Mid-Elder, and Old.
+You need to create avatar images for this protagonist at exactly six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder, and Old.
 
-Produce exactly 5 JSON objects, each representing {story_name} at one of these five life stages. For each object:
+Produce exactly 6 JSON objects, each representing {story_name} at one of these five life stages. For each object:
 - "ip_image_path": use the format "data/{story_name}/avatar_{story_name}_<stage>.jpg" replacing <stage> with one of the specified stages.
 - "prompt": A multi-line string describing the scene from five angles:
   - character: Appearance, age, clothing, facial expression, etc.
@@ -73,7 +73,7 @@ Produce exactly 5 JSON objects, each representing {story_name} at one of these f
 
 [!!!Be consistent with the narrative, choose details that reflect each stage of {story_name}'s life, and ensure each prompt is detailed and visually evocative.]
 
-Output a JSON array of these 5 objects.
+Output a JSON array of these 6 objects.
 """
 
 with open(SHORT_DESC_PATH, 'r', encoding='utf-8') as f:
@@ -117,15 +117,15 @@ system_prompt_3 = f"""You are now a cinematic director and image curator. You ha
 
 Your tasks:
 1. Read the 30 short shot descriptions.
-2. From avatar_prompt.json, you have these 5 avatar image paths:
+2. From avatar_prompt.json, you have these 6 avatar image paths:
 {avatar_paths}
 
 3. Assign these 5 avatar image paths to the 30 shots so that the distribution matches {story_name}'s aging process:
    - Earliest shots use the Child stage image.
-   - As the narrative progresses into adolescence, use the Teen stage image.
-   - Then use Mid, followed by Mid-Elder, and finally Old for the last portion of her life.
+   - As the narrative progresses into adolescence, use the Teen and Early-30s, Late-40s, and Mid-Elder stage image, as the majority of the story.
+   - Then use Old for the last portion in final 2-3 shots.
    
-   Distribute these 5 avatar paths logically and evenly across the 30 shots, ensuring a chronological progression.
+   Distribute these 6 avatar paths logically and evenly across the 30 shots, ensuring a chronological progression.
 
 4. For each shot, create a JSON object:
    {{
