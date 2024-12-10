@@ -1,12 +1,22 @@
 import os
 import openai
+import json
 
-# Read API key
+# Read API Key
 CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'configs', 'config.txt')
 with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
     api_key = f.read().strip()
 
 openai.api_key = api_key
+
+# The original user prompt (renamed from user_prompt_1 to story_user_prompt)
+story_user_prompt = "Describe a set of one-sentence prompts, 30 shots, describe a story of a classic American woman Mary's life, from birth to death."
+
+# Extracting story_name from story_user_prompt:
+# For simplicity, we know the protagonist is Mary from the prompt.
+# In a more complex scenario, you could use NLP to parse the name,
+# but here we hardcode that the story_name = "Mary".
+story_name = "Mary"
 
 ########################################
 # 1. First GPT: Generate short_shot_description.txt
@@ -23,13 +33,11 @@ and environment, making each scene feel cinematic, with subtle but meaningful ch
 
 [!!!Try to have a coherent main plot, a stable protagonist, and similar but changing scenes.]"""
 
-user_prompt_1 = "Describe a set of one-sentence prompts, 30 shots, describe a story of a classic American woman Mary's life, from birth to death."
-
 response_1 = openai.ChatCompletion.create(
     model="gpt-4",
     messages=[
         {"role": "system", "content": system_prompt_1},
-        {"role": "user", "content": user_prompt_1}
+        {"role": "user", "content": story_user_prompt}
     ],
     temperature=0.7,
     max_tokens=3000
@@ -46,32 +54,38 @@ with open(SHORT_DESC_PATH, 'w', encoding='utf-8') as result_file:
 
 print("short_shot_description saved to results/tmp/short_shot_description.txt")
 
-
 ########################################
-# 2. Second GPT: Generate avatar_prompt.json
+# 2. Second GPT: Generate avatar_prompt.json for the specified life stages
 ########################################
 
-system_prompt_2 = """You are a master character concept artist and fashion designer, tasked with creating detailed character design prompts for a series of avatar images that represent Mary at various stages in her life, based on the previously generated short shot descriptions.
+system_prompt_2 = f"""You are a master character concept artist and fashion designer. You have been given a narrative (30 short shot descriptions) about a protagonist's life. 
+From the user prompt, the protagonist's name is {story_name} (story_name = "{story_name}"). 
+You need to create avatar images for this protagonist at exactly five distinct life stages: Child, Teen, Mid, Mid-Elder, and Old.
 
-Generate 5 to 6 distinct JSON objects, each representing Mary at a different age or stage. Each object should contain:
-- "ip_image_path": a file path (e.g., "/storage/home/mingzhe/code/VideoGen-of-Thought/data/fashion_designer/avatar_Mary_XXXX.jpg")
-- "prompt": a multi-line string describing the scene from five angles:
+Produce exactly 5 JSON objects, each representing {story_name} at one of these five life stages. For each object:
+- "ip_image_path": use the format "data/{story_name}/avatar_{story_name}_<stage>.jpg" replacing <stage> with one of the specified stages.
+- "prompt": A multi-line string describing the scene from five angles:
   - character: Appearance, age, clothing, facial expression, etc.
-  - background: The setting/environment behind Mary.
-  - relation: How Mary relates to her environment, her emotions, or others at this stage.
+  - background: The setting and environment behind {story_name}.
+  - relation: How {story_name} relates to her environment, emotions, or others at that stage.
   - camera pose: Cinematic angle and framing.
-  - HDR description: Lighting, atmosphere, and visual qualities in high detail (e.g., 8K HDR).
+  - HDR description: Lighting, atmosphere, and visual qualities, ideally in high detail (e.g., 8K HDR).
 
-[!!!Be consistent with the life progression and character style, and ensure each prompt is detailed and visually evocative.]
+[!!!Be consistent with the narrative, choose details that reflect each stage of {story_name}'s life, and ensure each prompt is detailed and visually evocative.]
 
-You should output a JSON array of these 5-6 objects."""
+Output a JSON array of these 5 objects.
+"""
 
 with open(SHORT_DESC_PATH, 'r', encoding='utf-8') as f:
     short_descriptions_for_avatar = f.read().strip()
 
-AVATAR_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'tmp')
+AVATAR_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', story_name)
 os.makedirs(AVATAR_DIR, exist_ok=True)
-AVATAR_PROMPT_PATH = os.path.join(AVATAR_DIR, 'avatar_prompt.json')
+# We'll store avatar_prompt.json not inside avatar DIR (as per original instructions),
+# but inside data/tmp to keep consistency. If needed, we can change location.
+DATA_TMP_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'tmp')
+os.makedirs(DATA_TMP_DIR, exist_ok=True)
+AVATAR_PROMPT_PATH = os.path.join(DATA_TMP_DIR, 'avatar_prompt.json')
 
 response_2 = openai.ChatCompletion.create(
     model="gpt-4",
@@ -90,47 +104,39 @@ with open(AVATAR_PROMPT_PATH, 'w', encoding='utf-8') as avatar_file:
 
 print("avatar_prompt saved to data/tmp/avatar_prompt.json")
 
-
 ########################################
-# 3. Third GPT: Generate image_prompt_pairs.json with assigned ip_img_paths
+# 3. Third GPT: Generate image_prompt_pairs.json using avatar_prompt.json ip_image_paths
 ########################################
 
-# Here we define a list of 30 ip_img_paths for the 30 shots.
-# For example, they could be something like this:
-ip_img_paths = [
-    f"/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_{i+1}.jpg"
-    for i in range(30)
-]
+# Read avatar_prompt.json to extract ip_image_paths
+with open(AVATAR_PROMPT_PATH, 'r', encoding='utf-8') as af:
+    avatar_data = json.load(af)
+avatar_paths = [item['ip_image_path'] for item in avatar_data]
 
-# We'll provide these paths to the model in the system prompt instruction.
-# The model should distribute these 30 paths over the 30 shots in order.
+system_prompt_3 = f"""You are now a cinematic director and image curator. You have 30 short shot descriptions depicting {story_name}'s life from birth to death, and a JSON array of 5 avatar image objects (from avatar_prompt.json) representing {story_name} at five distinct life stages: Child, Teen, Mid, Mid-Elder, and Old.
 
-system_prompt_3 = f"""You are now a cinematic director and image curator. You have a list of 30 short shot descriptions detailing moments from Mary's life (from birth to death). 
-You also have a predefined list of 30 image paths (one for each shot):
+Your tasks:
+1. Read the 30 short shot descriptions.
+2. From avatar_prompt.json, you have these 5 avatar image paths:
+{avatar_paths}
 
-{ip_img_paths}
-
-Your task:
-1. Convert each of the 30 short shot descriptions into a JSON object with fields "ip_img_path" and "prompt".
-2. The "prompt" should follow the format:
-   "character:..., background:..., relation:..., camera pose:..., HDR description:..."
+3. Assign these 5 avatar image paths to the 30 shots so that the distribution matches {story_name}'s aging process:
+   - Earliest shots use the Child stage image.
+   - As the narrative progresses into adolescence, use the Teen stage image.
+   - Then use Mid, followed by Mid-Elder, and finally Old for the last portion of her life.
    
-   - character: Describe Mary's appearance, age, expression, attire.
-   - background: Describe the setting and environment.
-   - relation: Emotional or narrative connection between Mary and the scene.
-   - camera pose: How the camera frames and angles the shot.
-   - HDR description: Lighting and atmospheric details in a cinematic 8K HDR style.
+   Distribute these 5 avatar paths logically and evenly across the 30 shots, ensuring a chronological progression.
 
-3. Assign each shot exactly one unique image path from the provided list, in order or a roughly even distribution. 
-   For example, shot 1 gets the first path, shot 2 gets the second path, and so forth until all 30 shots are assigned.
-
-4. Return a JSON array of 30 objects. Each object:
+4. For each shot, create a JSON object:
    {{
-     "ip_img_path": "<one_of_the_provided_paths>",
-     "prompt": "<the detailed cinematic prompt derived from the short shot description>"
+     "ip_img_path": "<assigned_avatar_path_for_this_stage>",
+     "prompt": "character:..., background:..., relation:..., camera pose:..., HDR description:..."
    }}
 
-[!!!Be clear, be detailed, and faithful to the original short shot description. Make sure each prompt is visually rich and consistent with Mary's life progression.]"""
+   The "prompt" should expand the original one-sentence shot description into a detailed, cinematic scene description.
+
+[!!!Be clear, be detailed, faithful to the short shot descriptions, and ensure that the life stage distribution makes sense chronologically.]
+"""
 
 with open(SHORT_DESC_PATH, 'r', encoding='utf-8') as f:
     short_descriptions_for_image_pairs = f.read().strip()
