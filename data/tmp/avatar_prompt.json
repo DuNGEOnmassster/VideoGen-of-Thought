@@ -1,0 +1,26 @@
+[
+  {
+    "ip_image_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/fashion_designer/avatar_Mary_newborn.jpg",
+    "prompt": "Character: Mary, a newborn baby girl with soft tufts of brown hair and rosy cheeks, swaddled in a light blue blanket. \nBackground: A small, rustic farmhouse room, complete with wooden furniture and a window showcasing the dawning sun. \nRelation: Mary's eyes open for the first time, her gaze filled with curiosity and innocence. \nCamera Pose: A close-up shot of Mary, the rising sun in the background creating a halo around her. \nHDR Description: The morning light filtering through the window illuminates the room, highlighting the soft textures of the wooden furniture and the intricate stitchwork on Mary's blanket."
+  },
+  {
+    "ip_image_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/fashion_designer/avatar_Mary_three_year_old.jpg",
+    "prompt": "Character: Three-year-old Mary, dressed in a playful sunflower-patterned dress and tiny sneakers, her brown hair tied in two ponytails. \nBackground: Towering cornfields under the clear blue sky. \nRelation: Mary chases butterflies through the fields, her laughter resonating with pure joy. \nCamera Pose: A medium shot, capturing Mary mid-run, surrounded by tall corn stalks. \nHDR Description: The warm afternoon sun casts long shadows, enhancing the vivid green of the cornfields and the vibrant yellows and blues in Mary's dress."
+  },
+  {
+    "ip_image_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/fashion_designer/avatar_Mary_kindergartener.jpg",
+    "prompt": "Character: Mary, now a kindergartener, dressed in a neat school uniform, her face a mix of excitement and nerves. \nBackground: A gravel path leading up to a one-room schoolhouse, surrounded by a small playground. \nRelation: Mary walks hand in hand with her mother, her small backpack bouncing with each step. \nCamera Pose: A long shot, showcasing Mary and her mother approaching the schoolhouse. \nHDR Description: The sunlight reflecting off the schoolhouse windows and playground equipment adds a warm glow to the scene, accentuating the details of Mary's uniform and the nervous excitement in her eyes."
+  },
+  {
+    "ip_image_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/fashion_designer/avatar_Mary_teenager.jpg",
+    "prompt": "Character: Mary, now a teenager, dressed in a flowing blue dress, her cheeks flushed with happiness. \nBackground: A high school dance, complete with twinkling lights and a bustling crowd of dancing teenagers. \nRelation: Mary dances, her eyes sparkling with joy and the thrill of youth. \nCamera Pose: A medium shot, capturing Mary mid-twirl, surrounded by her peers. \nHDR Description: The twinkling lights create a magical atmosphere, casting a soft glow on Mary's face and highlighting the intricate details of her dress."
+  },
+  {
+    "ip_image_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/fashion_designer/avatar_Mary_adult.jpg",
+    "prompt": "Character: Mary, now an adult, dressed in a professional suit, her eyes filled with determination. \nBackground: A busy law firm, complete with stacks of law books and the harsh glow of fluorescent lights. \nRelation: Mary pours over law books, working late into the night to prepare for her cases. \nCamera Pose: A close-up shot, capturing Mary's determined expression as she reads. \nHDR Description: The harsh fluorescent light creates a stark contrast with the dark office, highlighting the details on Mary's face and the worn pages of the law books."
+  },
+  {
+    "ip_image_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/fashion_designer/avatar_Mary_elderly.jpg",
+    "prompt": "Character: Mary, now elderly, dressed in a simple floral dress, her face glowing with tranquility. \nBackground: A wooden porch overlooking a vibrant garden, the setting sun painting the sky with hues of orange and pink. \nRelation: Mary sits on her porch, her eyes reflecting the setting sun and a lifetime of beautifully lived moments. \nCamera Pose: A medium shot, capturing Mary against the backdrop of the sunset. \nHDR Description: The soft evening light enhances the vibrant colors of the garden and the intricate textures of Mary's dress, the setting sun casting a warm glow on her face."
+  }
+]
