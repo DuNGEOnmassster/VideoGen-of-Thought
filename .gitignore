@@ -7,6 +7,9 @@ __pycache__/
 pretrained_ckpts/
 weights/
 
+# configs
+configs/config.txt
+
 # C extensions
 *.so
 
