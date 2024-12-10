@@ -1,122 +1,122 @@
 [
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_1.jpg",
-"prompt": "character: newborn baby girl, Mary, eyes opening. background: a small, rustic farmhouse in rural Nebraska at sunrise. relation: Mary's first moments of life, opening her eyes for the first time. camera pose: close-up of Mary. HDR description: The morning light creeping in through the farmhouse windows, illuminating Mary's face."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_2.jpg",
-"prompt": "character: Three-year-old Mary, gleeful. background: towering cornfields in the afternoon. relation: Mary's childhood innocence manifesting as she chases butterflies. camera pose: Medium shot of Mary running. HDR description: Warm afternoon light casting long shadows on the cornfields, highlighting Mary's energy."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_3.jpg",
-"prompt": "character: Kindergartener Mary, nervous and excited. background: Path leading to one-room schoolhouse. relation: Mary's first day of school, marking a significant step in her life. camera pose: Handheld shot following Mary and her mother. HDR description: The sun peeking behind the schoolhouse, casting a warm glow on the scene."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_4.jpg",
-"prompt": "character: Mary with her father, both gazing at the stars. background: Porch of their farmhouse at night. relation: Father-daughter bonding moment, instilling a sense of wonder in Mary. camera pose: Wide shot capturing the expansive sky. HDR description: The moonlight illuminating their faces, contrasting with the dark sky dotted with stars."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_5.jpg",
-"prompt": "character: School-age Mary, beaming with pride. background: School auditorium during a spelling bee. relation: Mary's first academic achievement, a source of great pride. camera pose: Medium close-up of Mary. HDR description: Golden sunlight streaming through windows, spotlighting Mary on stage."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_6.jpg",
-"prompt": "character: Teenage Mary, glowing with happiness. background: High school dance with twinkling lights. relation: Mary's first dance, a significant teenage milestone. camera pose: Tracking shot of Mary dancing. HDR description: Twinkling lights creating a dreamy atmosphere, mirroring Mary's happiness."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_7.jpg",
-"prompt": "character: Mary at her high school graduation, teary-eyed. background: Outdoor graduation ceremony. relation: Mary's academic success and her parents' pride. camera pose: Close-up of Mary's face. HDR description: Afternoon sun casting a warm glow on the scene, reflecting on Mary's tears of joy."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_8.jpg",
-"prompt": "character: Mary in her early twenties, wide-eyed. background: Bustling city of New York. relation: Mary's move to the city, marking a new chapter in her life. camera pose: Wide shot of Mary amidst the cityscape. HDR description: City lights creating a stark contrast with Mary's rural upbringing."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_9.jpg",
-"prompt": "character: College student Mary, focused. background: Dimly lit university library. relation: Mary's dedication to her studies, working late nights. camera pose: Over-the-shoulder shot of Mary studying. HDR description: The soft library light focusing on Mary, outlining her determination."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_10.jpg",
-"prompt": "character: Mary at her law school graduation, determined. background: Graduation ceremony under the afternoon sun. relation: Mary's accomplishment of becoming a lawyer. camera pose: Medium shot of Mary holding her diploma. HDR description: The sun illuminating the graduation scene, reflecting off Mary's hopeful eyes."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_11.jpg",
-"prompt": "character: Mary working late at a law firm, determined. background: Small law firm under fluorescent light. relation: Mary's relentless pursuit of her career. camera pose: Low-angle shot of Mary working. HDR description: The harsh fluorescent light illuminating the office, emphasizing Mary's dedication."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_12.jpg",
-"prompt": "character: Mary and John, a fellow lawyer, exchanging glances. background: Friend's wedding under soft candlelight. relation: The moment Mary and John's paths cross. camera pose: Medium shot capturing their first interaction. HDR description: The soft candlelight creating a romantic atmosphere, highlighting their connection."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_13.jpg",
-"prompt": "character: Mary and John on a quiet beach, Mary surprised and in love. background: Starlit beach at night. relation: John's proposal to Mary, a significant step in their relationship. camera pose: Medium shot of John proposing. HDR description: The stars and moonlight casting a magical glow on the scene, reflecting in Mary's surprised eyes."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_14.jpg",
-"prompt": "character: Mary on her wedding day, radiant. background: Old church in her hometown. relation: Mary's joyous wedding, a culmination of her love story. camera pose: Tracking shot of Mary walking down the aisle. HDR description: The sun streaming through stained glass windows, casting colorful patterns and illuminating Mary's joy."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_15.jpg",
-"prompt": "character: Mary and John at a candlelit dinner, overjoyed. background: Cozy home dining room. relation: Mary sharing the news of her pregnancy, a new chapter in their lives. camera pose: Close-up of their faces. HDR description: The warm candlelight highlighting their expressions of joy and anticipation."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_16.jpg",
-"prompt": "character: Mary cradling her newborn daughter, lovingly. background: Home nursery in soft morning light. relation: Mary's first moments as a mother. camera pose: Close-up of Mary and her baby. HDR description: The morning light softly illuminating the room, mirroring the tender moment."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_17.jpg",
-"prompt": "character: Mary at her daughter's first birthday party, laughing. background: Decorated living room filled with guests. relation: Mary's joy at her daughter's first milestone. camera pose: Wide shot capturing the party chaos. HDR description: The indoor lights reflecting off party decorations, capturing Mary's happiness."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_18.jpg",
-"prompt": "character: Mary in a courtroom, triumphant. background: High-stakes courtroom scene. relation: Mary's significant career victory. camera pose: Medium shot of Mary standing. HDR description: The harsh courtroom lights highlighting Mary's triumphant expression."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_19.jpg",
-"prompt": "character: Mary watching her daughter board the school bus, teary-eyed. background: School bus in the afternoon sun. relation: Mary's emotional moment as her daughter starts school. camera pose: Over-the-shoulder shot of Mary watching. HDR description: The afternoon sun casting long shadows, symbolizing the passage of time."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_20.jpg",
-"prompt": "character: Mary watching her daughter perform in a school play, joyously. background: School auditorium under twinkling Christmas lights. relation: Mary's pride in her daughter's performance. camera pose: Medium shot of Mary in the audience. HDR description: The twinkling lights creating a festive atmosphere, reflecting in Mary's joyful eyes."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_21.jpg",
-"prompt": "character: Mary on her 50th birthday, glowing. background: Party scene with loved ones. relation: Mary's milestone birthday celebration. camera pose: Medium shot of Mary surrounded by family and friends. HDR description: Candlelight casting a warm glow on the scene, illuminating Mary's face."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_22.jpg",
-"prompt": "character: Mary receiving her breast cancer diagnosis, fearful and determined. background: Sterile hospital room under harsh light. relation: Mary's life-changing diagnosis. camera pose: Close-up of Mary's face. HDR description: The harsh hospital lights creating a stark and serious atmosphere, accentuating Mary's emotions."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_23.jpg",
-"prompt": "character: Mary after chemotherapy, bald and resilient. background: Home bathroom mirror. relation: Mary's fight against cancer, showing her resilience. camera pose: Medium close-up of Mary in the mirror. HDR description: The soft bathroom light focusing on Mary's reflection, highlighting her courage."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_24.jpg",
-"prompt": "character: Mary celebrating her cancer remission, relieved. background: Family picnic under the afternoon sun. relation: Mary's victory over cancer, a moment of relief and joy. camera pose: Wide shot of the picnic scene. HDR description: The sun casting a warm glow on the scene, reflecting Mary's relief and joy."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_25.jpg",
-"prompt": "character: Grandmother Mary, lovingly holding her grandchild. background: Home nursery in soft morning light. relation: Mary's joy at becoming a grandmother. camera pose: Close-up of Mary and her grandchild. HDR description: The soft morning light emphasizing the tender moment between Mary and her grandchild."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_26.jpg",
-"prompt": "character: Mary and John on their golden anniversary, loving. background: Candlelit dinner at home. relation: Mary and John's lifetime of love and togetherness. camera pose: Medium shot of Mary and John. HDR description: The warm candlelight creating a romantic atmosphere, reflecting their enduring love."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_27.jpg",
-"prompt": "character: Mary holding John's hand as he passes away, sorrowful. background: Dim hospital room. relation: Mary's heartbreaking loss of John. camera pose: Close-up of their hands. HDR description: The dim light emphasizing the solemnity of the moment, capturing Mary's sorrow and love."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_28.jpg",
-"prompt": "character: Widowed Mary, finding solace in gardening. background: Lush garden under the warm sun. relation: Mary's healing process through gardening. camera pose: Wide shot of Mary in her garden. HDR description: The sun casting a warm glow on the vibrant flowers, symbolizing Mary's resilience."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_29.jpg",
-"prompt": "character: Frail and old Mary, tranquil. background: Her porch in the soft evening light. relation: Mary reflecting on her life journey. camera pose: Medium shot of Mary sitting on the porch. HDR description: The sun setting in the background, casting a soft light on Mary's serene face."
-},
-{
-"ip_img_path": "/storage/home/mingzhe/code/VideoGen-of-Thought/data/tmp/img_30.jpg",
-"prompt": "character: Mary on a snowy morning, serene, passed away peacefully. background: Her bedroom. relation: Mary's peaceful end to her beautifully lived journey. camera pose: Wide shot of Mary's room. HDR description: The snow outside creating a soft, serene atmosphere, mirroring Mary's peaceful death."
-}
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Child.jpg",
+    "prompt": "character: Newborn Mary, background: Cozy small-town Iowa hospital room, relation: Mary's birth, camera pose: Close-up shot of Mary's face, HDR description: The soft morning light filters through the hospital windows, illuminating the room as newborn Mary takes her first breath."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Child.jpg",
+    "prompt": "character: Toddler Mary, background: Sun-drenched backyard, relation: Mary's childhood, camera pose: Mid-shot of Mary chasing a butterfly, HDR description: The bright, playful scene unfolds in a backyard bathed in sunlight as toddler Mary squeals with delight, chasing a fluttering monarch butterfly."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Child.jpg",
+    "prompt": "character: Six-year-old Mary, background: Lively classroom, relation: Mary's school life, camera pose: Close-up shot of Mary reciting the pledge, HDR description: Amidst the bustle of a lively classroom, six-year-old Mary earnestly recites the Pledge of Allegiance, her tiny hand on her heart, a symbol of her innocent dedication."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Child.jpg",
+    "prompt": "character: Mary, background: Home on a snowy Christmas morning, relation: Mary's childhood Christmas, camera pose: Medium shot of Mary with her new bicycle, HDR description: The Christmas morning scene is painted with joy as Mary unwraps her first bicycle, her eyes wide with pure joy."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Child.jpg",
+    "prompt": "character: Mary, background: Local school under the warm sun, relation: Mary's academic achievement, camera pose: Mid-shot of Mary holding her spelling bee trophy, HDR description: Under the warm afternoon sun, Mary wins her first spelling bee at the local school, her face flushed with the sweet triumph of success."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Teen.jpg",
+    "prompt": "character: Mary, background: Junior high prom, relation: Mary's adolescence, camera pose: Medium shot of Mary dancing, HDR description: In the golden dusk light, Mary experiences her first dance at the junior high prom, her heart fluttering with innocent excitement, marking the threshold of her adolescence."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Teen.jpg",
+    "prompt": "character: Mary, background: High school library, relation: Mary's academic achievement, camera pose: Close-up shot of Mary holding her acceptance letter, HDR description: Beneath the stark fluorescent lights of the library, high school senior Mary holds her acceptance letter to a prestigious university, a landmark moment in her academic journey."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Teen.jpg",
+    "prompt": "character: Mary, background: College campus under a starlit sky, relation: Mary's college life, camera pose: Wide shot of Mary looking at the sky, HDR description: Under the canopy of a starlit sky, Mary experiences the exhilarating freedom of her first night at college, a world of possibilities opening before her."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Teen.jpg",
+    "prompt": "character: Mary, background: College library, relation: Mary's academic determination, camera pose: Close-up shot of Mary studying, HDR description: In the hushed silence of the college library, Mary burns the midnight oil, her determination reflected in her intense gaze, a testament to her unwavering pursuit of knowledge."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Teen.jpg",
+    "prompt": "character: Mary, background: College graduation ceremony, relation: Mary's graduation, camera pose: Medium shot of Mary receiving her diploma, HDR description: During a vibrant spring graduation ceremony, Mary walks across the stage to receive her diploma, her heart pounding with pride, the culmination of her academic journey."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid.jpg",
+    "prompt": "character: Mary, background: Busy New York newsroom, relation: Mary's first job, camera pose: Wide shot of Mary in the newsroom, HDR description: In the hustle and bustle of a busy New York newsroom, Mary lands her first job as a journalist, her spirit brimming with ambition and the promise of a bright future."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid.jpg",
+    "prompt": "character: Mary, background: Apartment on a rainy evening, relation: Mary's heartbreak, camera pose: Close-up shot of Mary looking out the window, HDR description: On a rainy evening, Mary experiences her first heartbreak, her tears blending with the raindrops on the window, an intimate portrait of her emotional journey."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid.jpg",
+    "prompt": "character: Mary, background: Quiet solitude of her apartment, relation: Mary's creative process, camera pose: Mid-shot of Mary typing on her typewriter, HDR description: In the quiet solitude of her apartment, Mary spends countless nights crafting her first novel, her fingers dancing over the typewriter keys, a testament to her creative spirit."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid.jpg",
+    "prompt": "character: Mary, background: Publisher's office on a sunny afternoon, relation: Mary's first book deal, camera pose: Close-up shot of Mary signing the book deal, HDR description: On a sunny afternoon, Mary signs her first book deal, her dreams slowly becoming a reality, marking a significant milestone in her career as a writer."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid.jpg",
+    "prompt": "character: Mary, background: Glittering city lights, relation: Mary's romantic encounter, camera pose: Medium shot of Mary and her future husband, HDR description: Under the glittering city lights, Mary meets her future husband, their connection immediate and tangible, the spark of a love story about to unfold."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
+    "prompt": "character: Mary, background: Candlelit dinner setting, relation: Mary's engagement, camera pose: Medium shot of Mary accepting the proposal, HDR description: In the soft glow of a candlelit dinner, Mary accepts a marriage proposal, her eyes sparkling with love and hope, marking the beginning of a new chapter in her life."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
+    "prompt": "character: Mary, background: Countryside chapel, relation: Mary's wedding, camera pose: Wide shot of Mary getting married, HDR description: Amidst the serene setting of a countryside chapel, Mary marries, her happiness radiating like the summer sun, the joyous culmination of her love story."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
+    "prompt": "character: Mary, background: Moonlit nursery, relation: Mary's motherhood, camera pose: Close-up shot of Mary cradling her newborn daughter, HDR description: In the quiet of a moonlit nursery, Mary cradles her newborn daughter, her heart filled with a love she's never known, the tender moment marking her journey into motherhood."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
+    "prompt": "character: Mary, background: Various settings over the years, relation: Mary's motherhood journey, camera pose: Montage of Mary with her growing daughter, HDR description: Throughout the years, Mary watches her daughter grow, her pride swelling with each milestone, a montage capturing the heartwarming journey of her motherhood."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
+    "prompt": "character: Mary, background: Daughter's high school graduation, relation: Mary's transition to an empty nest, camera pose: Medium shot of Mary watching her daughter graduate, HDR description: Under the shadow of her daughter's high school graduation, Mary feels the bittersweet pang of an empty nest, a poignant snapshot of her evolving role as a mother."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Quiet study, relation: Mary's professional achievement, camera pose: Close-up shot of Mary holding her bestselling novel, HDR description: In the stillness of a quiet study, Mary pens her bestselling novel, her success a testament to her resilience and unwavering dedication to her craft."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Home on a balmy summer evening, relation: Mary's grandmotherhood, camera pose: Close-up shot of Mary with her grandchild, HDR description: On a balmy summer evening, Mary becomes a proud grandmother, her heart warmed by the soft coos of her first grandchild, a tender moment encapsulating the joy of her grandmotherhood."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Family home during Thanksgiving dinner, relation: Mary's family life, camera pose: Wide shot of Mary with her family, HDR description: Amidst the golden hues of a Thanksgiving dinner, Mary is surrounded by her growing family, her heart full of gratitude, a heartwarming tableau of her family life."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Family home, relation: Mary's storytelling tradition, camera pose: Medium shot of Mary reading to her grandchildren, HDR description: In the cozy comfort of her family home, Mary reads her stories to her grandchildren, their eyes full of wonder, a cherished tradition echoing the power of her storytelling."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Sunset setting, relation: Mary's 50th wedding anniversary, camera pose: Medium shot of Mary and her husband, HDR description: During a quiet sunset, Mary celebrates her 50th wedding anniversary, her love for her husband as strong as ever, a testament to their enduring bond."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Solitude of her writing room, relation: Mary's career conclusion, camera pose: Close-up shot of Mary penning her final novel, HDR description: In the solitude of her writing room, Mary pens her final novel, her legacy enshrined in print, marking the conclusion of her illustrious writing career."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Mary's 80th birthday celebration, relation: Mary's birthday, camera pose: Wide shot of Mary surrounded by family and friends, HDR description: Amidst the laughter and tears of her 80th birthday, Mary revels in the love of her family and friends, a joyous celebration of her remarkable life."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Dawn setting, relation: Mary's farewell to her husband, camera pose: Medium shot of Mary saying goodbye, HDR description: In the gentle dawn light, Mary says her last goodbye to her husband, her heart heavy with sorrow, a poignant moment capturing the depth of her love and loss."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary, background: Home, relation: Mary's final moments, camera pose: Medium shot of Mary surrounded by loved ones, HDR description: In the quiet comfort of her home, surrounded by her loved ones, Mary takes her last breath, her life a beautiful tapestry of memories, a solemn tribute to her extraordinary journey."
+  },
+  {
+    "ip_img_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "character: Mary's family, background: Mary's funeral, relation: Mary's legacy, camera pose: Wide shot of the family gathering, HDR description: On a peaceful afternoon, Mary's family gathers for her funeral, her spirit living on through her stories and the love she left behind, a poignant testament to her enduring legacy."
+  }
 ]

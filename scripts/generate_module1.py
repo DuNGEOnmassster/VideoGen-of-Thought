@@ -150,7 +150,7 @@ response_3 = openai.ChatCompletion.create(
         {"role": "user", "content": short_descriptions_for_image_pairs}
     ],
     temperature=0.7,
-    max_tokens=4000
+    max_tokens=6000
 )
 
 image_prompt_pairs_content = response_3['choices'][0]['message']['content']
