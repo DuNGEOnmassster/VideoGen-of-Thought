@@ -1,0 +1,26 @@
+[
+  {
+    "ip_image_path": "data/Mary/avatar_Mary_Child.jpg",
+    "prompt": "Character: A young Mary, about 8 years old, with bright eyes and a bob of chestnut hair. She wears a simple school uniform with an oversized backpack. \nBackground: The large, imposing entrance of a school building. \nRelation: Mary looks slightly anxious, her small hands clutching her backpack straps tightly. \nCamera Pose: A low angle shot emphasizing the size of the school entrance relative to Mary. \nHDR Description: The scene is lit by the bright morning sun, casting long shadows and giving everything a golden hue."
+  },
+  {
+    "ip_image_path": "data/Mary/avatar_Mary_Teen.jpg",
+    "prompt": "Character: Mary as a teenager, around 16, her face showing the first signs of maturity. Her hair is longer, styled in a messy ponytail, and she wears casual jeans and a sweater. \nBackground: A 50's style diner, complete with neon signs, and checkered floors. \nRelation: Mary sits alone at a booth, a melting milkshake in front of her, her eyes filled with sadness. \nCamera Pose: A medium shot capturing Mary from the waist up, focusing on her emotional state. \nHDR Description: The diner is bathed in warm, soft lighting, with the neon signs reflecting off the polished surfaces."
+  },
+  {
+    "ip_image_path": "data/Mary/avatar_Mary_Early-30s.jpg",
+    "prompt": "Character: Mary in her early 30s, her face radiant, her hair neatly styled. She wears a white wedding gown, complete with a long veil. \nBackground: The interior of a chapel, filled with friends and family. \nRelation: Mary, holding a bouquet, stands at the altar, her eyes locked with John's, her smile radiant. \nCamera Pose: A full-length shot capturing Mary's wedding attire and the chapel's interior. \nHDR Description: The scene is lit by the warm, soft light filtering through the stained glass windows, casting colorful patterns on the floor."
+  },
+  {
+    "ip_image_path": "data/Mary/avatar_Mary_Late-40s.jpg",
+    "prompt": "Character: Mary in her late 40s, her face showing signs of age but retaining its beauty. Her hair is shorter, and she wears a comfortable dress. \nBackground: A homey kitchen filled with baking tools and a large oven. \nRelation: Mary, apron-clad, teaches her granddaughter how to bake, her face showing patience and love. \nCamera Pose: A medium shot focusing on Mary and her granddaughter, capturing their interaction. \nHDR Description: The scene is illuminated by the soft morning light streaming through the window, casting a warm glow over everything."
+  },
+  {
+    "ip_image_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
+    "prompt": "Character: Mary in her 60s, her face deeply lined but radiating wisdom. Her hair is a stylish short cut, and she is dressed in comfortable clothes. \nBackground: A living room filled with family photos, comfortable furniture, and a fireplace. \nRelation: Mary sits in a cozy armchair, reading a story to her grandchildren, her voice filled with warmth. \nCamera Pose: A medium shot capturing Mary's interaction with her grandchildren. \nHDR Description: The scene is lit by the soft, warm glow of the fireplace, casting long shadows and highlighting the cozy atmosphere."
+  },
+  {
+    "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
+    "prompt": "Character: Mary in her 80s, frail but resolute, her face etched with age. She wears a simple dress, her thin hair neatly combed back. \nBackground: A dimly lit hospital room, sterile and quiet. \nRelation: Mary, surrounded by her family, is lying on the hospital bed, a peaceful smile on her face. \nCamera Pose: A medium shot capturing Mary's interaction with her family. \nHDR Description: The room is bathed in the soft twilight, casting an ethereal glow over Mary and her family."
+  }
+]
