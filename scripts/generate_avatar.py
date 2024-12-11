@@ -19,7 +19,7 @@ import argparse
 # Argument parsing function
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate images using paired image paths and prompts from JSON.")
-    parser.add_argument('--json_path', type=str, default="olivia_avatar.json", help='Path to the JSON file with image-path and prompt pairs.')
+    parser.add_argument('--json_path', type=str, default="data/Mary/avatar_prompt.json", help='Path to the JSON file with image-path and prompt pairs.')
     parser.add_argument('--seed', type=int, default=3407, help='Random seed for reproducibility.')
     return parser.parse_args()
 

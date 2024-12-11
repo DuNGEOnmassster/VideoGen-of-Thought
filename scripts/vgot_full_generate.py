@@ -1,6 +1,25 @@
 import os
 import openai
 import json
+import torch
+from transformers import CLIPVisionModelWithProjection, CLIPImageProcessor
+from diffusers.utils import load_image
+from PIL import Image
+from diffusers import AutoencoderKL, EulerDiscreteScheduler
+from kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256_ipadapter import StableDiffusionXLPipeline
+from kolors.models.modeling_chatglm import ChatGLMModel
+from kolors.models.tokenization_chatglm import ChatGLMTokenizer
+from kolors.models.unet_2d_condition import UNet2DConditionModel
+import argparse
+
+# Argument parsing function
+def parse_args():
+    parser = argparse.ArgumentParser(description="Generate images using paired image paths and prompts from JSON.")
+    parser.add_argument('--json_path', type=str, default="data/Mary/image_prompt_pairs.json", help='Path to the JSON file with image-path and prompt pairs.')
+    parser.add_argument('--output_path', type=str, default="KeyFrames/Mary", help='Directory to save the generated images.')
+    parser.add_argument('--seed', type=int, default=3407, help='Random seed for reproducibility.')
+    return parser.parse_args()
+
 
 # Read API Key
 CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'configs', 'config.txt')
@@ -9,12 +28,8 @@ with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
 
 openai.api_key = api_key
 
-# The original user prompt
-# story_user_prompt = "Describe a set of one-sentence prompts, 30 shots, describe a story of a classic American woman Mary's life, from birth to death."
-
-# User prompt load from file
-with open('user_input.txt', 'r', encoding='utf-8') as f:
-    story_user_prompt = f.read().strip()
+# The original user prompt (renamed from user_prompt_1 to story_user_prompt)
+story_user_prompt = "Describe a set of one-sentence prompts, 30 shots, describe a story of a classic American woman Mary's life, from birth to death."
 
 # Extracting story_name from story_user_prompt:
 # For simplicity, we know the protagonist is Mary from the prompt.
@@ -65,7 +80,7 @@ print(f"short_shot_description saved to {SHORT_DESC_PATH}")
 
 system_prompt_2 = f"""You are a master character concept artist and fashion designer. You have been given a narrative (30 short shot descriptions) about a protagonist's life. 
 From the user prompt, the protagonist's name is {story_name} (story_name = "{story_name}"). 
-You need to create avatar images for this protagonist at exactly six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder(Late-50s), and Old.
+You need to create avatar images for this protagonist at exactly six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder, and Old.
 
 Produce exactly 6 JSON objects, each representing {story_name} at one of these five life stages. For each object:
 - "ip_image_path": use the format "data/{story_name}/avatar_{story_name}_<stage>.jpg" replacing <stage> with one of the specified stages.
@@ -77,7 +92,6 @@ Produce exactly 6 JSON objects, each representing {story_name} at one of these f
   - HDR Description: Lighting, atmosphere, and visual qualities, ideally in high detail (e.g., 8K HDR).
 
 [!!!Be consistent with the narrative, choose details that reflect each stage of {story_name}'s life, and ensure each prompt is detailed and visually evocative.]
-[!!!Be Creative, but also ensure the portrait to keep consistent despite the age changes.]
 
 Output a JSON array of these 6 objects.
 """
@@ -120,7 +134,7 @@ with open(AVATAR_PROMPT_PATH, 'r', encoding='utf-8') as af:
     avatar_data = json.load(af)
 avatar_paths = [item['ip_image_path'] for item in avatar_data]
 
-system_prompt_3 = f"""You are now a cinematic director and image curator. You have 30 short shot descriptions depicting {story_name}'s life from birth to death, and a JSON array of 5 avatar image objects (from avatar_prompt.json) representing {story_name} at Six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder, and Old.
+system_prompt_3 = f"""You are now a cinematic director and image curator. You have 30 short shot descriptions depicting {story_name}'s life from birth to death, and a JSON array of 5 avatar image objects (from avatar_prompt.json) representing {story_name} at five distinct life stages: Child, Teen, Mid, Mid-Elder, and Old.
 
 Your tasks:
 1. Read the 30 short shot descriptions.
@@ -147,7 +161,6 @@ Your tasks:
    The "prompt" should expand the original one-sentence shot description into a detailed, cinematic scene description.
 
 [!!!Be clear, be detailed, faithful to the short shot descriptions, and ensure that the life stage distribution makes sense chronologically.]
-[!!!Only Reply the json contents]
 """
 
 with open(SHORT_DESC_PATH, 'r', encoding='utf-8') as f:
