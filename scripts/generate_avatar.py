@@ -14,7 +14,7 @@ from diffusers import UNet2DConditionModel, AutoencoderKL
 from diffusers import EulerDiscreteScheduler
 import argparse
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 # Argument parsing function
 def parse_args():
@@ -55,7 +55,7 @@ def prepare_model():
             unet=unet,
             scheduler=scheduler,
             force_zeros_for_empty_prompt=False)
-    pipe = pipe.to("cuda:1")
+    pipe = pipe.to("cuda")
     pipe.enable_model_cpu_offload()
     return pipe
 

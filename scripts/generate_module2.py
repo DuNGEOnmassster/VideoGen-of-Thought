@@ -64,6 +64,9 @@ def prepare_model():
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
 
     pipe.load_ip_adapter(f'{root_dir}/weights/Kolors-IP-Adapter-Plus', subfolder="", weight_name=["ip_adapter_plus_general.bin"])
+
+    # import pdb; pdb.set_trace()
+    
     return pipe
 
 # Main function to run the pipeline

@@ -45,14 +45,15 @@ response_1 = openai.ChatCompletion.create(
 
 result_content_1 = response_1['choices'][0]['message']['content']
 
-RESULT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'results', 'tmp')
+# RESULT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'results', story_name)
+RESULT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', story_name)
 os.makedirs(RESULT_DIR, exist_ok=True)
 SHORT_DESC_PATH = os.path.join(RESULT_DIR, 'short_shot_description.txt')
 
 with open(SHORT_DESC_PATH, 'w', encoding='utf-8') as result_file:
     result_file.write(result_content_1)
 
-print("short_shot_description saved to results/tmp/short_shot_description.txt")
+print(f"short_shot_description saved to {SHORT_DESC_PATH}")
 
 ########################################
 # 2. Second GPT: Generate avatar_prompt.json for the specified life stages
@@ -65,11 +66,11 @@ You need to create avatar images for this protagonist at exactly six distinct li
 Produce exactly 6 JSON objects, each representing {story_name} at one of these five life stages. For each object:
 - "ip_image_path": use the format "data/{story_name}/avatar_{story_name}_<stage>.jpg" replacing <stage> with one of the specified stages.
 - "prompt": A multi-line string describing the scene from five angles:
-  - character: Appearance, age, clothing, facial expression, etc.
-  - background: The setting and environment behind {story_name}.
-  - relation: How {story_name} relates to her environment, emotions, or others at that stage.
-  - camera pose: Cinematic angle and framing.
-  - HDR description: Lighting, atmosphere, and visual qualities, ideally in high detail (e.g., 8K HDR).
+  - Character: Appearance, age, clothing, facial expression, etc.
+  - Background: The setting and environment behind {story_name}.
+  - Relation: How {story_name} relates to her environment, emotions, or others at that stage.
+  - Camera Pose: Cinematic angle and framing.
+  - HDR Description: Lighting, atmosphere, and visual qualities, ideally in high detail (e.g., 8K HDR).
 
 [!!!Be consistent with the narrative, choose details that reflect each stage of {story_name}'s life, and ensure each prompt is detailed and visually evocative.]
 
@@ -83,7 +84,8 @@ AVATAR_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', st
 os.makedirs(AVATAR_DIR, exist_ok=True)
 # We'll store avatar_prompt.json not inside avatar DIR (as per original instructions),
 # but inside data/tmp to keep consistency. If needed, we can change location.
-DATA_TMP_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'tmp')
+# DATA_TMP_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'tmp')
+DATA_TMP_DIR = AVATAR_DIR
 os.makedirs(DATA_TMP_DIR, exist_ok=True)
 AVATAR_PROMPT_PATH = os.path.join(DATA_TMP_DIR, 'avatar_prompt.json')
 
@@ -102,7 +104,7 @@ avatar_prompt_content = response_2['choices'][0]['message']['content']
 with open(AVATAR_PROMPT_PATH, 'w', encoding='utf-8') as avatar_file:
     avatar_file.write(avatar_prompt_content)
 
-print("avatar_prompt saved to data/tmp/avatar_prompt.json")
+print(f"avatar_prompt saved to {AVATAR_PROMPT_PATH}")
 
 ########################################
 # 3. Third GPT: Generate image_prompt_pairs.json using avatar_prompt.json ip_image_paths
@@ -120,18 +122,22 @@ Your tasks:
 2. From avatar_prompt.json, you have these 6 avatar image paths:
 {avatar_paths}
 
-3. Assign these 5 avatar image paths to the 30 shots so that the distribution matches {story_name}'s aging process:
+3. Assign these 6 avatar image paths to the 30 shots so that the distribution matches {story_name}'s aging process:
    - Earliest shots use the Child stage image.
    - As the narrative progresses into adolescence, use the Teen and Early-30s, Late-40s, and Mid-Elder stage image, as the majority of the story.
-   - Then use Old for the last portion in final 2-3 shots.
+   - Then use Old for the last portion in final shots.
    
-   Distribute these 6 avatar paths logically and evenly across the 30 shots, ensuring a chronological progression.
+   Distribute these 6 avatar paths logically and evenly across the 30 shots, ensuring a chronological progression (each 5 shots represent a different stage).
+   [!!! You can use any method to distribute the images, but it should be consistent and logical.]
+   [!!! Child and Old only requires three shots]
 
 4. For each shot, create a JSON object:
+   [
    {{
      "ip_img_path": "<assigned_avatar_path_for_this_stage>",
-     "prompt": "character:..., background:..., relation:..., camera pose:..., HDR description:..."
+     "prompt": "Character:..., Background:..., Relation:..., Camera Pose:..., HDR Description:..."
    }}
+   ]
 
    The "prompt" should expand the original one-sentence shot description into a detailed, cinematic scene description.
 
@@ -141,7 +147,7 @@ Your tasks:
 with open(SHORT_DESC_PATH, 'r', encoding='utf-8') as f:
     short_descriptions_for_image_pairs = f.read().strip()
 
-IMAGE_PROMPT_PATH = os.path.join(RESULT_DIR, 'image_prompt_pairs.json')
+IMAGE_PROMPT_PATH = os.path.join(DATA_TMP_DIR, 'image_prompt_pairs.json')
 
 response_3 = openai.ChatCompletion.create(
     model="gpt-4",
@@ -158,4 +164,4 @@ image_prompt_pairs_content = response_3['choices'][0]['message']['content']
 with open(IMAGE_PROMPT_PATH, 'w', encoding='utf-8') as json_file:
     json_file.write(image_prompt_pairs_content)
 
-print("image_prompt_pairs saved to results/tmp/image_prompt_pairs.json")
+print(f"image_prompt_pairs saved to {IMAGE_PROMPT_PATH}")
