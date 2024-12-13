@@ -5,10 +5,10 @@ import os
 import json
 from PIL import Image
 from diffusers import AutoencoderKL, EulerDiscreteScheduler
-from kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256_ipadapter import StableDiffusionXLPipeline
-from kolors.models.modeling_chatglm import ChatGLMModel
-from kolors.models.tokenization_chatglm import ChatGLMTokenizer
-from kolors.models.unet_2d_condition import UNet2DConditionModel
+from models.kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256_ipadapter import StableDiffusionXLPipeline
+from models.kolors.models.modeling_chatglm import ChatGLMModel
+from models.kolors.models.tokenization_chatglm import ChatGLMTokenizer
+from models.kolors.models.unet_2d_condition import UNet2DConditionModel
 import argparse
 
 # Argument parsing function

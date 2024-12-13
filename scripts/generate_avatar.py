@@ -7,9 +7,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import json
 from PIL import Image
-from kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256 import StableDiffusionXLPipeline
-from kolors.models.modeling_chatglm import ChatGLMModel
-from kolors.models.tokenization_chatglm import ChatGLMTokenizer
+from models.kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256 import StableDiffusionXLPipeline
+from models.kolors.models.modeling_chatglm import ChatGLMModel
+from models.kolors.models.tokenization_chatglm import ChatGLMTokenizer
 from diffusers import UNet2DConditionModel, AutoencoderKL
 from diffusers import EulerDiscreteScheduler
 import argparse

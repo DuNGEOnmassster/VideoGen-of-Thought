@@ -163,6 +163,7 @@ def save_results_seperate(prompt, samples, filename, fakedir, fps=10, loop=False
             grid = (grid + 1.0) / 2.0
             grid = (grid * 255).to(torch.uint8).permute(1, 2, 3, 0) #thwc
             path = os.path.join(savedirs[idx].replace('samples', 'samples_separate'), f'{filename.split(".")[0]}_sample{i}.mp4')
+            # import pdb; pdb.set_trace()
             torchvision.io.write_video(path, grid, fps=fps, video_codec='h264', options={'crf': '10'})
 
 def get_latent_z(model, videos):
