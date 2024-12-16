@@ -8,7 +8,7 @@ prompt_dir=/root/VideoGen-of-Thought/data/${story_name}
 keyframe_dir=/root/VideoGen-of-Thought/KeyFrames/${story_name}
 res_dir=/root/VideoGen-of-Thought/Shot_Videos/${story_name}
 
-CUDA_VISIBLE_DEVICES=0 python3 scripts/generate_module4.py \
+CUDA_VISIBLE_DEVICES=0 python3 scripts/generate_module4-copy.py \
 --seed ${seed} \
 --ckpt_path $ckpt \
 --config $config \
