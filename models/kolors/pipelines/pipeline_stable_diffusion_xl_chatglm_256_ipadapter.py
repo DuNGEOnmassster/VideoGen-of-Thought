@@ -14,8 +14,10 @@
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from kolors.models.modeling_chatglm import ChatGLMModel
-from kolors.models.tokenization_chatglm import ChatGLMTokenizer
+sys.path.append("..")
+sys.path.append(".")
+from models.kolors.models.modeling_chatglm import ChatGLMModel
+from models.kolors.models.tokenization_chatglm import ChatGLMTokenizer
 import inspect
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import torch
