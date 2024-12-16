@@ -21,6 +21,7 @@ CUDA_VISIBLE_DEVICES=0 python3 scripts/generate_module4-copy.py \
 --prompt_dir $prompt_dir \
 --keyframe_dir $keyframe_dir \
 --text_input \
+--save_individual \
 --video_length 16 \
 --frame_stride 10 \
 --timestep_spacing 'uniform_trailing' --guidance_rescale 0.7 --perframe_ae

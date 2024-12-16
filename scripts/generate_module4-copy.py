@@ -72,9 +72,7 @@ def prepare_embeddings(model, prompts, videos, noise_shape, text_input=False, un
     return cond, uc
 
 
-
-
-def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddim_steps=50, ddim_eta=1., \
+def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddim_steps=50, ddim_eta=1., cond_z0=None, \
                         unconditional_guidance_scale=1.0, cfg_img=None, fs=None, text_input=False, multiple_cond_cfg=False, loop=False, interp=False, timestep_spacing='uniform', guidance_rescale=0.0, **kwargs):
     ddim_sampler = DDIMSampler(model) if not multiple_cond_cfg else DDIMSampler_multicond(model)
     batch_size = noise_shape[0]
@@ -84,20 +82,11 @@ def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddi
                                   text_input=text_input, unconditional_guidance_scale=unconditional_guidance_scale, \
                                     multiple_cond_cfg=multiple_cond_cfg, cfg_img=cfg_img, loop=loop, interp=interp, **kwargs)
 
-    z0 = None
-    cond_mask = None
-
     batch_variants = []
     for _ in range(n_samples):
-
-        if z0 is not None:
-            cond_z0 = z0.clone()
-            kwargs.update({"clean_cond": True})
-        else:
-            cond_z0 = None
         if ddim_sampler is not None:
 
-            samples, _ = ddim_sampler.sample(S=ddim_steps,
+            variants, _ = ddim_sampler.sample(S=ddim_steps,
                                             conditioning=cond,
                                             batch_size=batch_size,
                                             shape=noise_shape[1:],
@@ -106,32 +95,28 @@ def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddi
                                             unconditional_conditioning=uc,
                                             eta=ddim_eta,
                                             cfg_img=cfg_img, 
-                                            mask=cond_mask,
+                                            mask=None,
                                             x0=cond_z0,
                                             fs=fs,
                                             timestep_spacing=timestep_spacing,
                                             guidance_rescale=guidance_rescale,
                                             **kwargs
                                             )
-
-            # import pdb; pdb.set_trace()
-
-    return samples
-
-    #     ## reconstruct from latent to pixel space
-    #     batch_images = model.decode_first_stage(samples)
-    #     batch_variants.append(batch_images)
-    # ## variants, batch, c, t, h, w
-    # batch_variants = torch.stack(batch_variants)
-    # return batch_variants.permute(1, 0, 2, 3, 4, 5)
+            
+        ## reconstruct from latent to pixel space
+        batch_images = model.decode_first_stage(variants)
+        batch_variants.append(batch_images)
+    ## variants, batch, c, t, h, w
+    batch_variants = torch.stack(batch_variants)
+    return batch_variants.permute(1, 0, 2, 3, 4, 5), variants
 
 def reconstruct_from_latent(model, latent_codes):
     # reconstruct from latent to pixel space
     batch_images = model.decode_first_stage(latent_codes)
-    batch_variants.append(batch_images)
-    ## variants, batch, c, t, h, w
-    batch_variants = torch.stack(batch_variants)
-    return batch_variants.permute(1, 0, 2, 3, 4, 5)
+    # batch_variants.append(batch_images)
+    # ## variants, batch, c, t, h, w
+    # batch_variants = torch.stack(batch_variants)
+    return batch_images.permute(1, 0, 2, 3, 4)
 
 
 def run_inference(args, gpu_num, gpu_no):
@@ -186,8 +171,10 @@ def run_inference(args, gpu_num, gpu_no):
     # import pdb; pdb.set_trace()
 
     start = time.time()
+    batch_latents_list = []
     with torch.no_grad(), torch.cuda.amp.autocast():
         for idx, indice in tqdm(enumerate(range(0, len(prompt_list_rank), args.bs)), desc='Sample Batch'):
+            cond_z0 = torch.randn(noise_shape)  # reset for each round of inference
             prompts = prompt_list_rank[indice:indice+args.bs]
             videos = data_list_rank[indice:indice+args.bs]
             filenames = filename_list_rank[indice:indice+args.bs]
@@ -196,19 +183,24 @@ def run_inference(args, gpu_num, gpu_no):
             else:
                 videos = videos.unsqueeze(0).to("cuda")
 
-            batch_latents = image_guided_synthesis(model, prompts, videos, noise_shape, args.n_samples, args.ddim_steps, args.ddim_eta, \
+            batch_images, batch_latents = image_guided_synthesis(model, prompts, videos, noise_shape, args.n_samples, args.ddim_steps, args.ddim_eta, cond_z0, \
                                 args.unconditional_guidance_scale, args.cfg_img, args.frame_stride, args.text_input, args.multiple_cond_cfg, args.loop, args.interp, args.timestep_spacing, args.guidance_rescale)
 
             ## save each example individually
             if args.save_individual:
-                for ind_idx, latents in enumerate(batch_latents):
+                for ind_idx, samples in enumerate(batch_images):
                     ## samples : [n_samples,c,t,h,w]
-                    samples = reconstruct_from_latent(latents)
+                    # samples = reconstruct_from_latent(model, latents)
                     prompt = prompts[ind_idx]
                     filename = filenames[ind_idx]
                     # save_results(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
                     save_results_seperate(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
+        
+            # import pdb; pdb.set_trace()
+            batch_latents_list.append(batch_latents)
 
+    final_output = torch.stack(batch_latents_list).permute(1, 0, 2, 3, 4, 5)
+    save_results_seperate(prompt, final_output, "final_output", fakedir, fps=8, loop=args.loop)
     print(f"Saved in {args.savedir}. Time used: {(time.time() - start):.2f} seconds")
 
 
@@ -240,6 +232,7 @@ def get_parser():
     ## currently not support looping video and generative frame interpolation
     parser.add_argument("--loop", action='store_true', default=False, help="generate looping videos or not")
     parser.add_argument("--interp", action='store_true', default=False, help="generate generative frame interpolation or not")
+    parser.add_argument("--save_individual", action='store_true', default=False, help="save each example individually or not")
     return parser
 
 
