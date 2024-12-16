@@ -80,40 +80,6 @@ def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddi
     batch_size = noise_shape[0]
     fs = torch.tensor([fs] * batch_size, dtype=torch.long, device=model.device)
 
-    # if not text_input:
-    #     prompts = [""]*batch_size
-
-    # img = videos[:,:,0] #bchw
-    # img_emb = model.embedder(img) ## blc
-    # img_emb = model.image_proj_model(img_emb)
-
-    # cond_emb = model.get_learned_conditioning(prompts)
-    # cond = {"c_crossattn": [torch.cat([cond_emb,img_emb], dim=1)]}
-    # if model.model.conditioning_key == 'hybrid':
-    #     z = get_latent_z(model, videos) # b c t h w
-    #     if loop or interp:
-    #         img_cat_cond = torch.zeros_like(z)
-    #         img_cat_cond[:,:,0,:,:] = z[:,:,0,:,:]
-    #         img_cat_cond[:,:,-1,:,:] = z[:,:,-1,:,:]
-    #     else:
-    #         img_cat_cond = z[:,:,:1,:,:]
-    #         img_cat_cond = repeat(img_cat_cond, 'b c t h w -> b c (repeat t) h w', repeat=z.shape[2])
-    #     cond["c_concat"] = [img_cat_cond] # b c 1 h w
-    
-    # if unconditional_guidance_scale != 1.0:
-    #     if model.uncond_type == "empty_seq":
-    #         prompts = batch_size * [""]
-    #         uc_emb = model.get_learned_conditioning(prompts)
-    #     elif model.uncond_type == "zero_embed":
-    #         uc_emb = torch.zeros_like(cond_emb)
-    #     uc_img_emb = model.embedder(torch.zeros_like(img)) ## b l c
-    #     uc_img_emb = model.image_proj_model(uc_img_emb)
-    #     uc = {"c_crossattn": [torch.cat([uc_emb,uc_img_emb],dim=1)]}
-    #     if model.model.conditioning_key == 'hybrid':
-    #         uc["c_concat"] = [img_cat_cond]
-    # else:
-    #     uc = None
-
     cond, uc = prepare_embeddings(model, prompts, videos, noise_shape, \
                                   text_input=text_input, unconditional_guidance_scale=unconditional_guidance_scale, \
                                     multiple_cond_cfg=multiple_cond_cfg, cfg_img=cfg_img, loop=loop, interp=interp, **kwargs)
@@ -148,9 +114,21 @@ def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddi
                                             **kwargs
                                             )
 
-        ## reconstruct from latent to pixel space
-        batch_images = model.decode_first_stage(samples)
-        batch_variants.append(batch_images)
+            # import pdb; pdb.set_trace()
+
+    return samples
+
+    #     ## reconstruct from latent to pixel space
+    #     batch_images = model.decode_first_stage(samples)
+    #     batch_variants.append(batch_images)
+    # ## variants, batch, c, t, h, w
+    # batch_variants = torch.stack(batch_variants)
+    # return batch_variants.permute(1, 0, 2, 3, 4, 5)
+
+def reconstruct_from_latent(model, latent_codes):
+    # reconstruct from latent to pixel space
+    batch_images = model.decode_first_stage(latent_codes)
+    batch_variants.append(batch_images)
     ## variants, batch, c, t, h, w
     batch_variants = torch.stack(batch_variants)
     return batch_variants.permute(1, 0, 2, 3, 4, 5)
@@ -218,16 +196,18 @@ def run_inference(args, gpu_num, gpu_no):
             else:
                 videos = videos.unsqueeze(0).to("cuda")
 
-            batch_samples = image_guided_synthesis(model, prompts, videos, noise_shape, args.n_samples, args.ddim_steps, args.ddim_eta, \
+            batch_latents = image_guided_synthesis(model, prompts, videos, noise_shape, args.n_samples, args.ddim_steps, args.ddim_eta, \
                                 args.unconditional_guidance_scale, args.cfg_img, args.frame_stride, args.text_input, args.multiple_cond_cfg, args.loop, args.interp, args.timestep_spacing, args.guidance_rescale)
 
             ## save each example individually
-            for nn, samples in enumerate(batch_samples):
-                ## samples : [n_samples,c,t,h,w]
-                prompt = prompts[nn]
-                filename = filenames[nn]
-                # save_results(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
-                save_results_seperate(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
+            if args.save_individual:
+                for ind_idx, latents in enumerate(batch_latents):
+                    ## samples : [n_samples,c,t,h,w]
+                    samples = reconstruct_from_latent(latents)
+                    prompt = prompts[ind_idx]
+                    filename = filenames[ind_idx]
+                    # save_results(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
+                    save_results_seperate(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
 
     print(f"Saved in {args.savedir}. Time used: {(time.time() - start):.2f} seconds")
 
