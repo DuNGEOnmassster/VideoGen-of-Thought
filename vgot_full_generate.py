@@ -176,7 +176,7 @@ def generate_image_prompt_pairs(api_key, system_prompt_3, short_desc_path, image
 
 def depart_script_generation(args):
     # Read API Key
-    CONFIG_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'configs', 'config.txt')
+    CONFIG_PATH = os.path.join('configs', 'config.txt')
     with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
         api_key = f.read().strip()
 
@@ -193,7 +193,7 @@ def depart_script_generation(args):
     story_name = args.story_name
 
     # Setting output_dir for saving generated files.
-    RESULT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', story_name)
+    RESULT_DIR = os.path.join('data', story_name)
 
     system_prompt_1, system_prompt_2, _ = get_system_prompts(story_name, None)
     # Generate short_shot_description.txt
@@ -216,8 +216,7 @@ def depart_script_generation(args):
 
 # Prepare model pipeline
 def prepare_avatar_model():
-    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    ckpt_dir = f'{root_dir}/weights/Kolors'
+    ckpt_dir = 'weights/Kolors'
     text_encoder = ChatGLMModel.from_pretrained(
         f'{ckpt_dir}/text_encoder',
         torch_dtype=torch.float16).half()
@@ -285,9 +284,7 @@ def avatar_generation(args):
 
 # Prepare model pipeline
 def prepare_keyframe_model():
-    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    # root_dir = "."
-    ckpt_dir = f'{root_dir}/weights/Kolors'
+    ckpt_dir = 'weights/Kolors'
 
     text_encoder = ChatGLMModel.from_pretrained(f'{ckpt_dir}/text_encoder', torch_dtype=torch.float16).half()
     tokenizer = ChatGLMTokenizer.from_pretrained(f'{ckpt_dir}/text_encoder')
@@ -295,7 +292,7 @@ def prepare_keyframe_model():
     scheduler = EulerDiscreteScheduler.from_pretrained(f"{ckpt_dir}/scheduler")
     unet = UNet2DConditionModel.from_pretrained(f"{ckpt_dir}/unet", revision=None).half()
 
-    image_encoder = CLIPVisionModelWithProjection.from_pretrained(f'{root_dir}/weights/Kolors-IP-Adapter-Plus/image_encoder', ignore_mismatched_sizes=True).to(torch.float16)
+    image_encoder = CLIPVisionModelWithProjection.from_pretrained('weights/Kolors-IP-Adapter-Plus/image_encoder', ignore_mismatched_sizes=True).to(torch.float16)
     clip_image_processor = CLIPImageProcessor(size=336, crop_size=336)
 
     pipe = StableDiffusionXLPipeline_ipadapter(
@@ -313,7 +310,7 @@ def prepare_keyframe_model():
     if hasattr(pipe.unet, 'encoder_hid_proj'):
         pipe.unet.text_encoder_hid_proj = pipe.unet.encoder_hid_proj
 
-    pipe.load_ip_adapter(f'{root_dir}/weights/Kolors-IP-Adapter-Plus', subfolder="", weight_name=["ip_adapter_plus_general.bin"])
+    pipe.load_ip_adapter('weights/Kolors-IP-Adapter-Plus', subfolder="", weight_name=["ip_adapter_plus_general.bin"])
 
     # import pdb; pdb.set_trace()
     

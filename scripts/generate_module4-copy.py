@@ -202,7 +202,7 @@ def run_inference(args, gpu_num, gpu_no):
 
     shot_video_list = [model.decode_first_stage(shot) for shot in batch_latents_list]
 
-    final_output = torch.stack(shot_video_list)
+    final_output = torch.stack(shot_video_list).flatten(0, 1)
     # save_results_seperate(prompt, final_output, "final_output", fakedir, fps=8, loop=args.loop)
     # save_latents_as_video(final_output)
     final_save_path = os.path.join(args.savedir, "final_output.mp4")
