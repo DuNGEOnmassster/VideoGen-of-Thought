@@ -23,6 +23,7 @@ from models.lvdm.models.samplers.ddim_multiplecond import DDIMSampler as DDIMSam
 from utils.utils import *
 
 # Referenced from DynamiCrafter, https://github.com/Doubiiu/DynamiCrafter/tree/main/scripts/evaluation/inference.py
+
 def prepare_embeddings(model, prompts, videos, noise_shape, text_input=False, unconditional_guidance_scale=1.0, multiple_cond_cfg=False, cfg_img=None, loop=False, interp=False, **kwargs):
     batch_size = noise_shape[0]
 
@@ -71,55 +72,79 @@ def prepare_embeddings(model, prompts, videos, noise_shape, text_input=False, un
     
     return cond, uc
 
+def prepare_all_embeddings(model, prompts, videos, noise_shape, text_input=False, unconditional_guidance_scale=1.0, multiple_cond_cfg=False, cfg_img=None, loop=False, interp=False, **kwargs):
+    """
+    Prepare all embeddings at once and return lists of cond and uc for each prompt.
+    """
+    cond, uc = prepare_embeddings(model, prompts, videos, noise_shape, 
+                                  text_input=text_input, 
+                                  unconditional_guidance_scale=unconditional_guidance_scale,
+                                  multiple_cond_cfg=multiple_cond_cfg, 
+                                  cfg_img=cfg_img, 
+                                  loop=loop, 
+                                  interp=interp, 
+                                  **kwargs)
+    
+    # Extract cond_list
+    cond_list = []
+    for c in cond["c_crossattn"]:
+        cond_list.append(c.clone())
+    
+    # Extract uc_list
+    if uc is not None and "c_crossattn" in uc:
+        uc_list = []
+        for u in uc["c_crossattn"]:
+            uc_list.append(u.clone())
+    else:
+        uc_list = [None] * len(prompts)
+    
+    return cond_list, uc_list
 
-def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddim_steps=50, ddim_eta=1., cond_z0=None, \
-                        unconditional_guidance_scale=1.0, cfg_img=None, fs=None, text_input=False, multiple_cond_cfg=False, loop=False, interp=False, timestep_spacing='uniform', guidance_rescale=0.0, **kwargs):
-    ddim_sampler = DDIMSampler(model) if not multiple_cond_cfg else DDIMSampler_multicond(model)
-    batch_size = noise_shape[0]
-    fs = torch.tensor([fs] * batch_size, dtype=torch.long, device=model.device)
-
-    cond, uc = prepare_embeddings(model, prompts, videos, noise_shape, \
-                                  text_input=text_input, unconditional_guidance_scale=unconditional_guidance_scale, \
-                                    multiple_cond_cfg=multiple_cond_cfg, cfg_img=cfg_img, loop=loop, interp=interp, **kwargs)
-
-    batch_variants = []
-    for _ in range(n_samples):
-        if ddim_sampler is not None:
-
-            variants, _ = ddim_sampler.sample(S=ddim_steps,
-                                            conditioning=cond,
-                                            batch_size=batch_size,
-                                            shape=noise_shape[1:],
-                                            verbose=False,
-                                            unconditional_guidance_scale=unconditional_guidance_scale,
-                                            unconditional_conditioning=uc,
-                                            eta=ddim_eta,
-                                            cfg_img=cfg_img, 
-                                            mask=None,
-                                            x0=cond_z0,
-                                            fs=fs,
-                                            timestep_spacing=timestep_spacing,
-                                            guidance_rescale=guidance_rescale,
-                                            **kwargs
-                                            )
-            
-        ## reconstruct from latent to pixel space
-        batch_images = model.decode_first_stage(variants)
-        batch_variants.append(batch_images)
-    ## variants, batch, c, t, h, w
-    batch_variants = torch.stack(batch_variants)
-    return batch_variants.permute(1, 0, 2, 3, 4, 5), variants
+def image_guided_synthesis(model, cond, uc, noise_shape, n_samples=1, ddim_steps=50, ddim_eta=1., cond_z0=None, \
+                           unconditional_guidance_scale=1.0, cfg_img=None, fs=None, **kwargs):
+    """
+    Generate images based on precomputed cond and uc.
+    """
+    # Initialize sampler
+    if kwargs.get('multiple_cond_cfg', False):
+        ddim_sampler = DDIMSampler_multicond(model)
+    else:
+        ddim_sampler = DDIMSampler(model)
+    
+    # Sample using DDIM
+    variants, _ = ddim_sampler.sample(S=ddim_steps,
+                                      conditioning=cond,
+                                      batch_size=cond["c_crossattn"][0].shape[0],
+                                      shape=noise_shape[1:],
+                                      verbose=False,
+                                      unconditional_guidance_scale=unconditional_guidance_scale,
+                                      unconditional_conditioning=uc,
+                                      eta=ddim_eta,
+                                      cfg_img=cfg_img, 
+                                      mask=None,
+                                      x0=cond_z0,
+                                      fs=fs,
+                                      **kwargs
+                                      )
+    
+    # Reconstruct from latent to pixel space
+    batch_images = model.decode_first_stage(variants)
+    batch_images = batch_images.permute(0, 1, 2, 3, 4, 5)  # Adjust dimensions if necessary
+    
+    return batch_images, variants
 
 def reconstruct_from_latent(model, latent_codes):
-    # reconstruct from latent to pixel space
+    """
+    Reconstruct images from latent codes.
+    """
     batch_images = model.decode_first_stage(latent_codes)
-    # ## batch, c, t, h, w
     return batch_images.permute(1, 0, 2, 3, 4)
 
-
 def run_inference(args, gpu_num, gpu_no):
-    ## step 1: model config
-    ## -----------------------------------------------------------------
+    """
+    Main inference function.
+    """
+    ## Step 1: Model Configuration
     config = OmegaConf.load(args.config)
     model_config = config.pop("model", OmegaConf.create())
     model_config['params']['unet_config']['params']['use_checkpoint'] = False
@@ -130,9 +155,8 @@ def run_inference(args, gpu_num, gpu_no):
     model = load_model_checkpoint(model, args.ckpt_path)
     model.eval()
 
-    ## sample shape
+    ## Sample shape
     assert (args.height % 16 == 0) and (args.width % 16 == 0), "Error: image size [h,w] should be multiples of 16!"
-    ## latent noise shape
     h, w = args.height // 8, args.width // 8
     channels = model.model.diffusion_model.out_channels
     n_frames = args.video_length
@@ -140,66 +164,89 @@ def run_inference(args, gpu_num, gpu_no):
     print(f'Inference with {n_frames} frames')
     noise_shape = [args.bs, channels, n_frames, h, w]
 
-    ## step 2: load data
-    ## -----------------------------------------------------------------
+    ## Step 2: Load Data
     fakedir = os.path.join(args.savedir, "samples")
     fakedir_separate = os.path.join(args.savedir, "samples_separate")
-
-    # os.makedirs(fakedir, exist_ok=True)
     os.makedirs(fakedir_separate, exist_ok=True)
 
-    ## prompt file setting
+    ## Prompt file setting
     assert os.path.exists(args.prompt_dir), "Error: prompt file Not Found!"
     assert os.path.exists(args.keyframe_dir), "Error: keyframe file Not Found!"
     filename_list, data_list, prompt_list = load_data_prompts(args.keyframe_dir, args.prompt_dir, video_size=(args.height, args.width), video_frames=n_frames, interp=args.interp)
     num_samples = len(prompt_list)
     samples_split = num_samples // gpu_num
     print('Prompts testing [rank:%d] %d/%d samples loaded.'%(gpu_no, samples_split, num_samples))
-    #indices = random.choices(list(range(0, num_samples)), k=samples_per_device)
     indices = list(range(samples_split*gpu_no, samples_split*(gpu_no+1)))
     prompt_list_rank = [prompt_list[i] for i in indices]
     data_list_rank = [data_list[i] for i in indices]
     filename_list_rank = [filename_list[i] for i in indices]
 
-    # fpss = torch.tensor([args.fps] * args.bs).to(model.device).long()
-
-    # multiprompt_list = prompt_list  # Use all prompts for inference
-    # text_embs_list = [model.get_learned_conditioning([mp]) for mp in multiprompt_list]
-    # conds_list = [[{"c_crossattn": [text_emb], "fps": fps} for text_emb in text_embs] for text_embs, fps in zip(text_embs_list, fpss)]
-
-    # import pdb; pdb.set_trace()
-
     start = time.time()
     batch_latents_list = []
+    
+    # Prepare all embeddings at once
+    cond_list, uc_list = prepare_all_embeddings(model, prompt_list_rank, data_list_rank, noise_shape, 
+                                                text_input=args.text_input, 
+                                                unconditional_guidance_scale=args.unconditional_guidance_scale, 
+                                                multiple_cond_cfg=args.multiple_cond_cfg, 
+                                                cfg_img=args.cfg_img, 
+                                                loop=args.loop, 
+                                                interp=args.interp)
+
     with torch.no_grad(), torch.cuda.amp.autocast():
         for idx, indice in tqdm(enumerate(range(0, len(prompt_list_rank), args.bs)), desc='Sample Batch'):
-            cond_z0 = torch.randn(noise_shape)  # reset for each round of inference
-            prompts = prompt_list_rank[indice:indice+args.bs]
-            videos = data_list_rank[indice:indice+args.bs]
-            filenames = filename_list_rank[indice:indice+args.bs]
-            if isinstance(videos, list):
-                videos = torch.stack(videos, dim=0).to("cuda")
+            # Determine the current batch
+            current_prompts = prompt_list_rank[indice:indice+args.bs]
+            current_videos = data_list_rank[indice:indice+args.bs]
+            current_filenames = filename_list_rank[indice:indice+args.bs]
+            
+            if isinstance(current_videos, list):
+                current_videos = torch.stack(current_videos, dim=0).to("cuda")
             else:
-                videos = videos.unsqueeze(0).to("cuda")
+                current_videos = current_videos.unsqueeze(0).to("cuda")
+            
+            # Get corresponding cond and uc for the current batch
+            current_cond = cond_list[indice:indice+args.bs]
+            current_uc = uc_list[indice:indice+args.bs]
 
-            batch_images, batch_latents = image_guided_synthesis(model, prompts, videos, noise_shape, args.n_samples, args.ddim_steps, args.ddim_eta, cond_z0, \
-                                args.unconditional_guidance_scale, args.cfg_img, args.frame_stride, args.text_input, args.multiple_cond_cfg, args.loop, args.interp, args.timestep_spacing, args.guidance_rescale)
+            # Stack cond and uc for the batch
+            cond = {"c_crossattn": [torch.cat(current_cond, dim=0)]}
+            if args.unconditional_guidance_scale != 1.0:
+                if current_uc[0] is not None:
+                    uc = {"c_crossattn": [torch.cat(current_uc, dim=0)]}
+                else:
+                    uc = None
+            else:
+                uc = None
 
-            ## save each example individually
+            # Prepare any additional kwargs if necessary
+            additional_kwargs = {}
+            if args.multiple_cond_cfg:
+                # Handle multiple condition configurations if required
+                additional_kwargs['multiple_cond_cfg'] = True
+
+            # Generate images using precomputed cond and uc
+            batch_images, batch_latents = image_guided_synthesis(model, cond, uc, noise_shape, 
+                                                                 n_samples=args.n_samples, 
+                                                                 ddim_steps=args.ddim_steps, 
+                                                                 ddim_eta=args.ddim_eta, 
+                                                                 cond_z0=None, 
+                                                                 unconditional_guidance_scale=args.unconditional_guidance_scale, 
+                                                                 cfg_img=args.cfg_img, 
+                                                                 fs=None, 
+                                                                 **additional_kwargs)
+
+            ## Save each example individually
             if args.save_individual:
                 for ind_idx, samples in enumerate(batch_images):
-                    ## samples : [n_samples,c,t,h,w]
-                    # samples = reconstruct_from_latent(model, latents)
-                    prompt = prompts[ind_idx]
-                    filename = filenames[ind_idx]
-                    # save_results(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
+                    prompt = current_prompts[ind_idx]
+                    filename = current_filenames[ind_idx]
                     save_results_seperate(prompt, samples, filename, fakedir, fps=8, loop=args.loop)
         
-            # import pdb; pdb.set_trace()
             batch_latents_list.append(batch_latents)
 
+    # Reconstruct from latent to pixel space
     shot_video_list = [model.decode_first_stage(shot) for shot in batch_latents_list]
-
     final_output = torch.stack(shot_video_list).permute(1, 0, 2, 3, 4, 5)
     save_results_seperate(prompt, final_output, "final_output", fakedir, fps=8, loop=args.loop)
     print(f"Saved in {args.savedir}. Time used: {(time.time() - start):.2f} seconds")
