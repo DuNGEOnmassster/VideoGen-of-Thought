@@ -195,7 +195,7 @@ def depart_script_generation(args):
     # Setting output_dir for saving generated files.
     RESULT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', story_name)
 
-    system_prompt_1, system_prompt_2, _ = get_system_prompts(story_name, None)
+    system_prompt_1, system_prompt_2, system_prompt_3 = get_system_prompts(story_name, args.avatar_json_path)
     # Generate short_shot_description.txt
     result_content_1 = generate_short_shot_descriptions(api_key, system_prompt_1, story_user_prompt, os.path.join(RESULT_DIR, 'short_shot_description.txt'))
 
@@ -205,8 +205,7 @@ def depart_script_generation(args):
     with open(args.avatar_json_path, 'r', encoding='utf-8') as af:
         avatar_data = json.load(af)
     avatar_paths = [item['ip_image_path'] for item in avatar_data]
-
-    _, _, system_prompt_3 = get_system_prompts(story_name, avatar_paths)
+    # _, _, system_prompt_3 = get_system_prompts(story_name, avatar_paths)
 
     # Generate image_prompt_pairs.json using avatar_prompt.json ip_image_paths
     image_prompt_pairs_content = generate_image_prompt_pairs(api_key, system_prompt_3, os.path.join(RESULT_DIR,'short_shot_description.txt'), os.path.join(RESULT_DIR, 'image_prompt_pairs.json'))
@@ -555,7 +554,7 @@ def parse_args():
     parser.add_argument("--text_input", action='store_true', default=False, help="input text to I2V model or not")
     parser.add_argument("--multiple_cond_cfg", action='store_true', default=False, help="use multi-condition cfg or not")
     parser.add_argument("--cfg_img", type=float, default=None, help="guidance scale for image conditioning")
-    parser.add_argument("--timestep_spacing", type=str, default="uniform", help="The way the timesteps should be scaled. Refer to Table 2 of the [Common Diffusion Noise Schedules and Sample Steps are Flawed](https://huggingface.co/papers/2305.08891) for more information.")
+    parser.add_argument("--timestep_spacing", type=str, default="uniform_trailing", help="The way the timesteps should be scaled. Refer to Table 2 of the [Common Diffusion Noise Schedules and Sample Steps are Flawed](https://huggingface.co/papers/2305.08891) for more information.")
     parser.add_argument("--guidance_rescale", type=float, default=0.0, help="guidance rescale in [Common Diffusion Noise Schedules and Sample Steps are Flawed](https://huggingface.co/papers/2305.08891)")
     parser.add_argument("--perframe_ae", action='store_true', default=False, help="if we use per-frame AE decoding, set it to True to save GPU memory, especially for the model of 576x1024")
 
