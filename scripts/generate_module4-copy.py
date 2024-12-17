@@ -198,10 +198,15 @@ def run_inference(args, gpu_num, gpu_no):
             # import pdb; pdb.set_trace()
             batch_latents_list.append(batch_latents)
 
+    import pdb; pdb.set_trace()
+
     shot_video_list = [model.decode_first_stage(shot) for shot in batch_latents_list]
 
-    final_output = torch.stack(shot_video_list).permute(1, 0, 2, 3, 4, 5)
-    save_results_seperate(prompt, final_output, "final_output", fakedir, fps=8, loop=args.loop)
+    final_output = torch.stack(shot_video_list)
+    # save_results_seperate(prompt, final_output, "final_output", fakedir, fps=8, loop=args.loop)
+    # save_latents_as_video(final_output)
+    final_save_path = os.path.join(args.savedir, "final_output.mp4")
+    save_results_full(prompt, final_output, final_save_path, fps=8, loop=args.loop)
     print(f"Saved in {args.savedir}. Time used: {(time.time() - start):.2f} seconds")
 
 
