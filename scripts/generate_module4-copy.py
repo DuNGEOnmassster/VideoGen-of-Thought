@@ -113,18 +113,38 @@ def image_guided_synthesis(model, prompts, videos, noise_shape, n_samples=1, ddi
 def reconstruct_from_latent(model, latent_codes):
     # reconstruct from latent to pixel space
     batch_images = model.decode_first_stage(latent_codes)
-    # batch_variants.append(batch_images)
-    # ## variants, batch, c, t, h, w
-    # batch_variants = torch.stack(batch_variants)
+    # ## batch, c, t, h, w
     return batch_images.permute(1, 0, 2, 3, 4)
 
 
 def run_inference(args, gpu_num, gpu_no):
-    ## model config
+    # ## model config
+    # config = OmegaConf.load(args.config)
+    # model_config = config.pop("model", OmegaConf.create())
+    
+    # ## set use_checkpoint as False as when using deepspeed, it encounters an error "deepspeed backend not set"
+    # model_config['params']['unet_config']['params']['use_checkpoint'] = False
+    # model = instantiate_from_config(model_config)
+    # model = model.cuda(gpu_no)
+    # model.perframe_ae = args.perframe_ae
+    # assert os.path.exists(args.ckpt_path), "Error: checkpoint Not Found!"
+    # model = load_model_checkpoint(model, args.ckpt_path)
+    # model.eval()
+
+    # ## run over data
+    # assert (args.height % 16 == 0) and (args.width % 16 == 0), "Error: image size [h,w] should be multiples of 16!"
+    # assert args.bs == 1, "Current implementation only support [batch size = 1]!"
+    # ## latent noise shape
+    # h, w = args.height // 8, args.width // 8
+    # channels = model.model.diffusion_model.out_channels
+    # n_frames = args.video_length
+    # print(f'Inference with {n_frames} frames')
+    # noise_shape = [args.bs, channels, n_frames, h, w]
+
+    ## step 1: model config
+    ## -----------------------------------------------------------------
     config = OmegaConf.load(args.config)
     model_config = config.pop("model", OmegaConf.create())
-    
-    ## set use_checkpoint as False as when using deepspeed, it encounters an error "deepspeed backend not set"
     model_config['params']['unet_config']['params']['use_checkpoint'] = False
     model = instantiate_from_config(model_config)
     model = model.cuda(gpu_no)
@@ -133,15 +153,35 @@ def run_inference(args, gpu_num, gpu_no):
     model = load_model_checkpoint(model, args.ckpt_path)
     model.eval()
 
-    ## run over data
+    ## sample shape
     assert (args.height % 16 == 0) and (args.width % 16 == 0), "Error: image size [h,w] should be multiples of 16!"
-    assert args.bs == 1, "Current implementation only support [batch size = 1]!"
     ## latent noise shape
     h, w = args.height // 8, args.width // 8
     channels = model.model.diffusion_model.out_channels
     n_frames = args.video_length
+    batch_size = args.bs
     print(f'Inference with {n_frames} frames')
     noise_shape = [args.bs, channels, n_frames, h, w]
+
+    ## step 2: load data
+    ## -----------------------------------------------------------------
+    assert os.path.exists(args.prompt_file), "Error: prompt file NOT Found!"
+    prompt_list = load_prompts(args.prompt_file)
+    num_samples = len(prompt_list)
+
+    indices = list(range(num_samples))
+    indices = indices[args.rank::args.num_processes]
+
+    ## step 3: run over samples
+    ## -----------------------------------------------------------------
+    for idx in indices:
+        prompt = prompt_list[idx]
+        fps = torch.tensor([args.fps]*batch_size).to(model.device).long()
+
+        prompts = [prompt]
+        text_emb = model.get_learned_conditioning(prompts)
+
+        cond = {"c_crossattn": [text_emb], "fps": fps}
 
     fakedir = os.path.join(args.savedir, "samples")
     fakedir_separate = os.path.join(args.savedir, "samples_separate")
