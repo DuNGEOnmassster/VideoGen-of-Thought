@@ -83,7 +83,7 @@ def get_system_prompts(story_name, avatar_paths):
     4. For each shot, create a JSON object:
     [
     {{
-        "ip_img_path": "<assigned_avatar_path_for_this_stage>",
+        "ip_image_path": "<assigned_avatar_path_for_this_stage>",
         "prompt": "Character:..., Background:..., Relation:..., Camera Pose:..., HDR Description:..."
     }}
     ]
@@ -95,6 +95,52 @@ def get_system_prompts(story_name, avatar_paths):
     """
     return system_prompt_1, system_prompt_2, system_prompt_3
     
+def generate_short_shot_descriptions(api_key, system_prompt_1, story_user_prompt, short_desc_path):
+    """
+    Generate 30 short shot descriptions and save them to short_shot_description.txt.
+    """
+    openai.api_key = api_key
+    response_1 = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": system_prompt_1},
+            {"role": "user", "content": story_user_prompt}
+        ],
+        temperature=0.2,  # Lowered temperature for consistency
+        top_p=0.9,
+        max_tokens=3000
+    )
+
+    result_content_1 = response_1['choices'][0]['message']['content']
+    with open(short_desc_path, 'w', encoding='utf-8') as result_file:
+        result_file.write(result_content_1)
+    print("short_shot_description saved to", short_desc_path)
+
+
+def generate_avatar_prompt(api_key, system_prompt_2, short_desc_path, avatar_prompt_path):
+    """
+    Generate avatar prompts for specified life stages and save them to avatar_prompt.json.
+    """
+    openai.api_key = api_key
+    with open(short_desc_path, 'r', encoding='utf-8') as f:
+        short_descriptions_for_avatar = f.read().strip()
+
+    response_2 = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": system_prompt_2},
+            {"role": "user", "content": short_descriptions_for_avatar}
+        ],
+        temperature=0.2,  # Lowered temperature for consistency
+        top_p=0.9,
+        max_tokens=3000
+    )
+
+    avatar_prompt_content = response_2['choices'][0]['message']['content']
+    with open(avatar_prompt_path, 'w', encoding='utf-8') as avatar_file:
+        avatar_file.write(avatar_prompt_content)
+    print("avatar_prompt saved to", avatar_prompt_path)
+
 
 def script_generation(args):
     # Read API Key
@@ -111,7 +157,8 @@ def script_generation(args):
     with open('user_input.txt', 'r', encoding='utf-8') as f:
         story_user_prompt = f.read().strip()
 
-    # Placing story_name for story_user_prompt, set by user in args
+    # Setting story_name for story_user_prompt.
+    # Here we default that the story_name = "Mary", user can set with args.story_name.
     story_name = args.story_name
 
     ########################################
@@ -157,7 +204,7 @@ def script_generation(args):
 
     system_prompt_2 = f"""You are a master character concept artist and fashion designer. You have been given a narrative (30 short shot descriptions) about a protagonist's life. 
     From the user prompt, the protagonist's name is {story_name} (story_name = "{story_name}"). 
-    You need to create avatar images for this protagonist at exactly six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder(Late-50s), and Old.
+    You need to create avatar images for this protagonist at exactly six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder (Where Mid-Elder means Late-50s), and Old.
 
     Produce exactly 6 JSON objects, each representing {story_name} at one of these five life stages. For each object:
     - "ip_image_path": use the format "data/{story_name}/avatar_{story_name}_<stage>.jpg" replacing <stage> with one of the specified stages.
@@ -266,21 +313,6 @@ def script_generation(args):
 
     return result_content_1, avatar_prompt_content, image_prompt_pairs_content
 
-
-# Set random seed for reproducibility
-def set_seed(seed):
-    torch.manual_seed(seed)
-    if torch.cuda.is_available():
-        torch.cuda.manual_seed_all(seed)
-
-# Load image and prompt pairs from JSON file
-def load_image_prompt_pairs(json_path):
-    with open(json_path, 'r') as f:
-        data = json.load(f)
-    
-    return {idx: {'ip_image_path': item['ip_image_path'], 'prompt': item['prompt']} 
-            for idx, item in enumerate(data)}
-
 # Prepare model pipeline
 def prepare_avatar_model():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -314,8 +346,18 @@ def load_avatar_image_prompt_pairs(json_path):
     with open(json_path, 'r') as f:
         data = json.load(f)
     
-    return {idx: {'image_path': item['ip_img_path'], 'prompt': item['prompt']} 
+    return {idx: {'ip_image_path': item['ip_image_path'], 'prompt': item['prompt']} 
             for idx, item in enumerate(data)}
+
+
+# Load image and prompt pairs from JSON file
+def load_keyframe_image_prompt_pairs(json_path):
+    with open(json_path, 'r') as f:
+        data = json.load(f)
+    
+    return {idx: {'ip_image_path': item['ip_img_path'], 'prompt': item['prompt']} 
+            for idx, item in enumerate(data)}
+
 
 def avatar_generation(args):
     set_seed(args.seed)
@@ -380,11 +422,11 @@ def prepare_keyframe_model():
 def keyframe_generation(args):
     set_seed(args.seed)
     pipe = prepare_keyframe_model()
-    image_prompt_dict = load_image_prompt_pairs(args.keyframe_json_path)
+    image_prompt_dict = load_keyframe_image_prompt_pairs(args.keyframe_json_path)
     os.makedirs(args.output_path, exist_ok=True)
 
     for idx, item in image_prompt_dict.items():
-        ip_img_path = item['image_path']
+        ip_img_path = item['ip_img_path']
         prompt = item['prompt']
         
         ip_img = Image.open(ip_img_path)
