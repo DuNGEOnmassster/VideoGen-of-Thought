@@ -64,7 +64,7 @@ def get_system_prompts(story_name, avatar_paths):
     Output a JSON array of these 6 objects.
     """
 
-    system_prompt_3 = f"""You are now a cinematic director and image curator. You have 30 short shot descriptions depicting {story_name}'s life from birth to death, and a JSON array of 5 avatar image objects (from avatar_prompt.json) representing {story_name} at Six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder, and Old.
+    system_prompt_3 = f"""You are now a cinematic director and image curator. You have 30 short shot descriptions depicting {story_name}'s life from birth to death, and a JSON array of 6 avatar image objects (from avatar_prompt.json) representing {story_name} at Six distinct life stages: Child, Teen, Early-30s, Late-40s, Mid-Elder, and Old.
 
     Your tasks:
     1. Read the 30 short shot descriptions.
@@ -471,9 +471,9 @@ def generate_shots(args, gpu_num, gpu_no, short_desc_path):
     os.makedirs(fakedir_separate, exist_ok=True)
 
     ## prompt file setting
-    assert os.path.exists(short_desc_path), "Error: prompt file Not Found!"
+    assert os.path.exists(args.prompt_path), "Error: prompt file Not Found!"
     assert os.path.exists(args.keyframe_path), "Error: keyframe file Not Found!"
-    filename_list, data_list, prompt_list = load_data_prompts(args.keyframe_path, short_desc_path, video_size=(args.height, args.width), video_frames=n_frames, interp=args.interp)
+    filename_list, data_list, prompt_list = load_data_prompts(args.keyframe_path, args.prompt_path, video_size=(args.height, args.width), video_frames=n_frames, interp=args.interp)
     num_samples = len(prompt_list)
     samples_split = num_samples // gpu_num
     # print('Prompts testing [rank:%d] %d/%d samples loaded.'%(gpu_no, samples_split, num_samples))
@@ -566,6 +566,7 @@ def main():
     args = parse_args()
     args.avatar_json_path = f"data/{args.story_name}/avatar_prompt.json"
     args.keyframe_json_path = f"data/{args.story_name}/image_prompt_pairs.json"
+    args.prompt_path = f"data/{args.story_name}"
     args.keyframe_path = f"KeyFrames/{args.story_name}"
     args.shot_save_path = f"Shot_Videos/{args.story_name}"
     os.makedirs(args.shot_save_path, exist_ok=True)
