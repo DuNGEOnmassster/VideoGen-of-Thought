@@ -6,7 +6,7 @@ accelerate==1.1.1
 diffusers==0.31.0
 transformers==4.42.4
 tokenizers==0.19.1
-gradio==4.44.1
+gradio==5.5.0
 huggingface-hub==0.26.3
 einops==0.8.0
 decord==0.6.0
