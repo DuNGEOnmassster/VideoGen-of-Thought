@@ -1,0 +1,41 @@
+torch==2.2.2 --index-url https://download.pytorch.org/whl/cu121
+torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cu121
+xformers==0.0.25.post1 --index-url https://download.pytorch.org/whl/cu121
+
+accelerate==1.1.1
+diffusers==0.31.0
+transformers==4.42.4
+tokenizers==0.19.1
+gradio==4.44.1
+huggingface-hub==0.26.3
+einops==0.8.0
+decord==0.6.0
+fire==0.7.0
+open-clip-torch==2.12.0
+av==12.0.0
+openai==0.28.0
+Pillow==10.2.0
+safetensors==0.4.5
+
+imageio
+numpy
+omegaconf
+opencv_python
+pandas
+pytorch_lightning
+PyYAML
+setuptools
+tqdm
+moviepy
+timm
+scikit-learn 
+open_clip_torch
+kornia
+fire
+triton
+pydantic
+sentencepiece
+opencv-python
+einops
+timm
+onnxruntime
