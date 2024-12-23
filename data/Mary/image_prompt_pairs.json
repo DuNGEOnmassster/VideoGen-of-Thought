@@ -1,122 +1,122 @@
 [
     {
         "ip_image_path": "data/Mary/avatar_Mary_Child.jpg",
-        "prompt": "Character: Newborn Mary, Background: Softly lit hospital room, Relation: Mary's young parents, Camera Pose: Overhead shot of the newborn in her mother's arms, HDR Description: The camera captures the moment of Mary's birth, focusing on her tiny form cradled in her mother's arms. Her parents' faces are filled with a mix of joy and exhaustion, their eyes brimming with tears of happiness."
+        "prompt": "Character: Newborn baby Mary, her mother. Background: The soft glow of a hospital room. Relation: Mother-daughter. Camera Pose: A close-up shot of Mary's face as she opens her eyes. HDR Description: A tear-streaked face of her mother beaming with joy serves as a powerful backdrop."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Child.jpg",
-        "prompt": "Character: Toddler Mary, Background: Sunlit living room, Relation: Mary's parents, Camera Pose: Level shot capturing Mary's first steps, HDR Description: The camera captures Mary's first steps, her parents cheering her on from the background. Her giggles fill the room, echoing against the sunny backdrop of their living room."
+        "prompt": "Character: Toddler Mary, her parents. Background: A sun-dappled lawn of a suburban home. Relation: Parents encouraging their child. Camera Pose: A wide shot capturing Mary's first steps. HDR Description: The cheering and clapping parents provide an encouraging atmosphere."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Child.jpg",
-        "prompt": "Character: Five-year-old Mary, Background: School building, Relation: Mary's mother, Camera Pose: Medium shot capturing Mary and her mother, HDR Description: Mary, now five, starts her first day of school. Her small hand clutches her mother's tightly as they approach the imposing school building, her wide eyes reflecting a mix of fear and excitement."
+        "prompt": "Character: Mary, in her red coat. Background: A crisp autumn day, a yellow school bus. Relation: Child's independence. Camera Pose: A medium shot capturing Mary boarding the bus. HDR Description: The excitement of the first day of school is evident in her eager expression."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Teen.jpg",
-        "prompt": "Character: Teen Mary, Background: Crowded school science fair, Relation: Her science project, Camera Pose: Medium shot capturing Mary presenting her project, HDR Description: At a crowded school science fair, Mary presents her volcano project with a proud smile. The camera captures the dramatic eruption of her project, the crowd's appreciative applause echoing around her."
+        "prompt": "Character: Ten-year-old Mary. Background: A tree in her backyard, golden afternoon light. Relation: Solitude. Camera Pose: A close-up shot capturing Mary's concentration. HDR Description: The book and the intense concentration depict a child engrossed in her world of imagination."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Teen.jpg",
-        "prompt": "Character: Teen Mary, Background: Her bedroom, Relation: Nobody, Camera Pose: Close-up on Mary's face, HDR Description: Mary experiences her first heartbreak, sobbing into her pillow in the dim light of her bedroom. The camera captures the raw emotion on her face, the tears glistening on her cheeks."
+        "prompt": "Character: Mary at her high school graduation. Background: A crowd, a diploma in her hands. Relation: Achievement. Camera Pose: A medium shot capturing Mary's proud smile. HDR Description: The crowd erupting in applause adds to the celebratory mood."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Teen.jpg",
-        "prompt": "Character: Teen Mary, Background: Diner, Relation: Customers, Camera Pose: Medium shot capturing Mary serving coffee, HDR Description: Mary works her first job at a diner. The harsh fluorescent lights illuminate her tired but determined smile as she serves coffee to the late-night customers."
+        "prompt": "Character: Young woman Mary. Background: The bustling campus of her dream university. Relation: Anticipation. Camera Pose: A wide shot capturing Mary's wide-eyed expression. HDR Description: The hint of nervousness adds a touch of realism to the anticipation of a new journey."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Teen.jpg",
-        "prompt": "Character: Teen Mary, Background: High school graduation, Relation: Graduating peers, Camera Pose: Medium shot capturing Mary throwing her cap, HDR Description: Mary graduates high school, her face lit up with hope and excitement. The camera captures her throwing her cap into the air, the joyous cheers of her peers surrounding her."
+        "prompt": "Character: Mary in the library. Background: Stacks of books, cups of coffee. Relation: Determination. Camera Pose: A close-up shot capturing Mary's determined face. HDR Description: The dimly lit library with stacks of books and cups of coffee epitomizes the all-nighter."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Teen.jpg",
-        "prompt": "Character: Young adult Mary, Background: College dorm room, Relation: Roommate, Camera Pose: Wide shot capturing Mary moving in, HDR Description: Mary moves into her college dorm, the room small and bare. The camera captures her nervous and excited expression as she unpacks her belongings."
+        "prompt": "Character: Mary at her university graduation. Background: The warm afternoon sun. Relation: Relief. Camera Pose: A medium shot capturing Mary throwing her cap. HDR Description: The glowing face under the warm sun symbolizes the pride and relief of accomplishment."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Teen.jpg",
-        "prompt": "Character: Young adult Mary, Background: Library, Relation: Books and coffee, Camera Pose: Medium shot capturing Mary studying, HDR Description: Mary pulls an all-nighter in the quiet library. The camera captures her surrounded by stacks of books and cups of coffee, her determined expression hinting at the academic challenges ahead."
+        "prompt": "Character: Young professional Mary. Background: A bustling newsroom. Relation: Career. Camera Pose: A medium shot capturing Mary working. HDR Description: The image of her fingers flying over the keyboard as she writes her first article represents her active participation in the professional world."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Early-30s.jpg",
-        "prompt": "Character: Young adult Mary, Background: College graduation, Relation: Her family, Camera Pose: Medium shot capturing Mary receiving her degree, HDR Description: Mary, in her graduation gown, receives her college degree. The camera captures the proud expressions of her family cheering from the audience."
+        "prompt": "Character: Mary. Background: A rainy evening, a streetlight. Relation: Love at first sight. Camera Pose: A wide shot capturing Mary's lit-up face. HDR Description: The image of her seeing her future husband for the first time symbolizes a major turning point in her life."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Early-30s.jpg",
-        "prompt": "Character: Mary in her early 30s, Background: Office cubicle, Relation: Colleagues, Camera Pose: Medium shot capturing Mary in her cubicle, HDR Description: Mary starts her first professional job, sitting nervously in a cubicle under the sterile office lights. The camera captures her anxious glances at her new colleagues, highlighting the pressure of her new environment."
+        "prompt": "Character: Mary in her wedding dress. Background: A small church. Relation: Wedding. Camera Pose: A long shot capturing Mary walking down the aisle. HDR Description: The radiant smiles and locked eyes express the deep love and happiness of the couple."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Early-30s.jpg",
-        "prompt": "Character: Mary in her early 30s, Background: Wedding reception, Relation: Her future husband, Camera Pose: Close-up on Mary and her future husband, HDR Description: Mary meets her future husband at a friend's wedding, their eyes meeting under the soft, romantic glow of the reception hall. Their shared smiles hint at the blossoming love between them."
+        "prompt": "Character: Mary, her newborn daughter. Background: Soft morning light. Relation: Mother-daughter. Camera Pose: A close-up shot capturing Mary's loving face. HDR Description: The image of her cradling her newborn daughter symbolizes the beginning of a new phase in her life."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Early-30s.jpg",
-        "prompt": "Character: Mary in her early 30s, Background: Wedding venue, Relation: Her husband, Camera Pose: Medium shot capturing Mary saying 'I do', HDR Description: Mary, in a simple but elegant wedding dress, says 'I do' under a canopy of twinkling fairy lights. The camera captures the tender exchange of vows, the couple's shared joy palpable."
+        "prompt": "Character: Mary, her family. Background: 30th birthday celebration. Relation: Family celebration. Camera Pose: A medium shot capturing Mary blowing out the candles. HDR Description: The glowing face in the candlelight adds to the celebratory atmosphere."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Early-30s.jpg",
-        "prompt": "Character: Mary in her early 30s, Background: Their first home, Relation: Her husband, Camera Pose: Wide shot capturing Mary and her husband, HDR Description: Mary and her husband move into their first home, a small but cozy house. The camera captures their joyful expressions and the anticipation of starting a new life together."
+        "prompt": "Character: Mary in her home office. Background: A desk lamp, a typewriter. Relation: Passion. Camera Pose: A close-up shot capturing Mary typing. HDR Description: The glow of the desk lamp and the clacking of keys create an intimate atmosphere of passion and dedication."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Late-40s.jpg",
-        "prompt": "Character: Pregnant Mary, Background: Nursery, Relation: Her unborn baby, Camera Pose: Medium shot capturing Mary painting, HDR Description: Mary, pregnant, paints a nursery. The camera captures the soft pastel colors of the room and the promise of new life, reflected in Mary's tender touches to her belly."
+        "prompt": "Character: Published author Mary. Background: A local bookstore. Relation: Achievement. Camera Pose: A medium shot capturing Mary signing books. HDR Description: The flushed face with pride and disbelief reflects her feelings about her achievement."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Late-40s.jpg",
-        "prompt": "Character: Mary in her late 40s, Background: Hospital room, Relation: Her newborn baby, Camera Pose: Close-up on Mary and her baby, HDR Description: Mary becomes a mother, holding her newborn baby in the hospital room. The camera captures her face filled with love and awe, the emotional intensity of the moment palpable."
+        "prompt": "Character: Mary at her daughter's graduation. Background: The setting sun. Relation: Mother-daughter, pride. Camera Pose: A medium shot capturing Mary wiping her tears. HDR Description: The warm glow on her face symbolizes the joy and pride of a parent."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Late-40s.jpg",
-        "prompt": "Character: Mary in her late 40s, Background: Kitchen, Relation: Her family, Camera Pose: Wide shot capturing the morning chaos, HDR Description: Mary, now a busy mom, juggles work and family. The kitchen is a chaos of breakfast dishes and school projects. The camera captures Mary's multitasking in the heart of her family's morning routine."
+        "prompt": "Character: Grandmother Mary, her first grandchild. Background: Soft afternoon light. Relation: Grandmother-grandchild. Camera Pose: A close-up shot capturing Mary's joyful face. HDR Description: The image of her holding her first grandchild conveys pure joy."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Late-40s.jpg",
-        "prompt": "Character: Mary in her late 40s, Background: School building, Relation: Her child, Camera Pose: Medium shot capturing Mary waving goodbye, HDR Description: Mary sends her child off to their first day of school. Her eyes well up with tears as she waves goodbye, the camera capturing the bittersweet moment of letting go."
-    },
-    {
-        "ip_image_path": "data/Mary/avatar_Mary_Late-40s.jpg",
-        "prompt": "Character: Mary in her late 40s, Background: Hospital room, Relation: Her ailing mother, Camera Pose: Close-up on Mary and her mother, HDR Description: Mary, under the harsh lights of a hospital room, says goodbye to her ailing mother. The camera captures the intimate moment, their hands tightly clasped, reflecting the strength and love between them."
-    },
-    {
-        "ip_image_path": "data/Mary/avatar_Mary_Late-40s.jpg",
-        "prompt": "Character: Mary in her late 40s, Background: Her child's room, Relation: Her memories, Camera Pose: Wide shot capturing Mary repurposing the room, HDR Description: Mary, now an empty-nester, repurposes her child's room into a home office. Her face is a mix of sadness and resolve, the camera capturing the transformation of the room and the transition in her life."
+        "prompt": "Character: Mary, her family. Background: 50th wedding anniversary celebration. Relation: Family celebration. Camera Pose: A medium shot capturing Mary's sparkling eyes. HDR Description: The loving and happy expression on her face represents the joy of a long, happy marriage."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
-        "prompt": "Character: Grandmother Mary, Background: Family gathering, Relation: Her grandchild, Camera Pose: Close-up on Mary and her grandchild, HDR Description: Mary becomes a grandmother, holding her grandchild for the first time. Her face lights up with joy and love as she cradles the baby, the camera capturing the precious bond between them."
+        "prompt": "Character: Retired Mary. Background: A porch swing, the setting sun. Relation: Solitude. Camera Pose: A medium shot capturing Mary reading. HDR Description: The setting sun and the book in her hand symbolize a peaceful retirement."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
-        "prompt": "Character: Retired Mary, Background: Her porch, Relation: Her morning routine, Camera Pose: Medium shot capturing Mary sipping coffee, HDR Description: Mary, now retired, enjoys a quiet morning on her porch, sipping coffee and watching the sunrise. The camera captures the serenity of her retirement, the peaceful morning light reflecting off her contented smile."
+        "prompt": "Character: Mary on a family vacation. Background: The edge of the Grand Canyon. Relation: Wonder. Camera Pose: A wide shot capturing Mary's awe-struck face. HDR Description: The awe and wonder on her face reflect the grandeur and beauty of the Grand Canyon."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
-        "prompt": "Character: Retired Mary, Background: Various travel locations, Relation: Her husband, Camera Pose: Montage of Mary and her husband exploring, HDR Description: Mary travels with her husband, their faces filled with wonder as they explore new cities and cultures. The camera captures a montage of their adventures, highlighting their shared joy in this new phase of life."
+        "prompt": "Character: Great-grandmother Mary, her great-grandchildren. Background: A kitchen, fresh cookies. Relation: Great-grandmother-great-grandchildren. Camera Pose: A medium shot capturing Mary baking with her great-grandchildren. HDR Description: The laughter and the smell of fresh cookies create a warm, homey atmosphere."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
-        "prompt": "Character: Elderly Mary, Background: Hospital room, Relation: Her dying husband, Camera Pose: Close-up on Mary and her husband, HDR Description: Mary, in the soft glow of a hospital room, says goodbye to her husband. Her hand clutches his tightly, the camera capturing the raw emotion in her eyes as she faces the heart-wrenching farewell."
-    },
-    {
-        "ip_image_path": "data/Mary/avatar_Mary_Mid-Elder.jpg",
-        "prompt": "Character: Widow Mary, Background: Her garden, Relation: Her plants, Camera Pose: Medium shot capturing Mary gardening, HDR Description: Mary, now a widow, finds solace in her garden. Her hands are covered in dirt as she plants new flowers, the camera capturing the therapeutic nature of her gardening, reflecting the healing process in her life."
+        "prompt": "Character: Mary, her family. Background: 80th birthday celebration. Relation: Family celebration. Camera Pose: A medium shot capturing Mary's glowing face. HDR Description: The soft candlelight adds to the celebratory mood of the family gathering."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
-        "prompt": "Character: 80-year-old Mary, Background: Family gathering, Relation: Her family, Camera Pose: Wide shot capturing Mary and her family, HDR Description: Mary celebrates her 80th birthday, surrounded by her family. Her face glows with happiness and love, the camera capturing the joyous celebration and the warm family bonds."
+        "prompt": "Character: Frail Mary. Background: A garden, her family. Relation: Longing. Camera Pose: A medium shot capturing Mary watching her family. HDR Description: The lit-up face watching her family play symbolizes a mix of happiness and longing."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
-        "prompt": "Character: Frail Mary, Background: Nursing home room, Relation: Her new environment, Camera Pose: Medium shot capturing Mary in her room, HDR Description: Mary, now frail, moves into a nursing home. Her room is small but cozy, her face a mix of sadness and acceptance. The camera captures her settling into the new phase of her life, reflecting her resilience and strength."
+        "prompt": "Character: Mary, her husband. Background: A hospital bed. Relation: Love, acceptance. Camera Pose: A close-up shot capturing Mary holding her husband's hand. HDR Description: The loving and accepting expression on her face communicates a deep sense of peace and acceptance."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
-        "prompt": "Character: Great-grandmother Mary, Background: Family gathering, Relation: Her great-grandchild, Camera Pose: Close-up on Mary and her great-grandchild, HDR Description: Mary, surrounded by her family, celebrates her great-grandchild's first birthday. Her face is filled with joy and love, the camera capturing the precious moment as she holds the baby, the generational bond evident."
+        "prompt": "Character: Mary, her family. Background: Christmas celebration. Relation: Family celebration. Camera Pose: A medium shot capturing Mary's glowing face. HDR Description: The soft light of the Christmas tree adds to the festive and warm atmosphere of the family celebration."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
-        "prompt": "Character: Old Mary, Background: Her room, Relation: Her old photos, Camera Pose: Medium shot capturing Mary looking at photos, HDR Description: Mary, in the quiet of her room, looks at old photos. Her face is filled with nostalgia and a hint of sadness, the camera capturing the bittersweet memories reflected in her eyes."
+        "prompt": "Character: Very old Mary. Background: An armchair, a photo album. Relation: Nostalgia. Camera Pose: A close-up shot capturing Mary's contented face. HDR Description: The photo album on her lap and her nostalgic expression symbolize a life well-lived."
     },
     {
         "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
-        "prompt": "Character: Dying Mary, Background: Hospital room, Relation: Her family, Camera Pose: Overhead shot capturing Mary on the bed, HDR Description: Mary, under the soft glow of a hospital room, takes her last breath. Her face is peaceful, surrounded by her loving family. The camera captures the poignant moment, the end of her journey marked by the quiet tranquility in the room."
+        "prompt": "Character: Mary, her husband. Background: Deathbed. Relation: Love, peace. Camera Pose: A close-up shot capturing Mary's peaceful face. HDR Description: The image of her holding her husband's hand as she takes her last breath communicates a deep sense of peace and acceptance."
+    },
+    {
+        "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
+        "prompt": "Character: Mary's family. Background: Graveyard. Relation: Grief, love. Camera Pose: A medium shot capturing the family's grief. HDR Description: The grieving faces of the family express their deep love and loss."
+    },
+    {
+        "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
+        "prompt": "Character: Mary's husband. Background: Their empty house. Relation: Loss, longing. Camera Pose: A medium shot capturing the husband looking at a picture. HDR Description: The picture of Mary and his expression of loss and longing symbolize his deep love and longing for his departed wife."
+    },
+    {
+        "ip_image_path": "data/Mary/avatar_Mary_Old.jpg",
+        "prompt": "Character: Mary's family. Background: A family portrait, the setting sun. Relation: Legacy. Camera Pose: A wide shot capturing the family portrait. HDR Description: The warm glow of the setting sun on their faces symbolizes the continuation of Mary's love and wisdom in her family."
     }
 ]
