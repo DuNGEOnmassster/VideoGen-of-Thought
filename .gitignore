@@ -10,6 +10,9 @@ weights/
 # configs
 configs/config.txt
 
+# videos
+Shot_Videos/
+
 # C extensions
 *.so
 
