@@ -1,0 +1,697 @@
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_1_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_1_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_1_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_1_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_1_sample0.mp4: 0.5632
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_2_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_2_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_2_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_2_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_2_sample0.mp4: 0.9187
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_3_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_3_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_3_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_3_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_3_sample0.mp4: 0.8537
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_4_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_4_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_4_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_4_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_4_sample0.mp4: 0.9483
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_5_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_5_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_5_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_5_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_5_sample0.mp4: 0.9546
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_6_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_6_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_6_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_6_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_6_sample0.mp4: 0.9170
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_7_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_7_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_7_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_7_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_7_sample0.mp4: 0.9620
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_8_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_8_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_8_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_8_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_8_sample0.mp4: 0.8625
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_9_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_9_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_9_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_9_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_9_sample0.mp4: 0.8458
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_10_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_10_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_10_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_10_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_10_sample0.mp4: 0.8982
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_11_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_11_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_11_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_11_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_11_sample0.mp4: 0.9572
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_12_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_12_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_12_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_12_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_12_sample0.mp4: 0.9523
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_13_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_13_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_13_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_13_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_13_sample0.mp4: 0.7972
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_14_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_14_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_14_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_14_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_14_sample0.mp4: 0.8118
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_15_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_15_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_15_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_15_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_15_sample0.mp4: 0.9373
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_16_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_16_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_16_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_16_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_16_sample0.mp4: 0.9000
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_17_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_17_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_17_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_17_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_17_sample0.mp4: 0.9537
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_18_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_18_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_18_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_18_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_18_sample0.mp4: 0.9616
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_19_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_19_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_19_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_19_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_19_sample0.mp4: 0.7525
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_20_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_20_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_20_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_20_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_20_sample0.mp4: 0.9708
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_21_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_21_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_21_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_21_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_21_sample0.mp4: 0.9326
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_22_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_22_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_22_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_22_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_22_sample0.mp4: 0.7331
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_23_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_23_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_23_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_23_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_23_sample0.mp4: 0.9465
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_24_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_24_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_24_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_24_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_24_sample0.mp4: 0.8246
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_25_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_25_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_25_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_25_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_25_sample0.mp4: 0.9661
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_26_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_26_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_26_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_26_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_26_sample0.mp4: 0.9670
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_27_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_27_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_27_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_27_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_27_sample0.mp4: 0.9753
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_28_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_28_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_28_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_28_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_28_sample0.mp4: 0.9772
+
+Processing video: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_29_sample0.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_29_sample0.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_29_sample0.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_29_sample0.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_29_sample0.mp4: 0.9347
+Video not found: /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_30_sample0.mp4
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_1_sample0.mp4:
+  Frame 0 to Frame 1: 0.9527
+  Frame 1 to Frame 2: 0.9011
+  Frame 2 to Frame 3: 0.9410
+  Frame 3 to Frame 4: 0.9567
+  Frame 4 to Frame 5: 0.9499
+  Frame 5 to Frame 6: 0.9537
+  Frame 6 to Frame 7: 0.1173
+  Frame 7 to Frame 8: 0.1145
+  Frame 8 to Frame 9: 0.1685
+  Frame 9 to Frame 10: 0.2060
+  Frame 10 to Frame 11: 0.9288
+  Frame 11 to Frame 12: 0.1246
+  Frame 12 to Frame 13: 0.1371
+  Frame 13 to Frame 14: 0.1362
+  Frame 14 to Frame 15: 0.8593
+Average similarity: 0.5632
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_2_sample0.mp4:
+  Frame 0 to Frame 1: 0.9012
+  Frame 1 to Frame 2: 0.9226
+  Frame 2 to Frame 3: 0.8213
+  Frame 3 to Frame 4: 0.8321
+  Frame 4 to Frame 5: 0.9169
+  Frame 5 to Frame 6: 0.9370
+  Frame 6 to Frame 7: 0.9526
+  Frame 7 to Frame 8: 0.9544
+  Frame 8 to Frame 9: 0.9479
+  Frame 9 to Frame 10: 0.9410
+  Frame 10 to Frame 11: 0.9381
+  Frame 11 to Frame 12: 0.9481
+  Frame 12 to Frame 13: 0.9409
+  Frame 13 to Frame 14: 0.9283
+  Frame 14 to Frame 15: 0.8978
+Average similarity: 0.9187
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_3_sample0.mp4:
+  Frame 0 to Frame 1: 0.9273
+  Frame 1 to Frame 2: 0.9293
+  Frame 2 to Frame 3: 0.8972
+  Frame 3 to Frame 4: 0.8804
+  Frame 4 to Frame 5: 0.1543
+  Frame 5 to Frame 6: 0.9060
+  Frame 6 to Frame 7: 0.9466
+  Frame 7 to Frame 8: 0.9444
+  Frame 8 to Frame 9: 0.9274
+  Frame 9 to Frame 10: 0.9579
+  Frame 10 to Frame 11: 0.9332
+  Frame 11 to Frame 12: 0.9482
+  Frame 12 to Frame 13: 0.9586
+  Frame 13 to Frame 14: 0.9444
+  Frame 14 to Frame 15: 0.5499
+Average similarity: 0.8537
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_4_sample0.mp4:
+  Frame 0 to Frame 1: 0.9488
+  Frame 1 to Frame 2: 0.9452
+  Frame 2 to Frame 3: 0.9274
+  Frame 3 to Frame 4: 0.9573
+  Frame 4 to Frame 5: 0.9538
+  Frame 5 to Frame 6: 0.9653
+  Frame 6 to Frame 7: 0.9614
+  Frame 7 to Frame 8: 0.9629
+  Frame 8 to Frame 9: 0.9635
+  Frame 9 to Frame 10: 0.9461
+  Frame 10 to Frame 11: 0.9394
+  Frame 11 to Frame 12: 0.9228
+  Frame 12 to Frame 13: 0.9501
+  Frame 13 to Frame 14: 0.9457
+  Frame 14 to Frame 15: 0.9341
+Average similarity: 0.9483
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_5_sample0.mp4:
+  Frame 0 to Frame 1: 0.9723
+  Frame 1 to Frame 2: 0.9632
+  Frame 2 to Frame 3: 0.9393
+  Frame 3 to Frame 4: 0.9577
+  Frame 4 to Frame 5: 0.9519
+  Frame 5 to Frame 6: 0.9313
+  Frame 6 to Frame 7: 0.9304
+  Frame 7 to Frame 8: 0.9649
+  Frame 8 to Frame 9: 0.9668
+  Frame 9 to Frame 10: 0.9585
+  Frame 10 to Frame 11: 0.9405
+  Frame 11 to Frame 12: 0.9543
+  Frame 12 to Frame 13: 0.9497
+  Frame 13 to Frame 14: 0.9696
+  Frame 14 to Frame 15: 0.9690
+Average similarity: 0.9546
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_6_sample0.mp4:
+  Frame 0 to Frame 1: 0.9277
+  Frame 1 to Frame 2: 0.9429
+  Frame 2 to Frame 3: 0.9692
+  Frame 3 to Frame 4: 0.9479
+  Frame 4 to Frame 5: 0.9344
+  Frame 5 to Frame 6: 0.9398
+  Frame 6 to Frame 7: 0.9592
+  Frame 7 to Frame 8: 0.9649
+  Frame 8 to Frame 9: 0.9467
+  Frame 9 to Frame 10: 0.9597
+  Frame 10 to Frame 11: 0.9592
+  Frame 11 to Frame 12: 0.8884
+  Frame 12 to Frame 13: 0.9646
+  Frame 13 to Frame 14: 0.9021
+  Frame 14 to Frame 15: 0.5478
+Average similarity: 0.9170
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_7_sample0.mp4:
+  Frame 0 to Frame 1: 0.9549
+  Frame 1 to Frame 2: 0.9750
+  Frame 2 to Frame 3: 0.9622
+  Frame 3 to Frame 4: 0.9376
+  Frame 4 to Frame 5: 0.9600
+  Frame 5 to Frame 6: 0.9568
+  Frame 6 to Frame 7: 0.9619
+  Frame 7 to Frame 8: 0.9526
+  Frame 8 to Frame 9: 0.9486
+  Frame 9 to Frame 10: 0.9660
+  Frame 10 to Frame 11: 0.9717
+  Frame 11 to Frame 12: 0.9697
+  Frame 12 to Frame 13: 0.9761
+  Frame 13 to Frame 14: 0.9706
+  Frame 14 to Frame 15: 0.9658
+Average similarity: 0.9620
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_8_sample0.mp4:
+  Frame 0 to Frame 1: 0.7919
+  Frame 1 to Frame 2: 0.8134
+  Frame 2 to Frame 3: 0.8323
+  Frame 3 to Frame 4: 0.7938
+  Frame 4 to Frame 5: 0.7703
+  Frame 5 to Frame 6: 0.8788
+  Frame 6 to Frame 7: 0.8660
+  Frame 7 to Frame 8: 0.8918
+  Frame 8 to Frame 9: 0.8977
+  Frame 9 to Frame 10: 0.8970
+  Frame 10 to Frame 11: 0.8816
+  Frame 11 to Frame 12: 0.8929
+  Frame 12 to Frame 13: 0.8896
+  Frame 13 to Frame 14: 0.9206
+  Frame 14 to Frame 15: 0.9202
+Average similarity: 0.8625
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_9_sample0.mp4:
+  Frame 0 to Frame 1: 0.9068
+  Frame 1 to Frame 2: 0.9318
+  Frame 2 to Frame 3: 0.9198
+  Frame 3 to Frame 4: 0.9064
+  Frame 4 to Frame 5: 0.9125
+  Frame 5 to Frame 6: 0.8807
+  Frame 6 to Frame 7: 0.9078
+  Frame 7 to Frame 8: 0.9098
+  Frame 8 to Frame 9: 0.9108
+  Frame 9 to Frame 10: 0.4228
+  Frame 10 to Frame 11: 0.3897
+  Frame 11 to Frame 12: 0.9232
+  Frame 12 to Frame 13: 0.9267
+  Frame 13 to Frame 14: 0.9189
+  Frame 14 to Frame 15: 0.9190
+Average similarity: 0.8458
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_10_sample0.mp4:
+  Frame 0 to Frame 1: 0.8690
+  Frame 1 to Frame 2: 0.9194
+  Frame 2 to Frame 3: 0.8849
+  Frame 3 to Frame 4: 0.9073
+  Frame 4 to Frame 5: 0.8719
+  Frame 5 to Frame 6: 0.9119
+  Frame 6 to Frame 7: 0.9040
+  Frame 7 to Frame 8: 0.8764
+  Frame 8 to Frame 9: 0.8779
+  Frame 9 to Frame 10: 0.9027
+  Frame 10 to Frame 11: 0.9083
+  Frame 11 to Frame 12: 0.8943
+  Frame 12 to Frame 13: 0.8899
+  Frame 13 to Frame 14: 0.9280
+  Frame 14 to Frame 15: 0.9278
+Average similarity: 0.8982
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_11_sample0.mp4:
+  Frame 0 to Frame 1: 0.9598
+  Frame 1 to Frame 2: 0.9547
+  Frame 2 to Frame 3: 0.9662
+  Frame 3 to Frame 4: 0.9807
+  Frame 4 to Frame 5: 0.9590
+  Frame 5 to Frame 6: 0.9591
+  Frame 6 to Frame 7: 0.9370
+  Frame 7 to Frame 8: 0.9475
+  Frame 8 to Frame 9: 0.9464
+  Frame 9 to Frame 10: 0.9347
+  Frame 10 to Frame 11: 0.9516
+  Frame 11 to Frame 12: 0.9543
+  Frame 12 to Frame 13: 0.9748
+  Frame 13 to Frame 14: 0.9687
+  Frame 14 to Frame 15: 0.9636
+Average similarity: 0.9572
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_12_sample0.mp4:
+  Frame 0 to Frame 1: 0.9648
+  Frame 1 to Frame 2: 0.9570
+  Frame 2 to Frame 3: 0.9375
+  Frame 3 to Frame 4: 0.9568
+  Frame 4 to Frame 5: 0.9687
+  Frame 5 to Frame 6: 0.9527
+  Frame 6 to Frame 7: 0.9508
+  Frame 7 to Frame 8: 0.9387
+  Frame 8 to Frame 9: 0.9683
+  Frame 9 to Frame 10: 0.9634
+  Frame 10 to Frame 11: 0.9377
+  Frame 11 to Frame 12: 0.9607
+  Frame 12 to Frame 13: 0.9670
+  Frame 13 to Frame 14: 0.9682
+  Frame 14 to Frame 15: 0.8928
+Average similarity: 0.9523
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_13_sample0.mp4:
+  Frame 0 to Frame 1: 0.2384
+  Frame 1 to Frame 2: 0.8863
+  Frame 2 to Frame 3: 0.2827
+  Frame 3 to Frame 4: 0.9322
+  Frame 4 to Frame 5: 0.3159
+  Frame 5 to Frame 6: 0.8975
+  Frame 6 to Frame 7: 0.9240
+  Frame 7 to Frame 8: 0.9388
+  Frame 8 to Frame 9: 0.9444
+  Frame 9 to Frame 10: 0.9509
+  Frame 10 to Frame 11: 0.9325
+  Frame 11 to Frame 12: 0.9353
+  Frame 12 to Frame 13: 0.9491
+  Frame 13 to Frame 14: 0.9262
+  Frame 14 to Frame 15: 0.9040
+Average similarity: 0.7972
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_14_sample0.mp4:
+  Frame 0 to Frame 1: 0.8492
+  Frame 1 to Frame 2: 0.8529
+  Frame 2 to Frame 3: 0.8416
+  Frame 3 to Frame 4: 0.7908
+  Frame 4 to Frame 5: 0.8516
+  Frame 5 to Frame 6: 0.7416
+  Frame 6 to Frame 7: 0.6919
+  Frame 7 to Frame 8: 0.7573
+  Frame 8 to Frame 9: 0.8218
+  Frame 9 to Frame 10: 0.8510
+  Frame 10 to Frame 11: 0.7962
+  Frame 11 to Frame 12: 0.7827
+  Frame 12 to Frame 13: 0.8177
+  Frame 13 to Frame 14: 0.8686
+  Frame 14 to Frame 15: 0.8624
+Average similarity: 0.8118
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_15_sample0.mp4:
+  Frame 0 to Frame 1: 0.9467
+  Frame 1 to Frame 2: 0.9428
+  Frame 2 to Frame 3: 0.9489
+  Frame 3 to Frame 4: 0.9501
+  Frame 4 to Frame 5: 0.9567
+  Frame 5 to Frame 6: 0.9336
+  Frame 6 to Frame 7: 0.9330
+  Frame 7 to Frame 8: 0.9164
+  Frame 8 to Frame 9: 0.9405
+  Frame 9 to Frame 10: 0.9398
+  Frame 10 to Frame 11: 0.9452
+  Frame 11 to Frame 12: 0.9314
+  Frame 12 to Frame 13: 0.9221
+  Frame 13 to Frame 14: 0.9068
+  Frame 14 to Frame 15: 0.9455
+Average similarity: 0.9373
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_16_sample0.mp4:
+  Frame 0 to Frame 1: 0.9200
+  Frame 1 to Frame 2: 0.8869
+  Frame 2 to Frame 3: 0.8800
+  Frame 3 to Frame 4: 0.8416
+  Frame 4 to Frame 5: 0.9003
+  Frame 5 to Frame 6: 0.9376
+  Frame 6 to Frame 7: 0.8748
+  Frame 7 to Frame 8: 0.9333
+  Frame 8 to Frame 9: 0.9590
+  Frame 9 to Frame 10: 0.9427
+  Frame 10 to Frame 11: 0.9079
+  Frame 11 to Frame 12: 0.8227
+  Frame 12 to Frame 13: 0.8218
+  Frame 13 to Frame 14: 0.9364
+  Frame 14 to Frame 15: 0.9352
+Average similarity: 0.9000
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_17_sample0.mp4:
+  Frame 0 to Frame 1: 0.9576
+  Frame 1 to Frame 2: 0.9639
+  Frame 2 to Frame 3: 0.9570
+  Frame 3 to Frame 4: 0.9698
+  Frame 4 to Frame 5: 0.9528
+  Frame 5 to Frame 6: 0.9605
+  Frame 6 to Frame 7: 0.9454
+  Frame 7 to Frame 8: 0.9583
+  Frame 8 to Frame 9: 0.9243
+  Frame 9 to Frame 10: 0.9294
+  Frame 10 to Frame 11: 0.9462
+  Frame 11 to Frame 12: 0.9692
+  Frame 12 to Frame 13: 0.9581
+  Frame 13 to Frame 14: 0.9542
+  Frame 14 to Frame 15: 0.9589
+Average similarity: 0.9537
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_18_sample0.mp4:
+  Frame 0 to Frame 1: 0.9410
+  Frame 1 to Frame 2: 0.9605
+  Frame 2 to Frame 3: 0.9661
+  Frame 3 to Frame 4: 0.9616
+  Frame 4 to Frame 5: 0.9641
+  Frame 5 to Frame 6: 0.9633
+  Frame 6 to Frame 7: 0.9791
+  Frame 7 to Frame 8: 0.9557
+  Frame 8 to Frame 9: 0.9597
+  Frame 9 to Frame 10: 0.9383
+  Frame 10 to Frame 11: 0.9639
+  Frame 11 to Frame 12: 0.9708
+  Frame 12 to Frame 13: 0.9603
+  Frame 13 to Frame 14: 0.9743
+  Frame 14 to Frame 15: 0.9646
+Average similarity: 0.9616
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_19_sample0.mp4:
+  Frame 0 to Frame 1: 0.9210
+  Frame 1 to Frame 2: 0.9453
+  Frame 2 to Frame 3: 0.9371
+  Frame 3 to Frame 4: 0.9495
+  Frame 4 to Frame 5: 0.9457
+  Frame 5 to Frame 6: 0.3840
+  Frame 6 to Frame 7: 0.4036
+  Frame 7 to Frame 8: 0.3827
+  Frame 8 to Frame 9: 0.9447
+  Frame 9 to Frame 10: 0.9624
+  Frame 10 to Frame 11: 0.3597
+  Frame 11 to Frame 12: 0.8592
+  Frame 12 to Frame 13: 0.3884
+  Frame 13 to Frame 14: 0.9629
+  Frame 14 to Frame 15: 0.9408
+Average similarity: 0.7525
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_20_sample0.mp4:
+  Frame 0 to Frame 1: 0.9659
+  Frame 1 to Frame 2: 0.9817
+  Frame 2 to Frame 3: 0.9801
+  Frame 3 to Frame 4: 0.9730
+  Frame 4 to Frame 5: 0.9749
+  Frame 5 to Frame 6: 0.9655
+  Frame 6 to Frame 7: 0.9748
+  Frame 7 to Frame 8: 0.9633
+  Frame 8 to Frame 9: 0.9628
+  Frame 9 to Frame 10: 0.9634
+  Frame 10 to Frame 11: 0.9784
+  Frame 11 to Frame 12: 0.9609
+  Frame 12 to Frame 13: 0.9720
+  Frame 13 to Frame 14: 0.9716
+  Frame 14 to Frame 15: 0.9738
+Average similarity: 0.9708
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_21_sample0.mp4:
+  Frame 0 to Frame 1: 0.8899
+  Frame 1 to Frame 2: 0.9390
+  Frame 2 to Frame 3: 0.9247
+  Frame 3 to Frame 4: 0.9154
+  Frame 4 to Frame 5: 0.9412
+  Frame 5 to Frame 6: 0.9429
+  Frame 6 to Frame 7: 0.9589
+  Frame 7 to Frame 8: 0.9546
+  Frame 8 to Frame 9: 0.9576
+  Frame 9 to Frame 10: 0.9389
+  Frame 10 to Frame 11: 0.9437
+  Frame 11 to Frame 12: 0.9343
+  Frame 12 to Frame 13: 0.9281
+  Frame 13 to Frame 14: 0.9106
+  Frame 14 to Frame 15: 0.9096
+Average similarity: 0.9326
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_22_sample0.mp4:
+  Frame 0 to Frame 1: 0.9805
+  Frame 1 to Frame 2: 0.9695
+  Frame 2 to Frame 3: 0.0865
+  Frame 3 to Frame 4: 0.0800
+  Frame 4 to Frame 5: 0.9697
+  Frame 5 to Frame 6: 0.9634
+  Frame 6 to Frame 7: 0.9583
+  Frame 7 to Frame 8: 0.9629
+  Frame 8 to Frame 9: 0.9659
+  Frame 9 to Frame 10: 0.0938
+  Frame 10 to Frame 11: 0.0988
+  Frame 11 to Frame 12: 0.9693
+  Frame 12 to Frame 13: 0.9668
+  Frame 13 to Frame 14: 0.9673
+  Frame 14 to Frame 15: 0.9637
+Average similarity: 0.7331
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_23_sample0.mp4:
+  Frame 0 to Frame 1: 0.9235
+  Frame 1 to Frame 2: 0.9375
+  Frame 2 to Frame 3: 0.9546
+  Frame 3 to Frame 4: 0.9450
+  Frame 4 to Frame 5: 0.9608
+  Frame 5 to Frame 6: 0.9562
+  Frame 6 to Frame 7: 0.9320
+  Frame 7 to Frame 8: 0.9399
+  Frame 8 to Frame 9: 0.9569
+  Frame 9 to Frame 10: 0.9500
+  Frame 10 to Frame 11: 0.9514
+  Frame 11 to Frame 12: 0.9485
+  Frame 12 to Frame 13: 0.9543
+  Frame 13 to Frame 14: 0.9540
+  Frame 14 to Frame 15: 0.9330
+Average similarity: 0.9465
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_24_sample0.mp4:
+  Frame 0 to Frame 1: 0.9032
+  Frame 1 to Frame 2: 0.8924
+  Frame 2 to Frame 3: 0.9154
+  Frame 3 to Frame 4: 0.9152
+  Frame 4 to Frame 5: 0.8697
+  Frame 5 to Frame 6: 0.9055
+  Frame 6 to Frame 7: 0.9273
+  Frame 7 to Frame 8: 0.9348
+  Frame 8 to Frame 9: 0.9000
+  Frame 9 to Frame 10: 0.8892
+  Frame 10 to Frame 11: 0.2867
+  Frame 11 to Frame 12: 0.9600
+  Frame 12 to Frame 13: 0.8953
+  Frame 13 to Frame 14: 0.9045
+  Frame 14 to Frame 15: 0.2692
+Average similarity: 0.8246
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_25_sample0.mp4:
+  Frame 0 to Frame 1: 0.9703
+  Frame 1 to Frame 2: 0.9631
+  Frame 2 to Frame 3: 0.9743
+  Frame 3 to Frame 4: 0.9671
+  Frame 4 to Frame 5: 0.9786
+  Frame 5 to Frame 6: 0.9613
+  Frame 6 to Frame 7: 0.9349
+  Frame 7 to Frame 8: 0.9709
+  Frame 8 to Frame 9: 0.9692
+  Frame 9 to Frame 10: 0.9717
+  Frame 10 to Frame 11: 0.9698
+  Frame 11 to Frame 12: 0.9570
+  Frame 12 to Frame 13: 0.9615
+  Frame 13 to Frame 14: 0.9689
+  Frame 14 to Frame 15: 0.9724
+Average similarity: 0.9661
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_26_sample0.mp4:
+  Frame 0 to Frame 1: 0.9589
+  Frame 1 to Frame 2: 0.9607
+  Frame 2 to Frame 3: 0.9698
+  Frame 3 to Frame 4: 0.9566
+  Frame 4 to Frame 5: 0.9569
+  Frame 5 to Frame 6: 0.9624
+  Frame 6 to Frame 7: 0.9806
+  Frame 7 to Frame 8: 0.9738
+  Frame 8 to Frame 9: 0.9703
+  Frame 9 to Frame 10: 0.9521
+  Frame 10 to Frame 11: 0.9674
+  Frame 11 to Frame 12: 0.9738
+  Frame 12 to Frame 13: 0.9810
+  Frame 13 to Frame 14: 0.9702
+  Frame 14 to Frame 15: 0.9711
+Average similarity: 0.9670
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_27_sample0.mp4:
+  Frame 0 to Frame 1: 0.9767
+  Frame 1 to Frame 2: 0.9726
+  Frame 2 to Frame 3: 0.9727
+  Frame 3 to Frame 4: 0.9734
+  Frame 4 to Frame 5: 0.9764
+  Frame 5 to Frame 6: 0.9668
+  Frame 6 to Frame 7: 0.9675
+  Frame 7 to Frame 8: 0.9743
+  Frame 8 to Frame 9: 0.9777
+  Frame 9 to Frame 10: 0.9677
+  Frame 10 to Frame 11: 0.9824
+  Frame 11 to Frame 12: 0.9836
+  Frame 12 to Frame 13: 0.9778
+  Frame 13 to Frame 14: 0.9801
+  Frame 14 to Frame 15: 0.9801
+Average similarity: 0.9753
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_28_sample0.mp4:
+  Frame 0 to Frame 1: 0.9759
+  Frame 1 to Frame 2: 0.9751
+  Frame 2 to Frame 3: 0.9722
+  Frame 3 to Frame 4: 0.9676
+  Frame 4 to Frame 5: 0.9751
+  Frame 5 to Frame 6: 0.9801
+  Frame 6 to Frame 7: 0.9718
+  Frame 7 to Frame 8: 0.9819
+  Frame 8 to Frame 9: 0.9895
+  Frame 9 to Frame 10: 0.9786
+  Frame 10 to Frame 11: 0.9804
+  Frame 11 to Frame 12: 0.9833
+  Frame 12 to Frame 13: 0.9817
+  Frame 13 to Frame 14: 0.9701
+  Frame 14 to Frame 15: 0.9753
+Average similarity: 0.9772
+
+Similarity scores for /storage/home/mingzhe/code/VideoGen-of-Thought/thirdparty/i2v-module-3/DynamiCrafter/results/VGoT/dynamicrafter_vgot_mary_life2_1024_mp_seed123/samples_separate/sample_ip_29_sample0.mp4:
+  Frame 0 to Frame 1: 0.9658
+  Frame 1 to Frame 2: 0.9428
+  Frame 2 to Frame 3: 0.9318
+  Frame 3 to Frame 4: 0.9468
+  Frame 4 to Frame 5: 0.9477
+  Frame 5 to Frame 6: 0.9529
+  Frame 6 to Frame 7: 0.9568
+  Frame 7 to Frame 8: 0.9310
+  Frame 8 to Frame 9: 0.8705
+  Frame 9 to Frame 10: 0.9006
+  Frame 10 to Frame 11: 0.9375
+  Frame 11 to Frame 12: 0.8932
+  Frame 12 to Frame 13: 0.9441
+  Frame 13 to Frame 14: 0.9491
+  Frame 14 to Frame 15: 0.9504
+Average similarity: 0.9347

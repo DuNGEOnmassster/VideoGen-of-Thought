@@ -1,0 +1,1710 @@
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_01.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_01.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_01.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_01.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_01.mp4: 0.4242
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_02.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_02.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_02.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_02.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_02.mp4: 0.6896
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_03.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_03.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_03.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_03.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_03.mp4: 0.8161
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_04.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_04.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_04.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_04.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_04.mp4: 0.8023
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_05.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_05.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_05.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_05.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_05.mp4: 0.9848
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_06.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_06.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_06.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_06.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_06.mp4: 0.9645
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_07.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_07.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_07.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_07.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_07.mp4: 0.7401
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_08.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_08.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_08.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_08.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_08.mp4: 0.0000
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_09.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_09.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_09.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_09.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_09.mp4: 0.0000
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_10.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_10.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_10.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_10.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_10.mp4: 0.7568
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_11.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_11.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_11.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_11.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_11.mp4: 0.9375
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_12.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_12.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_12.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_12.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_12.mp4: 0.5351
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_13.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_13.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_13.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_13.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_13.mp4: 0.9242
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_14.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_14.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_14.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_14.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_14.mp4: 0.8013
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_15.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_15.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_15.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_15.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_15.mp4: 0.6216
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_16.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_16.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_16.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_16.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_16.mp4: 0.0000
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_17.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_17.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_17.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_17.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_17.mp4: 0.9384
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_18.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_18.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_18.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_18.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_18.mp4: 0.9469
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_19.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_19.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_19.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_19.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_19.mp4: 0.8362
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_20.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_20.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_20.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_20.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_20.mp4: 0.7635
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_21.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_21.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_21.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_21.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_21.mp4: 0.9074
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_22.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_22.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_22.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_22.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_22.mp4: 0.8586
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_23.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_23.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_23.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_23.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_23.mp4: 0.9472
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_24.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_24.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_24.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_24.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_24.mp4: 0.9888
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_25.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_25.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_25.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_25.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_25.mp4: 0.6430
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_26.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_26.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_26.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_26.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_26.mp4: 0.0000
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_27.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_27.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_27.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_27.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_27.mp4: 0.9826
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_28.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_28.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_28.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_28.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_28.mp4: 0.9157
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_29.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_29.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_29.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_29.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_29.mp4: 0.9209
+
+Processing video: /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_30.mp4
+Extracted 49 frames from /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_30.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_30.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_30.mp4.
+Average similarity for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_30.mp4: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_01.mp4:
+  Frame 0 to Frame 1: 0.9580
+  Frame 1 to Frame 2: 0.9831
+  Frame 2 to Frame 3: 0.9413
+  Frame 3 to Frame 4: 0.9734
+  Frame 4 to Frame 5: 0.9706
+  Frame 5 to Frame 6: 0.9661
+  Frame 6 to Frame 7: 0.9500
+  Frame 7 to Frame 8: 0.9698
+  Frame 8 to Frame 9: 0.9648
+  Frame 9 to Frame 10: 0.9678
+  Frame 10 to Frame 11: 0.9650
+  Frame 11 to Frame 12: 0.9819
+  Frame 12 to Frame 13: 0.9772
+  Frame 13 to Frame 14: 0.9739
+  Frame 14 to Frame 15: 0.9845
+  Frame 15 to Frame 16: 0.9861
+  Frame 16 to Frame 17: 0.0000
+  Frame 17 to Frame 18: 0.0000
+  Frame 18 to Frame 19: 0.9752
+  Frame 19 to Frame 20: 0.0000
+  Frame 20 to Frame 21: 0.0000
+  Frame 21 to Frame 22: 0.0000
+  Frame 22 to Frame 23: 0.0000
+  Frame 23 to Frame 24: 0.0000
+  Frame 24 to Frame 25: 0.0000
+  Frame 25 to Frame 26: 0.0000
+  Frame 26 to Frame 27: 0.0000
+  Frame 27 to Frame 28: 0.0000
+  Frame 28 to Frame 29: 0.0000
+  Frame 29 to Frame 30: 0.0000
+  Frame 30 to Frame 31: 0.0000
+  Frame 31 to Frame 32: 0.0000
+  Frame 32 to Frame 33: 0.0000
+  Frame 33 to Frame 34: 0.9693
+  Frame 34 to Frame 35: 0.9715
+  Frame 35 to Frame 36: 0.9638
+  Frame 36 to Frame 37: 0.0000
+  Frame 37 to Frame 38: 0.0000
+  Frame 38 to Frame 39: 0.0000
+  Frame 39 to Frame 40: 0.0000
+  Frame 40 to Frame 41: 0.9687
+  Frame 41 to Frame 42: 0.0000
+  Frame 42 to Frame 43: 0.0000
+  Frame 43 to Frame 44: 0.0000
+  Frame 44 to Frame 45: 0.0000
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.4242
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_02.mp4:
+  Frame 0 to Frame 1: 0.8137
+  Frame 1 to Frame 2: 0.6755
+  Frame 2 to Frame 3: 0.7186
+  Frame 3 to Frame 4: 0.7487
+  Frame 4 to Frame 5: 0.7467
+  Frame 5 to Frame 6: 0.8718
+  Frame 6 to Frame 7: 0.6931
+  Frame 7 to Frame 8: 0.6620
+  Frame 8 to Frame 9: 0.7135
+  Frame 9 to Frame 10: 0.6769
+  Frame 10 to Frame 11: 0.6735
+  Frame 11 to Frame 12: 0.7275
+  Frame 12 to Frame 13: 0.6766
+  Frame 13 to Frame 14: 0.8309
+  Frame 14 to Frame 15: 0.7098
+  Frame 15 to Frame 16: 0.8039
+  Frame 16 to Frame 17: 0.7294
+  Frame 17 to Frame 18: 0.8499
+  Frame 18 to Frame 19: 0.8118
+  Frame 19 to Frame 20: 0.8068
+  Frame 20 to Frame 21: 0.5896
+  Frame 21 to Frame 22: 0.5512
+  Frame 22 to Frame 23: 0.6506
+  Frame 23 to Frame 24: 0.8247
+  Frame 24 to Frame 25: 0.6003
+  Frame 25 to Frame 26: 0.6927
+  Frame 26 to Frame 27: 0.6078
+  Frame 27 to Frame 28: 0.6015
+  Frame 28 to Frame 29: 0.6267
+  Frame 29 to Frame 30: 0.6645
+  Frame 30 to Frame 31: 0.6376
+  Frame 31 to Frame 32: 0.7630
+  Frame 32 to Frame 33: 0.8062
+  Frame 33 to Frame 34: 0.5894
+  Frame 34 to Frame 35: 0.7733
+  Frame 35 to Frame 36: 0.6779
+  Frame 36 to Frame 37: 0.3431
+  Frame 37 to Frame 38: 0.4457
+  Frame 38 to Frame 39: 0.5239
+  Frame 39 to Frame 40: 0.7656
+  Frame 40 to Frame 41: 0.6764
+  Frame 41 to Frame 42: 0.7375
+  Frame 42 to Frame 43: 0.7545
+  Frame 43 to Frame 44: 0.7304
+  Frame 44 to Frame 45: 0.6112
+  Frame 45 to Frame 46: 0.5117
+  Frame 46 to Frame 47: 0.6309
+  Frame 47 to Frame 48: 0.7743
+Average similarity: 0.6896
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_03.mp4:
+  Frame 0 to Frame 1: 0.9326
+  Frame 1 to Frame 2: 0.1975
+  Frame 2 to Frame 3: 0.1868
+  Frame 3 to Frame 4: 0.2217
+  Frame 4 to Frame 5: 0.9278
+  Frame 5 to Frame 6: 0.9766
+  Frame 6 to Frame 7: 0.9751
+  Frame 7 to Frame 8: 0.9829
+  Frame 8 to Frame 9: 0.9794
+  Frame 9 to Frame 10: 0.9779
+  Frame 10 to Frame 11: 0.2693
+  Frame 11 to Frame 12: 0.2725
+  Frame 12 to Frame 13: 0.7640
+  Frame 13 to Frame 14: 0.9466
+  Frame 14 to Frame 15: 0.8972
+  Frame 15 to Frame 16: 0.7789
+  Frame 16 to Frame 17: 0.1816
+  Frame 17 to Frame 18: 0.9188
+  Frame 18 to Frame 19: 0.8797
+  Frame 19 to Frame 20: 0.8717
+  Frame 20 to Frame 21: 0.8246
+  Frame 21 to Frame 22: 0.8616
+  Frame 22 to Frame 23: 0.9211
+  Frame 23 to Frame 24: 0.8982
+  Frame 24 to Frame 25: 0.8609
+  Frame 25 to Frame 26: 0.8811
+  Frame 26 to Frame 27: 0.9216
+  Frame 27 to Frame 28: 0.7901
+  Frame 28 to Frame 29: 0.8402
+  Frame 29 to Frame 30: 0.1431
+  Frame 30 to Frame 31: 0.9591
+  Frame 31 to Frame 32: 0.9867
+  Frame 32 to Frame 33: 0.9701
+  Frame 33 to Frame 34: 0.9502
+  Frame 34 to Frame 35: 0.9518
+  Frame 35 to Frame 36: 0.9618
+  Frame 36 to Frame 37: 0.9441
+  Frame 37 to Frame 38: 0.9437
+  Frame 38 to Frame 39: 0.9298
+  Frame 39 to Frame 40: 0.9683
+  Frame 40 to Frame 41: 0.9369
+  Frame 41 to Frame 42: 0.9487
+  Frame 42 to Frame 43: 0.9539
+  Frame 43 to Frame 44: 0.9554
+  Frame 44 to Frame 45: 0.8581
+  Frame 45 to Frame 46: 0.9290
+  Frame 46 to Frame 47: 0.9712
+  Frame 47 to Frame 48: 0.9724
+Average similarity: 0.8161
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_04.mp4:
+  Frame 0 to Frame 1: 0.9785
+  Frame 1 to Frame 2: 0.6454
+  Frame 2 to Frame 3: 0.7714
+  Frame 3 to Frame 4: 0.9661
+  Frame 4 to Frame 5: 0.8228
+  Frame 5 to Frame 6: 0.9097
+  Frame 6 to Frame 7: 0.9254
+  Frame 7 to Frame 8: 0.1258
+  Frame 8 to Frame 9: 0.1437
+  Frame 9 to Frame 10: 0.9595
+  Frame 10 to Frame 11: 0.9494
+  Frame 11 to Frame 12: 0.9413
+  Frame 12 to Frame 13: 0.8592
+  Frame 13 to Frame 14: 0.7368
+  Frame 14 to Frame 15: 0.7286
+  Frame 15 to Frame 16: 0.9087
+  Frame 16 to Frame 17: 0.8615
+  Frame 17 to Frame 18: 0.8988
+  Frame 18 to Frame 19: 0.9513
+  Frame 19 to Frame 20: 0.9536
+  Frame 20 to Frame 21: 0.9171
+  Frame 21 to Frame 22: 0.9691
+  Frame 22 to Frame 23: 0.9586
+  Frame 23 to Frame 24: 0.9753
+  Frame 24 to Frame 25: 0.9459
+  Frame 25 to Frame 26: 0.9303
+  Frame 26 to Frame 27: 0.9582
+  Frame 27 to Frame 28: 0.9876
+  Frame 28 to Frame 29: 0.9557
+  Frame 29 to Frame 30: 0.9683
+  Frame 30 to Frame 31: 0.9448
+  Frame 31 to Frame 32: 0.9653
+  Frame 32 to Frame 33: 0.9340
+  Frame 33 to Frame 34: 0.9414
+  Frame 34 to Frame 35: 0.9413
+  Frame 35 to Frame 36: 0.9594
+  Frame 36 to Frame 37: 0.1415
+  Frame 37 to Frame 38: 0.9510
+  Frame 38 to Frame 39: 0.9495
+  Frame 39 to Frame 40: 0.9600
+  Frame 40 to Frame 41: 0.8885
+  Frame 41 to Frame 42: 0.9264
+  Frame 42 to Frame 43: 0.1241
+  Frame 43 to Frame 44: 0.1459
+  Frame 44 to Frame 45: 0.9066
+  Frame 45 to Frame 46: 0.1386
+  Frame 46 to Frame 47: 0.9129
+  Frame 47 to Frame 48: 0.1753
+Average similarity: 0.8023
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_05.mp4:
+  Frame 0 to Frame 1: 0.9882
+  Frame 1 to Frame 2: 0.9875
+  Frame 2 to Frame 3: 0.9845
+  Frame 3 to Frame 4: 0.9802
+  Frame 4 to Frame 5: 0.9871
+  Frame 5 to Frame 6: 0.9825
+  Frame 6 to Frame 7: 0.9848
+  Frame 7 to Frame 8: 0.9765
+  Frame 8 to Frame 9: 0.9875
+  Frame 9 to Frame 10: 0.9847
+  Frame 10 to Frame 11: 0.9839
+  Frame 11 to Frame 12: 0.9904
+  Frame 12 to Frame 13: 0.9818
+  Frame 13 to Frame 14: 0.9788
+  Frame 14 to Frame 15: 0.9836
+  Frame 15 to Frame 16: 0.9864
+  Frame 16 to Frame 17: 0.9836
+  Frame 17 to Frame 18: 0.9872
+  Frame 18 to Frame 19: 0.9926
+  Frame 19 to Frame 20: 0.9929
+  Frame 20 to Frame 21: 0.9850
+  Frame 21 to Frame 22: 0.9886
+  Frame 22 to Frame 23: 0.9917
+  Frame 23 to Frame 24: 0.9906
+  Frame 24 to Frame 25: 0.9841
+  Frame 25 to Frame 26: 0.9695
+  Frame 26 to Frame 27: 0.9637
+  Frame 27 to Frame 28: 0.9680
+  Frame 28 to Frame 29: 0.9719
+  Frame 29 to Frame 30: 0.9837
+  Frame 30 to Frame 31: 0.9885
+  Frame 31 to Frame 32: 0.9932
+  Frame 32 to Frame 33: 0.9821
+  Frame 33 to Frame 34: 0.9889
+  Frame 34 to Frame 35: 0.9925
+  Frame 35 to Frame 36: 0.9929
+  Frame 36 to Frame 37: 0.9897
+  Frame 37 to Frame 38: 0.9917
+  Frame 38 to Frame 39: 0.9873
+  Frame 39 to Frame 40: 0.9875
+  Frame 40 to Frame 41: 0.9884
+  Frame 41 to Frame 42: 0.9856
+  Frame 42 to Frame 43: 0.9798
+  Frame 43 to Frame 44: 0.9795
+  Frame 44 to Frame 45: 0.9758
+  Frame 45 to Frame 46: 0.9851
+  Frame 46 to Frame 47: 0.9916
+  Frame 47 to Frame 48: 0.9909
+Average similarity: 0.9848
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_06.mp4:
+  Frame 0 to Frame 1: 0.9620
+  Frame 1 to Frame 2: 0.9666
+  Frame 2 to Frame 3: 0.9784
+  Frame 3 to Frame 4: 0.9817
+  Frame 4 to Frame 5: 0.9625
+  Frame 5 to Frame 6: 0.9604
+  Frame 6 to Frame 7: 0.9876
+  Frame 7 to Frame 8: 0.9916
+  Frame 8 to Frame 9: 0.9872
+  Frame 9 to Frame 10: 0.9896
+  Frame 10 to Frame 11: 0.9865
+  Frame 11 to Frame 12: 0.9931
+  Frame 12 to Frame 13: 0.9884
+  Frame 13 to Frame 14: 0.9813
+  Frame 14 to Frame 15: 0.9924
+  Frame 15 to Frame 16: 0.9950
+  Frame 16 to Frame 17: 0.9957
+  Frame 17 to Frame 18: 0.9916
+  Frame 18 to Frame 19: 0.9816
+  Frame 19 to Frame 20: 0.9758
+  Frame 20 to Frame 21: 0.9781
+  Frame 21 to Frame 22: 0.9240
+  Frame 22 to Frame 23: 0.9613
+  Frame 23 to Frame 24: 0.8763
+  Frame 24 to Frame 25: 0.9315
+  Frame 25 to Frame 26: 0.9856
+  Frame 26 to Frame 27: 0.9852
+  Frame 27 to Frame 28: 0.9831
+  Frame 28 to Frame 29: 0.9769
+  Frame 29 to Frame 30: 0.9795
+  Frame 30 to Frame 31: 0.9782
+  Frame 31 to Frame 32: 0.9611
+  Frame 32 to Frame 33: 0.9803
+  Frame 33 to Frame 34: 0.9218
+  Frame 34 to Frame 35: 0.9441
+  Frame 35 to Frame 36: 0.9643
+  Frame 36 to Frame 37: 0.9499
+  Frame 37 to Frame 38: 0.9110
+  Frame 38 to Frame 39: 0.9123
+  Frame 39 to Frame 40: 0.9420
+  Frame 40 to Frame 41: 0.9004
+  Frame 41 to Frame 42: 0.9169
+  Frame 42 to Frame 43: 0.9697
+  Frame 43 to Frame 44: 0.9911
+  Frame 44 to Frame 45: 0.9790
+  Frame 45 to Frame 46: 0.9542
+  Frame 46 to Frame 47: 0.9202
+  Frame 47 to Frame 48: 0.9671
+Average similarity: 0.9645
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_07.mp4:
+  Frame 0 to Frame 1: 0.9783
+  Frame 1 to Frame 2: 0.9670
+  Frame 2 to Frame 3: 0.9661
+  Frame 3 to Frame 4: 0.8746
+  Frame 4 to Frame 5: -0.0335
+  Frame 5 to Frame 6: 0.9733
+  Frame 6 to Frame 7: 0.9591
+  Frame 7 to Frame 8: 0.0234
+  Frame 8 to Frame 9: 0.9547
+  Frame 9 to Frame 10: 0.9623
+  Frame 10 to Frame 11: 0.9774
+  Frame 11 to Frame 12: 0.9597
+  Frame 12 to Frame 13: 0.0147
+  Frame 13 to Frame 14: 0.0346
+  Frame 14 to Frame 15: 0.9705
+  Frame 15 to Frame 16: 0.9778
+  Frame 16 to Frame 17: 0.9779
+  Frame 17 to Frame 18: 0.0517
+  Frame 18 to Frame 19: 0.9734
+  Frame 19 to Frame 20: 0.0943
+  Frame 20 to Frame 21: 0.9805
+  Frame 21 to Frame 22: 0.9809
+  Frame 22 to Frame 23: 0.9455
+  Frame 23 to Frame 24: 0.9267
+  Frame 24 to Frame 25: 0.8660
+  Frame 25 to Frame 26: 0.9756
+  Frame 26 to Frame 27: 0.9833
+  Frame 27 to Frame 28: 0.9765
+  Frame 28 to Frame 29: 0.9872
+  Frame 29 to Frame 30: 0.9654
+  Frame 30 to Frame 31: 0.9058
+  Frame 31 to Frame 32: 0.9394
+  Frame 32 to Frame 33: 0.9237
+  Frame 33 to Frame 34: 0.9617
+  Frame 34 to Frame 35: 0.9665
+  Frame 35 to Frame 36: 0.9571
+  Frame 36 to Frame 37: 0.9789
+  Frame 37 to Frame 38: 0.9582
+  Frame 38 to Frame 39: 0.9584
+  Frame 39 to Frame 40: 0.9647
+  Frame 40 to Frame 41: 0.7802
+  Frame 41 to Frame 42: 0.0037
+  Frame 42 to Frame 43: -0.0163
+  Frame 43 to Frame 44: 0.0257
+  Frame 44 to Frame 45: 0.0245
+  Frame 45 to Frame 46: 0.0159
+  Frame 46 to Frame 47: 0.9661
+  Frame 47 to Frame 48: 0.9636
+Average similarity: 0.7401
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_08.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+  Frame 15 to Frame 16: 0.0000
+  Frame 16 to Frame 17: 0.0000
+  Frame 17 to Frame 18: 0.0000
+  Frame 18 to Frame 19: 0.0000
+  Frame 19 to Frame 20: 0.0000
+  Frame 20 to Frame 21: 0.0000
+  Frame 21 to Frame 22: 0.0000
+  Frame 22 to Frame 23: 0.0000
+  Frame 23 to Frame 24: 0.0000
+  Frame 24 to Frame 25: 0.0000
+  Frame 25 to Frame 26: 0.0000
+  Frame 26 to Frame 27: 0.0000
+  Frame 27 to Frame 28: 0.0000
+  Frame 28 to Frame 29: 0.0000
+  Frame 29 to Frame 30: 0.0000
+  Frame 30 to Frame 31: 0.0000
+  Frame 31 to Frame 32: 0.0000
+  Frame 32 to Frame 33: 0.0000
+  Frame 33 to Frame 34: 0.0000
+  Frame 34 to Frame 35: 0.0000
+  Frame 35 to Frame 36: 0.0000
+  Frame 36 to Frame 37: 0.0000
+  Frame 37 to Frame 38: 0.0000
+  Frame 38 to Frame 39: 0.0000
+  Frame 39 to Frame 40: 0.0000
+  Frame 40 to Frame 41: 0.0000
+  Frame 41 to Frame 42: 0.0000
+  Frame 42 to Frame 43: 0.0000
+  Frame 43 to Frame 44: 0.0000
+  Frame 44 to Frame 45: 0.0000
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_09.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+  Frame 15 to Frame 16: 0.0000
+  Frame 16 to Frame 17: 0.0000
+  Frame 17 to Frame 18: 0.0000
+  Frame 18 to Frame 19: 0.0000
+  Frame 19 to Frame 20: 0.0000
+  Frame 20 to Frame 21: 0.0000
+  Frame 21 to Frame 22: 0.0000
+  Frame 22 to Frame 23: 0.0000
+  Frame 23 to Frame 24: 0.0000
+  Frame 24 to Frame 25: 0.0000
+  Frame 25 to Frame 26: 0.0000
+  Frame 26 to Frame 27: 0.0000
+  Frame 27 to Frame 28: 0.0000
+  Frame 28 to Frame 29: 0.0000
+  Frame 29 to Frame 30: 0.0000
+  Frame 30 to Frame 31: 0.0000
+  Frame 31 to Frame 32: 0.0000
+  Frame 32 to Frame 33: 0.0000
+  Frame 33 to Frame 34: 0.0000
+  Frame 34 to Frame 35: 0.0000
+  Frame 35 to Frame 36: 0.0000
+  Frame 36 to Frame 37: 0.0000
+  Frame 37 to Frame 38: 0.0000
+  Frame 38 to Frame 39: 0.0000
+  Frame 39 to Frame 40: 0.0000
+  Frame 40 to Frame 41: 0.0000
+  Frame 41 to Frame 42: 0.0000
+  Frame 42 to Frame 43: 0.0000
+  Frame 43 to Frame 44: 0.0000
+  Frame 44 to Frame 45: 0.0000
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_10.mp4:
+  Frame 0 to Frame 1: 0.9353
+  Frame 1 to Frame 2: 0.9299
+  Frame 2 to Frame 3: 0.9554
+  Frame 3 to Frame 4: 0.8472
+  Frame 4 to Frame 5: 0.7880
+  Frame 5 to Frame 6: 0.6492
+  Frame 6 to Frame 7: 0.8873
+  Frame 7 to Frame 8: 0.5845
+  Frame 8 to Frame 9: 0.4786
+  Frame 9 to Frame 10: 0.9207
+  Frame 10 to Frame 11: 0.9165
+  Frame 11 to Frame 12: 0.8714
+  Frame 12 to Frame 13: 0.8005
+  Frame 13 to Frame 14: 0.7184
+  Frame 14 to Frame 15: 0.8425
+  Frame 15 to Frame 16: 0.9324
+  Frame 16 to Frame 17: 0.7034
+  Frame 17 to Frame 18: 0.7353
+  Frame 18 to Frame 19: 0.8854
+  Frame 19 to Frame 20: 0.9378
+  Frame 20 to Frame 21: 0.6496
+  Frame 21 to Frame 22: 0.8902
+  Frame 22 to Frame 23: 0.9348
+  Frame 23 to Frame 24: 0.9251
+  Frame 24 to Frame 25: 0.9341
+  Frame 25 to Frame 26: 0.8341
+  Frame 26 to Frame 27: 0.9133
+  Frame 27 to Frame 28: 0.8810
+  Frame 28 to Frame 29: 0.5181
+  Frame 29 to Frame 30: 0.4208
+  Frame 30 to Frame 31: 0.7376
+  Frame 31 to Frame 32: 0.9345
+  Frame 32 to Frame 33: 0.9086
+  Frame 33 to Frame 34: 0.0872
+  Frame 34 to Frame 35: 0.1193
+  Frame 35 to Frame 36: 0.9373
+  Frame 36 to Frame 37: 0.7119
+  Frame 37 to Frame 38: 0.0521
+  Frame 38 to Frame 39: 0.0299
+  Frame 39 to Frame 40: 0.8705
+  Frame 40 to Frame 41: 0.6516
+  Frame 41 to Frame 42: 0.5806
+  Frame 42 to Frame 43: 0.9200
+  Frame 43 to Frame 44: 0.9323
+  Frame 44 to Frame 45: 0.8687
+  Frame 45 to Frame 46: 0.9417
+  Frame 46 to Frame 47: 0.9145
+  Frame 47 to Frame 48: 0.9090
+Average similarity: 0.7568
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_11.mp4:
+  Frame 0 to Frame 1: 0.9750
+  Frame 1 to Frame 2: 0.9676
+  Frame 2 to Frame 3: 0.9608
+  Frame 3 to Frame 4: 0.9629
+  Frame 4 to Frame 5: 0.9127
+  Frame 5 to Frame 6: 0.9525
+  Frame 6 to Frame 7: 0.9829
+  Frame 7 to Frame 8: 0.9822
+  Frame 8 to Frame 9: 0.9742
+  Frame 9 to Frame 10: 0.9655
+  Frame 10 to Frame 11: 0.9777
+  Frame 11 to Frame 12: 0.9841
+  Frame 12 to Frame 13: 0.9610
+  Frame 13 to Frame 14: 0.9289
+  Frame 14 to Frame 15: 0.9185
+  Frame 15 to Frame 16: 0.9581
+  Frame 16 to Frame 17: 0.9604
+  Frame 17 to Frame 18: 0.9172
+  Frame 18 to Frame 19: 0.9316
+  Frame 19 to Frame 20: 0.9564
+  Frame 20 to Frame 21: 0.9782
+  Frame 21 to Frame 22: 0.9744
+  Frame 22 to Frame 23: 0.9570
+  Frame 23 to Frame 24: 0.9507
+  Frame 24 to Frame 25: 0.9379
+  Frame 25 to Frame 26: 0.9645
+  Frame 26 to Frame 27: 0.9710
+  Frame 27 to Frame 28: 0.9642
+  Frame 28 to Frame 29: 0.9690
+  Frame 29 to Frame 30: 0.9607
+  Frame 30 to Frame 31: 0.9615
+  Frame 31 to Frame 32: 0.9425
+  Frame 32 to Frame 33: 0.9169
+  Frame 33 to Frame 34: 0.9838
+  Frame 34 to Frame 35: 0.9853
+  Frame 35 to Frame 36: 0.9425
+  Frame 36 to Frame 37: 0.9263
+  Frame 37 to Frame 38: 0.8093
+  Frame 38 to Frame 39: 0.7501
+  Frame 39 to Frame 40: 0.6797
+  Frame 40 to Frame 41: 0.8585
+  Frame 41 to Frame 42: 0.8418
+  Frame 42 to Frame 43: 0.8690
+  Frame 43 to Frame 44: 0.9318
+  Frame 44 to Frame 45: 0.8996
+  Frame 45 to Frame 46: 0.9779
+  Frame 46 to Frame 47: 0.9853
+  Frame 47 to Frame 48: 0.9783
+Average similarity: 0.9375
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_12.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.9831
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.9667
+  Frame 8 to Frame 9: 0.9379
+  Frame 9 to Frame 10: 0.9361
+  Frame 10 to Frame 11: 0.9689
+  Frame 11 to Frame 12: 0.9561
+  Frame 12 to Frame 13: 0.9304
+  Frame 13 to Frame 14: 0.9464
+  Frame 14 to Frame 15: 0.0000
+  Frame 15 to Frame 16: 0.0000
+  Frame 16 to Frame 17: 0.9124
+  Frame 17 to Frame 18: 0.9820
+  Frame 18 to Frame 19: 0.9648
+  Frame 19 to Frame 20: 0.9788
+  Frame 20 to Frame 21: 0.9500
+  Frame 21 to Frame 22: 0.9508
+  Frame 22 to Frame 23: 0.9782
+  Frame 23 to Frame 24: 0.9543
+  Frame 24 to Frame 25: 0.9445
+  Frame 25 to Frame 26: 0.9781
+  Frame 26 to Frame 27: 0.9442
+  Frame 27 to Frame 28: 0.9003
+  Frame 28 to Frame 29: 0.9483
+  Frame 29 to Frame 30: 0.9835
+  Frame 30 to Frame 31: 0.9671
+  Frame 31 to Frame 32: 0.9243
+  Frame 32 to Frame 33: 0.9640
+  Frame 33 to Frame 34: 0.0000
+  Frame 34 to Frame 35: 0.0000
+  Frame 35 to Frame 36: 0.0000
+  Frame 36 to Frame 37: 0.0000
+  Frame 37 to Frame 38: 0.0000
+  Frame 38 to Frame 39: 0.0000
+  Frame 39 to Frame 40: 0.0000
+  Frame 40 to Frame 41: 0.0000
+  Frame 41 to Frame 42: 0.0000
+  Frame 42 to Frame 43: 0.0000
+  Frame 43 to Frame 44: 0.8615
+  Frame 44 to Frame 45: 0.9721
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.5351
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_13.mp4:
+  Frame 0 to Frame 1: 0.9418
+  Frame 1 to Frame 2: 0.9140
+  Frame 2 to Frame 3: 0.9413
+  Frame 3 to Frame 4: 0.9794
+  Frame 4 to Frame 5: 0.9553
+  Frame 5 to Frame 6: 0.9825
+  Frame 6 to Frame 7: 0.9792
+  Frame 7 to Frame 8: 0.9589
+  Frame 8 to Frame 9: 0.9560
+  Frame 9 to Frame 10: 0.9537
+  Frame 10 to Frame 11: 0.9728
+  Frame 11 to Frame 12: 0.9452
+  Frame 12 to Frame 13: 0.9222
+  Frame 13 to Frame 14: 0.9200
+  Frame 14 to Frame 15: 0.9213
+  Frame 15 to Frame 16: 0.9432
+  Frame 16 to Frame 17: 0.9544
+  Frame 17 to Frame 18: 0.9204
+  Frame 18 to Frame 19: 0.7982
+  Frame 19 to Frame 20: 0.9064
+  Frame 20 to Frame 21: 0.8731
+  Frame 21 to Frame 22: 0.8798
+  Frame 22 to Frame 23: 0.8228
+  Frame 23 to Frame 24: 0.8377
+  Frame 24 to Frame 25: 0.8790
+  Frame 25 to Frame 26: 0.9397
+  Frame 26 to Frame 27: 0.9417
+  Frame 27 to Frame 28: 0.9201
+  Frame 28 to Frame 29: 0.9127
+  Frame 29 to Frame 30: 0.8696
+  Frame 30 to Frame 31: 0.9249
+  Frame 31 to Frame 32: 0.9308
+  Frame 32 to Frame 33: 0.9045
+  Frame 33 to Frame 34: 0.9548
+  Frame 34 to Frame 35: 0.9617
+  Frame 35 to Frame 36: 0.9697
+  Frame 36 to Frame 37: 0.9358
+  Frame 37 to Frame 38: 0.9245
+  Frame 38 to Frame 39: 0.8985
+  Frame 39 to Frame 40: 0.9375
+  Frame 40 to Frame 41: 0.8756
+  Frame 41 to Frame 42: 0.8808
+  Frame 42 to Frame 43: 0.9199
+  Frame 43 to Frame 44: 0.9174
+  Frame 44 to Frame 45: 0.9016
+  Frame 45 to Frame 46: 0.9588
+  Frame 46 to Frame 47: 0.9748
+  Frame 47 to Frame 48: 0.9482
+Average similarity: 0.9242
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_14.mp4:
+  Frame 0 to Frame 1: 0.8520
+  Frame 1 to Frame 2: 0.6147
+  Frame 2 to Frame 3: 0.7753
+  Frame 3 to Frame 4: 0.9256
+  Frame 4 to Frame 5: 0.8644
+  Frame 5 to Frame 6: 0.7811
+  Frame 6 to Frame 7: 0.9281
+  Frame 7 to Frame 8: 0.8955
+  Frame 8 to Frame 9: 0.7978
+  Frame 9 to Frame 10: 0.6380
+  Frame 10 to Frame 11: 0.9167
+  Frame 11 to Frame 12: 0.7983
+  Frame 12 to Frame 13: 0.7838
+  Frame 13 to Frame 14: 0.7263
+  Frame 14 to Frame 15: 0.9018
+  Frame 15 to Frame 16: 0.7577
+  Frame 16 to Frame 17: 0.6770
+  Frame 17 to Frame 18: 0.7208
+  Frame 18 to Frame 19: 0.8296
+  Frame 19 to Frame 20: 0.8793
+  Frame 20 to Frame 21: 0.7395
+  Frame 21 to Frame 22: 0.7644
+  Frame 22 to Frame 23: 0.8124
+  Frame 23 to Frame 24: 0.8512
+  Frame 24 to Frame 25: 0.8015
+  Frame 25 to Frame 26: 0.7916
+  Frame 26 to Frame 27: 0.8199
+  Frame 27 to Frame 28: 0.8466
+  Frame 28 to Frame 29: 0.8005
+  Frame 29 to Frame 30: 0.8273
+  Frame 30 to Frame 31: 0.7922
+  Frame 31 to Frame 32: 0.9350
+  Frame 32 to Frame 33: 0.8105
+  Frame 33 to Frame 34: 0.8780
+  Frame 34 to Frame 35: 0.8802
+  Frame 35 to Frame 36: 0.8660
+  Frame 36 to Frame 37: 0.7385
+  Frame 37 to Frame 38: 0.6425
+  Frame 38 to Frame 39: 0.9333
+  Frame 39 to Frame 40: 0.9512
+  Frame 40 to Frame 41: 0.9584
+  Frame 41 to Frame 42: 0.9148
+  Frame 42 to Frame 43: 0.7511
+  Frame 43 to Frame 44: 0.7743
+  Frame 44 to Frame 45: 0.4380
+  Frame 45 to Frame 46: 0.5570
+  Frame 46 to Frame 47: 0.8371
+  Frame 47 to Frame 48: 0.6859
+Average similarity: 0.8013
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_15.mp4:
+  Frame 0 to Frame 1: -0.0246
+  Frame 1 to Frame 2: 0.9509
+  Frame 2 to Frame 3: -0.0233
+  Frame 3 to Frame 4: 0.9824
+  Frame 4 to Frame 5: 0.0149
+  Frame 5 to Frame 6: 0.8799
+  Frame 6 to Frame 7: 0.0031
+  Frame 7 to Frame 8: 0.1348
+  Frame 8 to Frame 9: 0.1015
+  Frame 9 to Frame 10: 0.0832
+  Frame 10 to Frame 11: 0.4247
+  Frame 11 to Frame 12: 0.0284
+  Frame 12 to Frame 13: 0.9305
+  Frame 13 to Frame 14: 0.9556
+  Frame 14 to Frame 15: 0.8971
+  Frame 15 to Frame 16: 0.0418
+  Frame 16 to Frame 17: 0.1156
+  Frame 17 to Frame 18: 0.1366
+  Frame 18 to Frame 19: 0.1655
+  Frame 19 to Frame 20: 0.9685
+  Frame 20 to Frame 21: 0.1354
+  Frame 21 to Frame 22: 0.0801
+  Frame 22 to Frame 23: 0.9031
+  Frame 23 to Frame 24: 0.8982
+  Frame 24 to Frame 25: 0.9294
+  Frame 25 to Frame 26: 0.8229
+  Frame 26 to Frame 27: 0.7925
+  Frame 27 to Frame 28: 0.8176
+  Frame 28 to Frame 29: 0.1060
+  Frame 29 to Frame 30: 0.8808
+  Frame 30 to Frame 31: 0.9746
+  Frame 31 to Frame 32: 0.9850
+  Frame 32 to Frame 33: 0.9349
+  Frame 33 to Frame 34: 0.9499
+  Frame 34 to Frame 35: 0.9505
+  Frame 35 to Frame 36: 0.9717
+  Frame 36 to Frame 37: 0.9572
+  Frame 37 to Frame 38: 0.9205
+  Frame 38 to Frame 39: 0.9454
+  Frame 39 to Frame 40: 0.9481
+  Frame 40 to Frame 41: 0.8302
+  Frame 41 to Frame 42: 0.9259
+  Frame 42 to Frame 43: 0.9801
+  Frame 43 to Frame 44: 0.9573
+  Frame 44 to Frame 45: 0.9429
+  Frame 45 to Frame 46: 0.6325
+  Frame 46 to Frame 47: 0.7216
+  Frame 47 to Frame 48: 0.1735
+Average similarity: 0.6216
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_16.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+  Frame 15 to Frame 16: 0.0000
+  Frame 16 to Frame 17: 0.0000
+  Frame 17 to Frame 18: 0.0000
+  Frame 18 to Frame 19: 0.0000
+  Frame 19 to Frame 20: 0.0000
+  Frame 20 to Frame 21: 0.0000
+  Frame 21 to Frame 22: 0.0000
+  Frame 22 to Frame 23: 0.0000
+  Frame 23 to Frame 24: 0.0000
+  Frame 24 to Frame 25: 0.0000
+  Frame 25 to Frame 26: 0.0000
+  Frame 26 to Frame 27: 0.0000
+  Frame 27 to Frame 28: 0.0000
+  Frame 28 to Frame 29: 0.0000
+  Frame 29 to Frame 30: 0.0000
+  Frame 30 to Frame 31: 0.0000
+  Frame 31 to Frame 32: 0.0000
+  Frame 32 to Frame 33: 0.0000
+  Frame 33 to Frame 34: 0.0000
+  Frame 34 to Frame 35: 0.0000
+  Frame 35 to Frame 36: 0.0000
+  Frame 36 to Frame 37: 0.0000
+  Frame 37 to Frame 38: 0.0000
+  Frame 38 to Frame 39: 0.0000
+  Frame 39 to Frame 40: 0.0000
+  Frame 40 to Frame 41: 0.0000
+  Frame 41 to Frame 42: 0.0000
+  Frame 42 to Frame 43: 0.0000
+  Frame 43 to Frame 44: 0.0000
+  Frame 44 to Frame 45: 0.0000
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_17.mp4:
+  Frame 0 to Frame 1: 0.8925
+  Frame 1 to Frame 2: 0.9083
+  Frame 2 to Frame 3: 0.9486
+  Frame 3 to Frame 4: 0.9530
+  Frame 4 to Frame 5: 0.9647
+  Frame 5 to Frame 6: 0.9704
+  Frame 6 to Frame 7: 0.9758
+  Frame 7 to Frame 8: 0.9609
+  Frame 8 to Frame 9: 0.9829
+  Frame 9 to Frame 10: 0.9724
+  Frame 10 to Frame 11: 0.9608
+  Frame 11 to Frame 12: 0.9555
+  Frame 12 to Frame 13: 0.9568
+  Frame 13 to Frame 14: 0.9638
+  Frame 14 to Frame 15: 0.9319
+  Frame 15 to Frame 16: 0.9473
+  Frame 16 to Frame 17: 0.9444
+  Frame 17 to Frame 18: 0.8816
+  Frame 18 to Frame 19: 0.9462
+  Frame 19 to Frame 20: 0.9112
+  Frame 20 to Frame 21: 0.9437
+  Frame 21 to Frame 22: 0.9322
+  Frame 22 to Frame 23: 0.8765
+  Frame 23 to Frame 24: 0.9410
+  Frame 24 to Frame 25: 0.8655
+  Frame 25 to Frame 26: 0.9607
+  Frame 26 to Frame 27: 0.9733
+  Frame 27 to Frame 28: 0.9642
+  Frame 28 to Frame 29: 0.9741
+  Frame 29 to Frame 30: 0.9597
+  Frame 30 to Frame 31: 0.9669
+  Frame 31 to Frame 32: 0.9503
+  Frame 32 to Frame 33: 0.8658
+  Frame 33 to Frame 34: 0.8475
+  Frame 34 to Frame 35: 0.9125
+  Frame 35 to Frame 36: 0.9383
+  Frame 36 to Frame 37: 0.9590
+  Frame 37 to Frame 38: 0.8862
+  Frame 38 to Frame 39: 0.8955
+  Frame 39 to Frame 40: 0.9534
+  Frame 40 to Frame 41: 0.8562
+  Frame 41 to Frame 42: 0.8937
+  Frame 42 to Frame 43: 0.9787
+  Frame 43 to Frame 44: 0.9576
+  Frame 44 to Frame 45: 0.9308
+  Frame 45 to Frame 46: 0.9612
+  Frame 46 to Frame 47: 0.9828
+  Frame 47 to Frame 48: 0.9869
+Average similarity: 0.9384
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_18.mp4:
+  Frame 0 to Frame 1: 0.9616
+  Frame 1 to Frame 2: 0.9510
+  Frame 2 to Frame 3: 0.9661
+  Frame 3 to Frame 4: 0.9671
+  Frame 4 to Frame 5: 0.9517
+  Frame 5 to Frame 6: 0.9581
+  Frame 6 to Frame 7: 0.9580
+  Frame 7 to Frame 8: 0.9613
+  Frame 8 to Frame 9: 0.9569
+  Frame 9 to Frame 10: 0.9816
+  Frame 10 to Frame 11: 0.9717
+  Frame 11 to Frame 12: 0.9732
+  Frame 12 to Frame 13: 0.9583
+  Frame 13 to Frame 14: 0.9644
+  Frame 14 to Frame 15: 0.9718
+  Frame 15 to Frame 16: 0.9586
+  Frame 16 to Frame 17: 0.9625
+  Frame 17 to Frame 18: 0.9824
+  Frame 18 to Frame 19: 0.9720
+  Frame 19 to Frame 20: 0.9813
+  Frame 20 to Frame 21: 0.9587
+  Frame 21 to Frame 22: 0.9637
+  Frame 22 to Frame 23: 0.9562
+  Frame 23 to Frame 24: 0.9803
+  Frame 24 to Frame 25: 0.9514
+  Frame 25 to Frame 26: 0.9152
+  Frame 26 to Frame 27: 0.9390
+  Frame 27 to Frame 28: 0.9044
+  Frame 28 to Frame 29: 0.8834
+  Frame 29 to Frame 30: 0.8905
+  Frame 30 to Frame 31: 0.9427
+  Frame 31 to Frame 32: 0.9667
+  Frame 32 to Frame 33: 0.9680
+  Frame 33 to Frame 34: 0.9531
+  Frame 34 to Frame 35: 0.9668
+  Frame 35 to Frame 36: 0.9602
+  Frame 36 to Frame 37: 0.9098
+  Frame 37 to Frame 38: 0.9009
+  Frame 38 to Frame 39: 0.8746
+  Frame 39 to Frame 40: 0.8625
+  Frame 40 to Frame 41: 0.8945
+  Frame 41 to Frame 42: 0.9014
+  Frame 42 to Frame 43: 0.9701
+  Frame 43 to Frame 44: 0.9748
+  Frame 44 to Frame 45: 0.9605
+  Frame 45 to Frame 46: 0.9298
+  Frame 46 to Frame 47: 0.9507
+  Frame 47 to Frame 48: 0.9135
+Average similarity: 0.9469
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_19.mp4:
+  Frame 0 to Frame 1: 0.5834
+  Frame 1 to Frame 2: 0.6962
+  Frame 2 to Frame 3: 0.9409
+  Frame 3 to Frame 4: 0.9573
+  Frame 4 to Frame 5: 0.9458
+  Frame 5 to Frame 6: 0.6574
+  Frame 6 to Frame 7: 0.7972
+  Frame 7 to Frame 8: 0.9568
+  Frame 8 to Frame 9: 0.7482
+  Frame 9 to Frame 10: 0.6200
+  Frame 10 to Frame 11: 0.9301
+  Frame 11 to Frame 12: 0.9630
+  Frame 12 to Frame 13: 0.9654
+  Frame 13 to Frame 14: 0.6459
+  Frame 14 to Frame 15: 0.6228
+  Frame 15 to Frame 16: 0.8727
+  Frame 16 to Frame 17: 0.7254
+  Frame 17 to Frame 18: 0.9568
+  Frame 18 to Frame 19: 0.9114
+  Frame 19 to Frame 20: 0.7978
+  Frame 20 to Frame 21: 0.7845
+  Frame 21 to Frame 22: 0.6272
+  Frame 22 to Frame 23: 0.8916
+  Frame 23 to Frame 24: 0.9141
+  Frame 24 to Frame 25: 0.9113
+  Frame 25 to Frame 26: 0.8161
+  Frame 26 to Frame 27: 0.7936
+  Frame 27 to Frame 28: 0.8330
+  Frame 28 to Frame 29: 0.7843
+  Frame 29 to Frame 30: 0.5626
+  Frame 30 to Frame 31: 0.8843
+  Frame 31 to Frame 32: 0.9420
+  Frame 32 to Frame 33: 0.8203
+  Frame 33 to Frame 34: 0.9519
+  Frame 34 to Frame 35: 0.9789
+  Frame 35 to Frame 36: 0.9474
+  Frame 36 to Frame 37: 0.9166
+  Frame 37 to Frame 38: 0.9314
+  Frame 38 to Frame 39: 0.9644
+  Frame 39 to Frame 40: 0.9008
+  Frame 40 to Frame 41: 0.5033
+  Frame 41 to Frame 42: 0.6581
+  Frame 42 to Frame 43: 0.8732
+  Frame 43 to Frame 44: 0.9367
+  Frame 44 to Frame 45: 0.8227
+  Frame 45 to Frame 46: 0.9752
+  Frame 46 to Frame 47: 0.9797
+  Frame 47 to Frame 48: 0.9390
+Average similarity: 0.8362
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_20.mp4:
+  Frame 0 to Frame 1: 0.9462
+  Frame 1 to Frame 2: 0.9306
+  Frame 2 to Frame 3: 0.9533
+  Frame 3 to Frame 4: 0.1810
+  Frame 4 to Frame 5: 0.8812
+  Frame 5 to Frame 6: 0.9524
+  Frame 6 to Frame 7: 0.9617
+  Frame 7 to Frame 8: 0.2256
+  Frame 8 to Frame 9: 0.9349
+  Frame 9 to Frame 10: 0.8232
+  Frame 10 to Frame 11: 0.8746
+  Frame 11 to Frame 12: 0.9117
+  Frame 12 to Frame 13: 0.9456
+  Frame 13 to Frame 14: 0.8446
+  Frame 14 to Frame 15: 0.8392
+  Frame 15 to Frame 16: 0.9371
+  Frame 16 to Frame 17: 0.7511
+  Frame 17 to Frame 18: 0.9261
+  Frame 18 to Frame 19: 0.9563
+  Frame 19 to Frame 20: 0.9718
+  Frame 20 to Frame 21: 0.9365
+  Frame 21 to Frame 22: 0.9639
+  Frame 22 to Frame 23: 0.9227
+  Frame 23 to Frame 24: 0.8921
+  Frame 24 to Frame 25: 0.1501
+  Frame 25 to Frame 26: 0.9328
+  Frame 26 to Frame 27: 0.9577
+  Frame 27 to Frame 28: 0.9249
+  Frame 28 to Frame 29: 0.1012
+  Frame 29 to Frame 30: 0.1171
+  Frame 30 to Frame 31: 0.9111
+  Frame 31 to Frame 32: 0.9749
+  Frame 32 to Frame 33: 0.9489
+  Frame 33 to Frame 34: 0.1288
+  Frame 34 to Frame 35: 0.0883
+  Frame 35 to Frame 36: 0.8176
+  Frame 36 to Frame 37: 0.0872
+  Frame 37 to Frame 38: 0.8344
+  Frame 38 to Frame 39: 0.1182
+  Frame 39 to Frame 40: 0.9242
+  Frame 40 to Frame 41: 0.7560
+  Frame 41 to Frame 42: 0.8372
+  Frame 42 to Frame 43: 0.8757
+  Frame 43 to Frame 44: 0.9006
+  Frame 44 to Frame 45: 0.9071
+  Frame 45 to Frame 46: 0.9593
+  Frame 46 to Frame 47: 0.9672
+  Frame 47 to Frame 48: 0.9644
+Average similarity: 0.7635
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_21.mp4:
+  Frame 0 to Frame 1: 0.9697
+  Frame 1 to Frame 2: 0.9847
+  Frame 2 to Frame 3: 0.9859
+  Frame 3 to Frame 4: 0.9800
+  Frame 4 to Frame 5: 0.9750
+  Frame 5 to Frame 6: 0.9796
+  Frame 6 to Frame 7: 0.9774
+  Frame 7 to Frame 8: 0.9806
+  Frame 8 to Frame 9: 0.8459
+  Frame 9 to Frame 10: 0.5123
+  Frame 10 to Frame 11: 0.6904
+  Frame 11 to Frame 12: 0.8727
+  Frame 12 to Frame 13: 0.7451
+  Frame 13 to Frame 14: 0.9568
+  Frame 14 to Frame 15: 0.9303
+  Frame 15 to Frame 16: 0.9547
+  Frame 16 to Frame 17: 0.9738
+  Frame 17 to Frame 18: 0.8856
+  Frame 18 to Frame 19: 0.8887
+  Frame 19 to Frame 20: 0.7529
+  Frame 20 to Frame 21: 0.8137
+  Frame 21 to Frame 22: 0.8096
+  Frame 22 to Frame 23: 0.7791
+  Frame 23 to Frame 24: 0.8583
+  Frame 24 to Frame 25: 0.7636
+  Frame 25 to Frame 26: 0.8980
+  Frame 26 to Frame 27: 0.9496
+  Frame 27 to Frame 28: 0.9620
+  Frame 28 to Frame 29: 0.8093
+  Frame 29 to Frame 30: 0.9316
+  Frame 30 to Frame 31: 0.9685
+  Frame 31 to Frame 32: 0.9644
+  Frame 32 to Frame 33: 0.9178
+  Frame 33 to Frame 34: 0.9559
+  Frame 34 to Frame 35: 0.9412
+  Frame 35 to Frame 36: 0.9809
+  Frame 36 to Frame 37: 0.9275
+  Frame 37 to Frame 38: 0.9138
+  Frame 38 to Frame 39: 0.9697
+  Frame 39 to Frame 40: 0.9761
+  Frame 40 to Frame 41: 0.9315
+  Frame 41 to Frame 42: 0.8665
+  Frame 42 to Frame 43: 0.9585
+  Frame 43 to Frame 44: 0.9796
+  Frame 44 to Frame 45: 0.9845
+  Frame 45 to Frame 46: 0.9626
+  Frame 46 to Frame 47: 0.9608
+  Frame 47 to Frame 48: 0.9790
+Average similarity: 0.9074
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_22.mp4:
+  Frame 0 to Frame 1: 0.8748
+  Frame 1 to Frame 2: 0.8955
+  Frame 2 to Frame 3: 0.9548
+  Frame 3 to Frame 4: 0.9549
+  Frame 4 to Frame 5: 0.8936
+  Frame 5 to Frame 6: 0.8069
+  Frame 6 to Frame 7: 0.8057
+  Frame 7 to Frame 8: 0.8443
+  Frame 8 to Frame 9: 0.7444
+  Frame 9 to Frame 10: 0.8247
+  Frame 10 to Frame 11: 0.8053
+  Frame 11 to Frame 12: 0.7481
+  Frame 12 to Frame 13: 0.7725
+  Frame 13 to Frame 14: 0.8489
+  Frame 14 to Frame 15: 0.8763
+  Frame 15 to Frame 16: 0.8831
+  Frame 16 to Frame 17: 0.8781
+  Frame 17 to Frame 18: 0.8812
+  Frame 18 to Frame 19: 0.8513
+  Frame 19 to Frame 20: 0.9142
+  Frame 20 to Frame 21: 0.8350
+  Frame 21 to Frame 22: 0.9747
+  Frame 22 to Frame 23: 0.9658
+  Frame 23 to Frame 24: 0.8999
+  Frame 24 to Frame 25: 0.8492
+  Frame 25 to Frame 26: 0.9055
+  Frame 26 to Frame 27: 0.9048
+  Frame 27 to Frame 28: 0.9322
+  Frame 28 to Frame 29: 0.9102
+  Frame 29 to Frame 30: 0.8908
+  Frame 30 to Frame 31: 0.8892
+  Frame 31 to Frame 32: 0.8662
+  Frame 32 to Frame 33: 0.8601
+  Frame 33 to Frame 34: 0.7653
+  Frame 34 to Frame 35: 0.8380
+  Frame 35 to Frame 36: 0.8793
+  Frame 36 to Frame 37: 0.7825
+  Frame 37 to Frame 38: 0.7503
+  Frame 38 to Frame 39: 0.8461
+  Frame 39 to Frame 40: 0.8883
+  Frame 40 to Frame 41: 0.8681
+  Frame 41 to Frame 42: 0.8705
+  Frame 42 to Frame 43: 0.9224
+  Frame 43 to Frame 44: 0.8592
+  Frame 44 to Frame 45: 0.8343
+  Frame 45 to Frame 46: 0.7799
+  Frame 46 to Frame 47: 0.8225
+  Frame 47 to Frame 48: 0.7643
+Average similarity: 0.8586
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_23.mp4:
+  Frame 0 to Frame 1: 0.9709
+  Frame 1 to Frame 2: 0.9529
+  Frame 2 to Frame 3: 0.9746
+  Frame 3 to Frame 4: 0.9618
+  Frame 4 to Frame 5: 0.9598
+  Frame 5 to Frame 6: 0.9733
+  Frame 6 to Frame 7: 0.9568
+  Frame 7 to Frame 8: 0.9628
+  Frame 8 to Frame 9: 0.9682
+  Frame 9 to Frame 10: 0.9477
+  Frame 10 to Frame 11: 0.9045
+  Frame 11 to Frame 12: 0.8972
+  Frame 12 to Frame 13: 0.8613
+  Frame 13 to Frame 14: 0.9191
+  Frame 14 to Frame 15: 0.8840
+  Frame 15 to Frame 16: 0.9058
+  Frame 16 to Frame 17: 0.8929
+  Frame 17 to Frame 18: 0.9597
+  Frame 18 to Frame 19: 0.9449
+  Frame 19 to Frame 20: 0.9665
+  Frame 20 to Frame 21: 0.9644
+  Frame 21 to Frame 22: 0.9629
+  Frame 22 to Frame 23: 0.9545
+  Frame 23 to Frame 24: 0.9194
+  Frame 24 to Frame 25: 0.8512
+  Frame 25 to Frame 26: 0.9699
+  Frame 26 to Frame 27: 0.9873
+  Frame 27 to Frame 28: 0.9498
+  Frame 28 to Frame 29: 0.9479
+  Frame 29 to Frame 30: 0.9658
+  Frame 30 to Frame 31: 0.9624
+  Frame 31 to Frame 32: 0.9509
+  Frame 32 to Frame 33: 0.9566
+  Frame 33 to Frame 34: 0.9599
+  Frame 34 to Frame 35: 0.9492
+  Frame 35 to Frame 36: 0.9707
+  Frame 36 to Frame 37: 0.9720
+  Frame 37 to Frame 38: 0.9613
+  Frame 38 to Frame 39: 0.9775
+  Frame 39 to Frame 40: 0.9780
+  Frame 40 to Frame 41: 0.9652
+  Frame 41 to Frame 42: 0.9520
+  Frame 42 to Frame 43: 0.9548
+  Frame 43 to Frame 44: 0.9286
+  Frame 44 to Frame 45: 0.9459
+  Frame 45 to Frame 46: 0.9658
+  Frame 46 to Frame 47: 0.9765
+  Frame 47 to Frame 48: 0.9014
+Average similarity: 0.9472
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_24.mp4:
+  Frame 0 to Frame 1: 0.9854
+  Frame 1 to Frame 2: 0.9685
+  Frame 2 to Frame 3: 0.9794
+  Frame 3 to Frame 4: 0.9884
+  Frame 4 to Frame 5: 0.9702
+  Frame 5 to Frame 6: 0.9788
+  Frame 6 to Frame 7: 0.9867
+  Frame 7 to Frame 8: 0.9904
+  Frame 8 to Frame 9: 0.9853
+  Frame 9 to Frame 10: 0.9935
+  Frame 10 to Frame 11: 0.9876
+  Frame 11 to Frame 12: 0.9950
+  Frame 12 to Frame 13: 0.9911
+  Frame 13 to Frame 14: 0.9936
+  Frame 14 to Frame 15: 0.9952
+  Frame 15 to Frame 16: 0.9958
+  Frame 16 to Frame 17: 0.9921
+  Frame 17 to Frame 18: 0.9744
+  Frame 18 to Frame 19: 0.9705
+  Frame 19 to Frame 20: 0.9918
+  Frame 20 to Frame 21: 0.9933
+  Frame 21 to Frame 22: 0.9925
+  Frame 22 to Frame 23: 0.9660
+  Frame 23 to Frame 24: 0.9835
+  Frame 24 to Frame 25: 0.9817
+  Frame 25 to Frame 26: 0.9932
+  Frame 26 to Frame 27: 0.9964
+  Frame 27 to Frame 28: 0.9960
+  Frame 28 to Frame 29: 0.9942
+  Frame 29 to Frame 30: 0.9857
+  Frame 30 to Frame 31: 0.9982
+  Frame 31 to Frame 32: 0.9922
+  Frame 32 to Frame 33: 0.9933
+  Frame 33 to Frame 34: 0.9919
+  Frame 34 to Frame 35: 0.9929
+  Frame 35 to Frame 36: 0.9950
+  Frame 36 to Frame 37: 0.9941
+  Frame 37 to Frame 38: 0.9923
+  Frame 38 to Frame 39: 0.9932
+  Frame 39 to Frame 40: 0.9964
+  Frame 40 to Frame 41: 0.9799
+  Frame 41 to Frame 42: 0.9803
+  Frame 42 to Frame 43: 0.9926
+  Frame 43 to Frame 44: 0.9966
+  Frame 44 to Frame 45: 0.9949
+  Frame 45 to Frame 46: 0.9943
+  Frame 46 to Frame 47: 0.9949
+  Frame 47 to Frame 48: 0.9941
+Average similarity: 0.9888
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_25.mp4:
+  Frame 0 to Frame 1: 0.9204
+  Frame 1 to Frame 2: 0.8786
+  Frame 2 to Frame 3: 0.9038
+  Frame 3 to Frame 4: 0.9416
+  Frame 4 to Frame 5: 0.9139
+  Frame 5 to Frame 6: 0.9725
+  Frame 6 to Frame 7: 0.8810
+  Frame 7 to Frame 8: 0.6008
+  Frame 8 to Frame 9: 0.6082
+  Frame 9 to Frame 10: 0.1711
+  Frame 10 to Frame 11: 0.8714
+  Frame 11 to Frame 12: 0.6246
+  Frame 12 to Frame 13: 0.8417
+  Frame 13 to Frame 14: 0.1522
+  Frame 14 to Frame 15: 0.2015
+  Frame 15 to Frame 16: 0.6358
+  Frame 16 to Frame 17: 0.1759
+  Frame 17 to Frame 18: 0.8656
+  Frame 18 to Frame 19: 0.7305
+  Frame 19 to Frame 20: 0.2536
+  Frame 20 to Frame 21: 0.9030
+  Frame 21 to Frame 22: 0.2347
+  Frame 22 to Frame 23: 0.9209
+  Frame 23 to Frame 24: 0.1655
+  Frame 24 to Frame 25: 0.9471
+  Frame 25 to Frame 26: 0.8820
+  Frame 26 to Frame 27: 0.1977
+  Frame 27 to Frame 28: 0.7123
+  Frame 28 to Frame 29: 0.1727
+  Frame 29 to Frame 30: 0.9820
+  Frame 30 to Frame 31: 0.9806
+  Frame 31 to Frame 32: 0.9127
+  Frame 32 to Frame 33: 0.6699
+  Frame 33 to Frame 34: 0.8520
+  Frame 34 to Frame 35: 0.1619
+  Frame 35 to Frame 36: 0.7059
+  Frame 36 to Frame 37: 0.5548
+  Frame 37 to Frame 38: 0.7168
+  Frame 38 to Frame 39: 0.1799
+  Frame 39 to Frame 40: 0.2177
+  Frame 40 to Frame 41: 0.7297
+  Frame 41 to Frame 42: 0.1582
+  Frame 42 to Frame 43: 0.2068
+  Frame 43 to Frame 44: 0.8102
+  Frame 44 to Frame 45: 0.9696
+  Frame 45 to Frame 46: 0.8460
+  Frame 46 to Frame 47: 0.9621
+  Frame 47 to Frame 48: 0.9656
+Average similarity: 0.6430
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_26.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+  Frame 15 to Frame 16: 0.0000
+  Frame 16 to Frame 17: 0.0000
+  Frame 17 to Frame 18: 0.0000
+  Frame 18 to Frame 19: 0.0000
+  Frame 19 to Frame 20: 0.0000
+  Frame 20 to Frame 21: 0.0000
+  Frame 21 to Frame 22: 0.0000
+  Frame 22 to Frame 23: 0.0000
+  Frame 23 to Frame 24: 0.0000
+  Frame 24 to Frame 25: 0.0000
+  Frame 25 to Frame 26: 0.0000
+  Frame 26 to Frame 27: 0.0000
+  Frame 27 to Frame 28: 0.0000
+  Frame 28 to Frame 29: 0.0000
+  Frame 29 to Frame 30: 0.0000
+  Frame 30 to Frame 31: 0.0000
+  Frame 31 to Frame 32: 0.0000
+  Frame 32 to Frame 33: 0.0000
+  Frame 33 to Frame 34: 0.0000
+  Frame 34 to Frame 35: 0.0000
+  Frame 35 to Frame 36: 0.0000
+  Frame 36 to Frame 37: 0.0000
+  Frame 37 to Frame 38: 0.0000
+  Frame 38 to Frame 39: 0.0000
+  Frame 39 to Frame 40: 0.0000
+  Frame 40 to Frame 41: 0.0000
+  Frame 41 to Frame 42: 0.0000
+  Frame 42 to Frame 43: 0.0000
+  Frame 43 to Frame 44: 0.0000
+  Frame 44 to Frame 45: 0.0000
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_27.mp4:
+  Frame 0 to Frame 1: 0.9797
+  Frame 1 to Frame 2: 0.9714
+  Frame 2 to Frame 3: 0.9690
+  Frame 3 to Frame 4: 0.9853
+  Frame 4 to Frame 5: 0.9815
+  Frame 5 to Frame 6: 0.9884
+  Frame 6 to Frame 7: 0.9803
+  Frame 7 to Frame 8: 0.9857
+  Frame 8 to Frame 9: 0.9892
+  Frame 9 to Frame 10: 0.9904
+  Frame 10 to Frame 11: 0.9809
+  Frame 11 to Frame 12: 0.9871
+  Frame 12 to Frame 13: 0.9607
+  Frame 13 to Frame 14: 0.9895
+  Frame 14 to Frame 15: 0.9891
+  Frame 15 to Frame 16: 0.9667
+  Frame 16 to Frame 17: 0.9753
+  Frame 17 to Frame 18: 0.9864
+  Frame 18 to Frame 19: 0.9921
+  Frame 19 to Frame 20: 0.9899
+  Frame 20 to Frame 21: 0.9790
+  Frame 21 to Frame 22: 0.9739
+  Frame 22 to Frame 23: 0.9901
+  Frame 23 to Frame 24: 0.9739
+  Frame 24 to Frame 25: 0.9947
+  Frame 25 to Frame 26: 0.9853
+  Frame 26 to Frame 27: 0.9690
+  Frame 27 to Frame 28: 0.9945
+  Frame 28 to Frame 29: 0.9826
+  Frame 29 to Frame 30: 0.9836
+  Frame 30 to Frame 31: 0.9831
+  Frame 31 to Frame 32: 0.9828
+  Frame 32 to Frame 33: 0.9837
+  Frame 33 to Frame 34: 0.9854
+  Frame 34 to Frame 35: 0.9881
+  Frame 35 to Frame 36: 0.9882
+  Frame 36 to Frame 37: 0.9855
+  Frame 37 to Frame 38: 0.9835
+  Frame 38 to Frame 39: 0.9725
+  Frame 39 to Frame 40: 0.9789
+  Frame 40 to Frame 41: 0.9689
+  Frame 41 to Frame 42: 0.9758
+  Frame 42 to Frame 43: 0.9853
+  Frame 43 to Frame 44: 0.9859
+  Frame 44 to Frame 45: 0.9923
+  Frame 45 to Frame 46: 0.9852
+  Frame 46 to Frame 47: 0.9849
+  Frame 47 to Frame 48: 0.9891
+Average similarity: 0.9826
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_28.mp4:
+  Frame 0 to Frame 1: 0.9700
+  Frame 1 to Frame 2: 0.9755
+  Frame 2 to Frame 3: 0.9694
+  Frame 3 to Frame 4: 0.9779
+  Frame 4 to Frame 5: 0.9035
+  Frame 5 to Frame 6: 0.8863
+  Frame 6 to Frame 7: 0.9210
+  Frame 7 to Frame 8: 0.9471
+  Frame 8 to Frame 9: 0.0999
+  Frame 9 to Frame 10: 0.9576
+  Frame 10 to Frame 11: 0.0825
+  Frame 11 to Frame 12: 0.9694
+  Frame 12 to Frame 13: 0.1154
+  Frame 13 to Frame 14: 0.9655
+  Frame 14 to Frame 15: 0.9718
+  Frame 15 to Frame 16: 0.9696
+  Frame 16 to Frame 17: 0.9368
+  Frame 17 to Frame 18: 0.9740
+  Frame 18 to Frame 19: 0.9838
+  Frame 19 to Frame 20: 0.9897
+  Frame 20 to Frame 21: 0.9788
+  Frame 21 to Frame 22: 0.9749
+  Frame 22 to Frame 23: 0.9793
+  Frame 23 to Frame 24: 0.9873
+  Frame 24 to Frame 25: 0.9832
+  Frame 25 to Frame 26: 0.9739
+  Frame 26 to Frame 27: 0.9745
+  Frame 27 to Frame 28: 0.9838
+  Frame 28 to Frame 29: 0.9680
+  Frame 29 to Frame 30: 0.9729
+  Frame 30 to Frame 31: 0.9770
+  Frame 31 to Frame 32: 0.9827
+  Frame 32 to Frame 33: 0.9691
+  Frame 33 to Frame 34: 0.9798
+  Frame 34 to Frame 35: 0.9538
+  Frame 35 to Frame 36: 0.9743
+  Frame 36 to Frame 37: 0.9576
+  Frame 37 to Frame 38: 0.9890
+  Frame 38 to Frame 39: 0.9935
+  Frame 39 to Frame 40: 0.9867
+  Frame 40 to Frame 41: 0.9823
+  Frame 41 to Frame 42: 0.9860
+  Frame 42 to Frame 43: 0.9803
+  Frame 43 to Frame 44: 0.9805
+  Frame 44 to Frame 45: 0.9687
+  Frame 45 to Frame 46: 0.9847
+  Frame 46 to Frame 47: 0.9815
+  Frame 47 to Frame 48: 0.9827
+Average similarity: 0.9157
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_29.mp4:
+  Frame 0 to Frame 1: 0.9829
+  Frame 1 to Frame 2: 0.9829
+  Frame 2 to Frame 3: 0.9470
+  Frame 3 to Frame 4: 0.9837
+  Frame 4 to Frame 5: 0.9855
+  Frame 5 to Frame 6: 0.9836
+  Frame 6 to Frame 7: 0.9796
+  Frame 7 to Frame 8: 0.9709
+  Frame 8 to Frame 9: 0.9762
+  Frame 9 to Frame 10: 0.9779
+  Frame 10 to Frame 11: 0.9426
+  Frame 11 to Frame 12: 0.9832
+  Frame 12 to Frame 13: 0.9871
+  Frame 13 to Frame 14: 0.9781
+  Frame 14 to Frame 15: 0.9854
+  Frame 15 to Frame 16: 0.9871
+  Frame 16 to Frame 17: 0.9867
+  Frame 17 to Frame 18: 0.9858
+  Frame 18 to Frame 19: 0.9890
+  Frame 19 to Frame 20: 0.9812
+  Frame 20 to Frame 21: 0.9872
+  Frame 21 to Frame 22: 0.9893
+  Frame 22 to Frame 23: 0.9882
+  Frame 23 to Frame 24: 0.9788
+  Frame 24 to Frame 25: 0.9897
+  Frame 25 to Frame 26: 0.9923
+  Frame 26 to Frame 27: 0.9835
+  Frame 27 to Frame 28: 0.9898
+  Frame 28 to Frame 29: 0.9890
+  Frame 29 to Frame 30: 0.9916
+  Frame 30 to Frame 31: 0.9925
+  Frame 31 to Frame 32: 0.9881
+  Frame 32 to Frame 33: 0.9927
+  Frame 33 to Frame 34: 0.9871
+  Frame 34 to Frame 35: 0.9903
+  Frame 35 to Frame 36: 0.9789
+  Frame 36 to Frame 37: 0.9789
+  Frame 37 to Frame 38: 0.9792
+  Frame 38 to Frame 39: 0.9867
+  Frame 39 to Frame 40: 0.9723
+  Frame 40 to Frame 41: 0.9844
+  Frame 41 to Frame 42: 0.9837
+  Frame 42 to Frame 43: 0.9699
+  Frame 43 to Frame 44: 0.9863
+  Frame 44 to Frame 45: 0.9750
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.9209
+
+Similarity scores for /storage/home/mingzhe/code/CogVideo/inference/result_t2v_v2/video_30.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+  Frame 15 to Frame 16: 0.0000
+  Frame 16 to Frame 17: 0.0000
+  Frame 17 to Frame 18: 0.0000
+  Frame 18 to Frame 19: 0.0000
+  Frame 19 to Frame 20: 0.0000
+  Frame 20 to Frame 21: 0.0000
+  Frame 21 to Frame 22: 0.0000
+  Frame 22 to Frame 23: 0.0000
+  Frame 23 to Frame 24: 0.0000
+  Frame 24 to Frame 25: 0.0000
+  Frame 25 to Frame 26: 0.0000
+  Frame 26 to Frame 27: 0.0000
+  Frame 27 to Frame 28: 0.0000
+  Frame 28 to Frame 29: 0.0000
+  Frame 29 to Frame 30: 0.0000
+  Frame 30 to Frame 31: 0.0000
+  Frame 31 to Frame 32: 0.0000
+  Frame 32 to Frame 33: 0.0000
+  Frame 33 to Frame 34: 0.0000
+  Frame 34 to Frame 35: 0.0000
+  Frame 35 to Frame 36: 0.0000
+  Frame 36 to Frame 37: 0.0000
+  Frame 37 to Frame 38: 0.0000
+  Frame 38 to Frame 39: 0.0000
+  Frame 39 to Frame 40: 0.0000
+  Frame 40 to Frame 41: 0.0000
+  Frame 41 to Frame 42: 0.0000
+  Frame 42 to Frame 43: 0.0000
+  Frame 43 to Frame 44: 0.0000
+  Frame 44 to Frame 45: 0.0000
+  Frame 45 to Frame 46: 0.0000
+  Frame 46 to Frame 47: 0.0000
+  Frame 47 to Frame 48: 0.0000
+Average similarity: 0.0000

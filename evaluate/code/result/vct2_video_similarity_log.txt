@@ -1,0 +1,720 @@
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0001.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0001.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0001.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0001.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0001.mp4: 0.6943
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0002.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0002.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0002.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0002.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0002.mp4: 0.8977
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0003.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0003.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0003.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0003.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0003.mp4: 0.7225
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0004.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0004.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0004.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0004.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0004.mp4: 0.6424
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0005.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0005.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0005.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0005.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0005.mp4: 0.5514
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0006.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0006.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0006.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0006.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0006.mp4: 0.7855
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0007.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0007.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0007.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0007.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0007.mp4: 0.8682
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0008.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0008.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0008.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0008.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0008.mp4: 0.0000
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0009.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0009.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0009.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0009.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0009.mp4: 0.0000
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0010.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0010.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0010.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0010.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0010.mp4: 0.6170
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0011.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0011.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0011.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0011.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0011.mp4: 0.5759
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0012.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0012.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0012.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0012.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0012.mp4: 0.0000
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0013.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0013.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0013.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0013.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0013.mp4: 0.8794
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0014.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0014.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0014.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0014.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0014.mp4: 0.8083
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0015.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0015.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0015.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0015.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0015.mp4: 0.6110
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0016.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0016.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0016.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0016.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0016.mp4: 0.4859
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0017.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0017.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0017.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0017.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0017.mp4: 0.9041
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0018.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0018.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0018.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0018.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0018.mp4: 0.7485
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0019.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0019.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0019.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0019.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0019.mp4: 0.7567
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0020.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0020.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0020.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0020.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0020.mp4: 0.7374
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0021.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0021.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0021.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0021.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0021.mp4: 0.9181
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0022.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0022.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0022.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0022.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0022.mp4: 0.8672
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0023.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0023.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0023.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0023.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0023.mp4: 0.6656
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0024.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0024.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0024.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0024.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0024.mp4: 0.7813
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0025.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0025.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0025.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0025.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0025.mp4: 0.8330
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0026.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0026.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0026.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0026.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0026.mp4: 0.1181
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0027.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0027.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0027.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0027.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0027.mp4: 0.7172
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0028.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0028.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0028.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0028.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0028.mp4: 0.5007
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0029.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0029.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0029.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0029.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0029.mp4: 0.8804
+
+Processing video: /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0030.mp4
+Extracted 16 frames from /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0030.mp4.
+Feature extraction completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0030.mp4.
+Frame-to-frame similarity evaluation completed for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0030.mp4.
+Average similarity for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0030.mp4: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0001.mp4:
+  Frame 0 to Frame 1: 0.9646
+  Frame 1 to Frame 2: 0.9423
+  Frame 2 to Frame 3: 0.9541
+  Frame 3 to Frame 4: 0.9193
+  Frame 4 to Frame 5: 0.9196
+  Frame 5 to Frame 6: 0.9564
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.9504
+  Frame 11 to Frame 12: 0.9744
+  Frame 12 to Frame 13: 0.9448
+  Frame 13 to Frame 14: 0.9360
+  Frame 14 to Frame 15: 0.9529
+Average similarity: 0.6943
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0002.mp4:
+  Frame 0 to Frame 1: 0.9166
+  Frame 1 to Frame 2: 0.9437
+  Frame 2 to Frame 3: 0.9004
+  Frame 3 to Frame 4: 0.9279
+  Frame 4 to Frame 5: 0.8703
+  Frame 5 to Frame 6: 0.8166
+  Frame 6 to Frame 7: 0.8781
+  Frame 7 to Frame 8: 0.8997
+  Frame 8 to Frame 9: 0.8947
+  Frame 9 to Frame 10: 0.9068
+  Frame 10 to Frame 11: 0.9100
+  Frame 11 to Frame 12: 0.9153
+  Frame 12 to Frame 13: 0.8941
+  Frame 13 to Frame 14: 0.9032
+  Frame 14 to Frame 15: 0.8885
+Average similarity: 0.8977
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0003.mp4:
+  Frame 0 to Frame 1: 0.8198
+  Frame 1 to Frame 2: 0.6904
+  Frame 2 to Frame 3: 0.7624
+  Frame 3 to Frame 4: 0.5168
+  Frame 4 to Frame 5: 0.6988
+  Frame 5 to Frame 6: 0.4986
+  Frame 6 to Frame 7: 0.8109
+  Frame 7 to Frame 8: 0.9113
+  Frame 8 to Frame 9: 0.8188
+  Frame 9 to Frame 10: 0.8821
+  Frame 10 to Frame 11: 0.6051
+  Frame 11 to Frame 12: 0.8157
+  Frame 12 to Frame 13: 0.6595
+  Frame 13 to Frame 14: 0.5763
+  Frame 14 to Frame 15: 0.7716
+Average similarity: 0.7225
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0004.mp4:
+  Frame 0 to Frame 1: 0.7962
+  Frame 1 to Frame 2: 0.8459
+  Frame 2 to Frame 3: 0.9070
+  Frame 3 to Frame 4: 0.1665
+  Frame 4 to Frame 5: 0.0635
+  Frame 5 to Frame 6: 0.1572
+  Frame 6 to Frame 7: 0.1765
+  Frame 7 to Frame 8: 0.9330
+  Frame 8 to Frame 9: 0.8656
+  Frame 9 to Frame 10: 0.7908
+  Frame 10 to Frame 11: 0.8472
+  Frame 11 to Frame 12: 0.7799
+  Frame 12 to Frame 13: 0.8244
+  Frame 13 to Frame 14: 0.7456
+  Frame 14 to Frame 15: 0.7370
+Average similarity: 0.6424
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0005.mp4:
+  Frame 0 to Frame 1: 0.7114
+  Frame 1 to Frame 2: 0.7707
+  Frame 2 to Frame 3: -0.0216
+  Frame 3 to Frame 4: 0.9548
+  Frame 4 to Frame 5: 0.8696
+  Frame 5 to Frame 6: 0.8905
+  Frame 6 to Frame 7: 0.8615
+  Frame 7 to Frame 8: 0.0147
+  Frame 8 to Frame 9: 0.9421
+  Frame 9 to Frame 10: 0.8025
+  Frame 10 to Frame 11: 0.7149
+  Frame 11 to Frame 12: -0.0439
+  Frame 12 to Frame 13: -0.0268
+  Frame 13 to Frame 14: 0.8329
+  Frame 14 to Frame 15: -0.0017
+Average similarity: 0.5514
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0006.mp4:
+  Frame 0 to Frame 1: 0.7906
+  Frame 1 to Frame 2: 0.8379
+  Frame 2 to Frame 3: 0.7944
+  Frame 3 to Frame 4: 0.7360
+  Frame 4 to Frame 5: 0.6901
+  Frame 5 to Frame 6: 0.7551
+  Frame 6 to Frame 7: 0.7681
+  Frame 7 to Frame 8: 0.5818
+  Frame 8 to Frame 9: 0.8004
+  Frame 9 to Frame 10: 0.9293
+  Frame 10 to Frame 11: 0.8663
+  Frame 11 to Frame 12: 0.8220
+  Frame 12 to Frame 13: 0.7541
+  Frame 13 to Frame 14: 0.8151
+  Frame 14 to Frame 15: 0.8415
+Average similarity: 0.7855
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0007.mp4:
+  Frame 0 to Frame 1: 0.8695
+  Frame 1 to Frame 2: 0.9285
+  Frame 2 to Frame 3: 0.9196
+  Frame 3 to Frame 4: 0.9294
+  Frame 4 to Frame 5: 0.9088
+  Frame 5 to Frame 6: 0.9192
+  Frame 6 to Frame 7: 0.9355
+  Frame 7 to Frame 8: 0.9517
+  Frame 8 to Frame 9: 0.8653
+  Frame 9 to Frame 10: 0.8413
+  Frame 10 to Frame 11: 0.8584
+  Frame 11 to Frame 12: 0.7800
+  Frame 12 to Frame 13: 0.8019
+  Frame 13 to Frame 14: 0.7181
+  Frame 14 to Frame 15: 0.7960
+Average similarity: 0.8682
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0008.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+Average similarity: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0009.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+Average similarity: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0010.mp4:
+  Frame 0 to Frame 1: 0.7624
+  Frame 1 to Frame 2: 0.7273
+  Frame 2 to Frame 3: 0.6342
+  Frame 3 to Frame 4: 0.6864
+  Frame 4 to Frame 5: 0.7397
+  Frame 5 to Frame 6: 0.6955
+  Frame 6 to Frame 7: 0.6387
+  Frame 7 to Frame 8: 0.7094
+  Frame 8 to Frame 9: 0.8362
+  Frame 9 to Frame 10: 0.7537
+  Frame 10 to Frame 11: 0.1535
+  Frame 11 to Frame 12: 0.2283
+  Frame 12 to Frame 13: 0.2306
+  Frame 13 to Frame 14: 0.7188
+  Frame 14 to Frame 15: 0.7400
+Average similarity: 0.6170
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0011.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.8462
+  Frame 4 to Frame 5: 0.8651
+  Frame 5 to Frame 6: 0.8916
+  Frame 6 to Frame 7: 0.8633
+  Frame 7 to Frame 8: 0.8054
+  Frame 8 to Frame 9: 0.7581
+  Frame 9 to Frame 10: 0.8760
+  Frame 10 to Frame 11: 0.0534
+  Frame 11 to Frame 12: 0.8152
+  Frame 12 to Frame 13: 0.0192
+  Frame 13 to Frame 14: 0.9436
+  Frame 14 to Frame 15: 0.9019
+Average similarity: 0.5759
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0012.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+Average similarity: 0.0000
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0013.mp4:
+  Frame 0 to Frame 1: 0.8286
+  Frame 1 to Frame 2: 0.9167
+  Frame 2 to Frame 3: 0.9390
+  Frame 3 to Frame 4: 0.8969
+  Frame 4 to Frame 5: 0.8657
+  Frame 5 to Frame 6: 0.8789
+  Frame 6 to Frame 7: 0.8478
+  Frame 7 to Frame 8: 0.8831
+  Frame 8 to Frame 9: 0.9222
+  Frame 9 to Frame 10: 0.9338
+  Frame 10 to Frame 11: 0.9085
+  Frame 11 to Frame 12: 0.8816
+  Frame 12 to Frame 13: 0.8807
+  Frame 13 to Frame 14: 0.7353
+  Frame 14 to Frame 15: 0.8725
+Average similarity: 0.8794
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0014.mp4:
+  Frame 0 to Frame 1: 0.7074
+  Frame 1 to Frame 2: 0.7592
+  Frame 2 to Frame 3: 0.9124
+  Frame 3 to Frame 4: 0.8121
+  Frame 4 to Frame 5: 0.8645
+  Frame 5 to Frame 6: 0.8319
+  Frame 6 to Frame 7: 0.7798
+  Frame 7 to Frame 8: 0.7858
+  Frame 8 to Frame 9: 0.8239
+  Frame 9 to Frame 10: 0.8324
+  Frame 10 to Frame 11: 0.9008
+  Frame 11 to Frame 12: 0.8506
+  Frame 12 to Frame 13: 0.8375
+  Frame 13 to Frame 14: 0.7064
+  Frame 14 to Frame 15: 0.7205
+Average similarity: 0.8083
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0015.mp4:
+  Frame 0 to Frame 1: 0.6579
+  Frame 1 to Frame 2: 0.1925
+  Frame 2 to Frame 3: 0.6303
+  Frame 3 to Frame 4: 0.1336
+  Frame 4 to Frame 5: 0.5895
+  Frame 5 to Frame 6: 0.7057
+  Frame 6 to Frame 7: 0.6482
+  Frame 7 to Frame 8: 0.7215
+  Frame 8 to Frame 9: 0.6811
+  Frame 9 to Frame 10: 0.7300
+  Frame 10 to Frame 11: 0.7787
+  Frame 11 to Frame 12: 0.6257
+  Frame 12 to Frame 13: 0.8317
+  Frame 13 to Frame 14: 0.5038
+  Frame 14 to Frame 15: 0.7350
+Average similarity: 0.6110
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0016.mp4:
+  Frame 0 to Frame 1: -0.0584
+  Frame 1 to Frame 2: 0.5678
+  Frame 2 to Frame 3: 0.1518
+  Frame 3 to Frame 4: 0.6877
+  Frame 4 to Frame 5: 0.8415
+  Frame 5 to Frame 6: 0.6296
+  Frame 6 to Frame 7: 0.4356
+  Frame 7 to Frame 8: 0.2894
+  Frame 8 to Frame 9: 0.5910
+  Frame 9 to Frame 10: 0.4369
+  Frame 10 to Frame 11: 0.4080
+  Frame 11 to Frame 12: 0.4238
+  Frame 12 to Frame 13: 0.6246
+  Frame 13 to Frame 14: 0.5929
+  Frame 14 to Frame 15: 0.6667
+Average similarity: 0.4859
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0017.mp4:
+  Frame 0 to Frame 1: 0.8781
+  Frame 1 to Frame 2: 0.9153
+  Frame 2 to Frame 3: 0.9130
+  Frame 3 to Frame 4: 0.9554
+  Frame 4 to Frame 5: 0.9485
+  Frame 5 to Frame 6: 0.9231
+  Frame 6 to Frame 7: 0.8871
+  Frame 7 to Frame 8: 0.8680
+  Frame 8 to Frame 9: 0.8570
+  Frame 9 to Frame 10: 0.8890
+  Frame 10 to Frame 11: 0.8988
+  Frame 11 to Frame 12: 0.8614
+  Frame 12 to Frame 13: 0.8979
+  Frame 13 to Frame 14: 0.9472
+  Frame 14 to Frame 15: 0.9223
+Average similarity: 0.9041
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0018.mp4:
+  Frame 0 to Frame 1: 0.7621
+  Frame 1 to Frame 2: 0.8960
+  Frame 2 to Frame 3: 0.0621
+  Frame 3 to Frame 4: 0.6758
+  Frame 4 to Frame 5: 0.8197
+  Frame 5 to Frame 6: 0.1632
+  Frame 6 to Frame 7: 0.8206
+  Frame 7 to Frame 8: 0.8670
+  Frame 8 to Frame 9: 0.9026
+  Frame 9 to Frame 10: 0.8217
+  Frame 10 to Frame 11: 0.7920
+  Frame 11 to Frame 12: 0.8401
+  Frame 12 to Frame 13: 0.9484
+  Frame 13 to Frame 14: 0.9287
+  Frame 14 to Frame 15: 0.9270
+Average similarity: 0.7485
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0019.mp4:
+  Frame 0 to Frame 1: 0.8833
+  Frame 1 to Frame 2: 0.8908
+  Frame 2 to Frame 3: 0.8154
+  Frame 3 to Frame 4: 0.8905
+  Frame 4 to Frame 5: 0.8099
+  Frame 5 to Frame 6: 0.7979
+  Frame 6 to Frame 7: 0.7796
+  Frame 7 to Frame 8: 0.7323
+  Frame 8 to Frame 9: 0.7189
+  Frame 9 to Frame 10: 0.5908
+  Frame 10 to Frame 11: 0.6611
+  Frame 11 to Frame 12: 0.7169
+  Frame 12 to Frame 13: 0.7136
+  Frame 13 to Frame 14: 0.6907
+  Frame 14 to Frame 15: 0.6584
+Average similarity: 0.7567
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0020.mp4:
+  Frame 0 to Frame 1: 0.7651
+  Frame 1 to Frame 2: 0.7385
+  Frame 2 to Frame 3: 0.8834
+  Frame 3 to Frame 4: 0.8352
+  Frame 4 to Frame 5: 0.2225
+  Frame 5 to Frame 6: 0.7814
+  Frame 6 to Frame 7: 0.3215
+  Frame 7 to Frame 8: 0.7980
+  Frame 8 to Frame 9: 0.7845
+  Frame 9 to Frame 10: 0.8300
+  Frame 10 to Frame 11: 0.8125
+  Frame 11 to Frame 12: 0.7665
+  Frame 12 to Frame 13: 0.7645
+  Frame 13 to Frame 14: 0.8819
+  Frame 14 to Frame 15: 0.8751
+Average similarity: 0.7374
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0021.mp4:
+  Frame 0 to Frame 1: 0.8664
+  Frame 1 to Frame 2: 0.7804
+  Frame 2 to Frame 3: 0.8026
+  Frame 3 to Frame 4: 0.9302
+  Frame 4 to Frame 5: 0.9221
+  Frame 5 to Frame 6: 0.9328
+  Frame 6 to Frame 7: 0.9507
+  Frame 7 to Frame 8: 0.9628
+  Frame 8 to Frame 9: 0.9686
+  Frame 9 to Frame 10: 0.9627
+  Frame 10 to Frame 11: 0.9508
+  Frame 11 to Frame 12: 0.9604
+  Frame 12 to Frame 13: 0.9357
+  Frame 13 to Frame 14: 0.9512
+  Frame 14 to Frame 15: 0.8937
+Average similarity: 0.9181
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0022.mp4:
+  Frame 0 to Frame 1: 0.8567
+  Frame 1 to Frame 2: 0.8402
+  Frame 2 to Frame 3: 0.7340
+  Frame 3 to Frame 4: 0.8333
+  Frame 4 to Frame 5: 0.8855
+  Frame 5 to Frame 6: 0.9459
+  Frame 6 to Frame 7: 0.8852
+  Frame 7 to Frame 8: 0.9182
+  Frame 8 to Frame 9: 0.9046
+  Frame 9 to Frame 10: 0.8690
+  Frame 10 to Frame 11: 0.9121
+  Frame 11 to Frame 12: 0.9277
+  Frame 12 to Frame 13: 0.8313
+  Frame 13 to Frame 14: 0.8401
+  Frame 14 to Frame 15: 0.8237
+Average similarity: 0.8672
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0023.mp4:
+  Frame 0 to Frame 1: 0.8516
+  Frame 1 to Frame 2: 0.9050
+  Frame 2 to Frame 3: -0.0002
+  Frame 3 to Frame 4: 0.8439
+  Frame 4 to Frame 5: -0.0248
+  Frame 5 to Frame 6: 0.0372
+  Frame 6 to Frame 7: 0.9409
+  Frame 7 to Frame 8: 0.9538
+  Frame 8 to Frame 9: 0.8905
+  Frame 9 to Frame 10: 0.9007
+  Frame 10 to Frame 11: 0.9449
+  Frame 11 to Frame 12: 0.9360
+  Frame 12 to Frame 13: 0.9613
+  Frame 13 to Frame 14: -0.0607
+  Frame 14 to Frame 15: 0.9041
+Average similarity: 0.6656
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0024.mp4:
+  Frame 0 to Frame 1: 0.8284
+  Frame 1 to Frame 2: 0.8218
+  Frame 2 to Frame 3: 0.7737
+  Frame 3 to Frame 4: 0.5187
+  Frame 4 to Frame 5: 0.7192
+  Frame 5 to Frame 6: 0.7894
+  Frame 6 to Frame 7: 0.6754
+  Frame 7 to Frame 8: 0.7990
+  Frame 8 to Frame 9: 0.6277
+  Frame 9 to Frame 10: 0.8725
+  Frame 10 to Frame 11: 0.8781
+  Frame 11 to Frame 12: 0.8397
+  Frame 12 to Frame 13: 0.8696
+  Frame 13 to Frame 14: 0.8376
+  Frame 14 to Frame 15: 0.8679
+Average similarity: 0.7813
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0025.mp4:
+  Frame 0 to Frame 1: 0.9561
+  Frame 1 to Frame 2: 0.9036
+  Frame 2 to Frame 3: 0.8581
+  Frame 3 to Frame 4: 0.8739
+  Frame 4 to Frame 5: 0.7219
+  Frame 5 to Frame 6: 0.7884
+  Frame 6 to Frame 7: 0.8094
+  Frame 7 to Frame 8: 0.8122
+  Frame 8 to Frame 9: 0.7830
+  Frame 9 to Frame 10: 0.7321
+  Frame 10 to Frame 11: 0.8401
+  Frame 11 to Frame 12: 0.8442
+  Frame 12 to Frame 13: 0.8310
+  Frame 13 to Frame 14: 0.9105
+  Frame 14 to Frame 15: 0.8298
+Average similarity: 0.8330
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0026.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.8746
+  Frame 8 to Frame 9: 0.8970
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+Average similarity: 0.1181
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0027.mp4:
+  Frame 0 to Frame 1: 0.7376
+  Frame 1 to Frame 2: 0.7319
+  Frame 2 to Frame 3: 0.5911
+  Frame 3 to Frame 4: 0.7464
+  Frame 4 to Frame 5: 0.8182
+  Frame 5 to Frame 6: 0.7927
+  Frame 6 to Frame 7: 0.7627
+  Frame 7 to Frame 8: 0.6680
+  Frame 8 to Frame 9: 0.6474
+  Frame 9 to Frame 10: 0.5922
+  Frame 10 to Frame 11: 0.6962
+  Frame 11 to Frame 12: 0.7416
+  Frame 12 to Frame 13: 0.6225
+  Frame 13 to Frame 14: 0.8530
+  Frame 14 to Frame 15: 0.7567
+Average similarity: 0.7172
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0028.mp4:
+  Frame 0 to Frame 1: 0.1023
+  Frame 1 to Frame 2: 0.1287
+  Frame 2 to Frame 3: 0.7725
+  Frame 3 to Frame 4: 0.7785
+  Frame 4 to Frame 5: 0.1233
+  Frame 5 to Frame 6: 0.9548
+  Frame 6 to Frame 7: 0.9038
+  Frame 7 to Frame 8: 0.9095
+  Frame 8 to Frame 9: 0.0537
+  Frame 9 to Frame 10: 0.0384
+  Frame 10 to Frame 11: 0.0392
+  Frame 11 to Frame 12: 0.8928
+  Frame 12 to Frame 13: 0.0936
+  Frame 13 to Frame 14: 0.8640
+  Frame 14 to Frame 15: 0.8555
+Average similarity: 0.5007
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0029.mp4:
+  Frame 0 to Frame 1: 0.9346
+  Frame 1 to Frame 2: 0.9426
+  Frame 2 to Frame 3: 0.9575
+  Frame 3 to Frame 4: 0.9625
+  Frame 4 to Frame 5: 0.9595
+  Frame 5 to Frame 6: 0.9480
+  Frame 6 to Frame 7: 0.9106
+  Frame 7 to Frame 8: 0.9093
+  Frame 8 to Frame 9: 0.9358
+  Frame 9 to Frame 10: 0.9088
+  Frame 10 to Frame 11: 0.9011
+  Frame 11 to Frame 12: 0.9280
+  Frame 12 to Frame 13: 0.1141
+  Frame 13 to Frame 14: 0.9592
+  Frame 14 to Frame 15: 0.9340
+Average similarity: 0.8804
+
+Similarity scores for /storage/home/mingzhe/code/VideoCrafter/results_t2v/base_512_v2/0030.mp4:
+  Frame 0 to Frame 1: 0.0000
+  Frame 1 to Frame 2: 0.0000
+  Frame 2 to Frame 3: 0.0000
+  Frame 3 to Frame 4: 0.0000
+  Frame 4 to Frame 5: 0.0000
+  Frame 5 to Frame 6: 0.0000
+  Frame 6 to Frame 7: 0.0000
+  Frame 7 to Frame 8: 0.0000
+  Frame 8 to Frame 9: 0.0000
+  Frame 9 to Frame 10: 0.0000
+  Frame 10 to Frame 11: 0.0000
+  Frame 11 to Frame 12: 0.0000
+  Frame 12 to Frame 13: 0.0000
+  Frame 13 to Frame 14: 0.0000
+  Frame 14 to Frame 15: 0.0000
+Average similarity: 0.0000
