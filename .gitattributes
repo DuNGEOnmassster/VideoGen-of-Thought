@@ -1,3 +1,4 @@
 evaluate/code/ffhq.pkl filter=lfs diff=lfs merge=lfs -text
 evaluate/OpenGVLab/ filter=lfs diff=lfs merge=lfs -text
 evaluate/ViCLIP_B_16 filter=lfs diff=lfs merge=lfs -text
+evaluate/code/ filter=lfs diff=lfs merge=lfs -text
