@@ -231,29 +231,69 @@ def save_results_seperate(prompt, samples, filename, fakedir, fps=10, loop=False
             # import pdb; pdb.set_trace()
             torchvision.io.write_video(path, grid, fps=fps, video_codec='h264', options={'crf': '10'})
 
-def save_results_full(prompt, samples, save_path, fps=10, loop=False):
+
+def save_results_full(prompt, final_output, final_save_path, fps=8, loop=False):
+    """
+    Save the entire video as a single MP4 file.
+
+    Args:
+        prompt (str or list):
+            The text prompt(s) corresponding to the video. 
+            If a list is provided, only the first element is used for logging purposes.
+        final_output (Tensor):
+            The video tensor of shape [N, C, T, H, W], where:
+              - N is the number of shots/clips
+              - C = 3 (RGB)
+              - T is the number of frames
+              - H and W are the height and width
+        final_save_path (str):
+            The path to save the final MP4 file, e.g., "xxx/final_result.mp4".
+        fps (int):
+            The frame rate (frames per second) to use when writing the video.
+        loop (bool):
+            If True, the last frame will be removed so that the first and last frames 
+            match seamlessly for looped playback.
+    """
+    # If prompt is a list, take the first element. 
+    # This can be adapted to the project's needs.
     prompt = prompt[0] if isinstance(prompt, list) else prompt
+    
+    # Move the video tensor to CPU for processing and writing.
+    video_tensor = final_output.detach().cpu()
+    
+    # Remove the last frame if loop is True to create a seamless loop.
+    if loop:
+        video_tensor = video_tensor[:, :, :-1, :, :]
+    
+    # Clamp the values to the range [-1, 1].
+    video_tensor = torch.clamp(video_tensor, -1.0, 1.0)
+    
+    # Scale from [-1, 1] to [0, 1], then to [0, 255].
+    video_tensor = (video_tensor + 1.0) / 2.0  # now in [0, 1]
+    video_tensor = (video_tensor * 255).to(torch.uint8)  # now in [0, 255]
+    
+    # Permute the dimensions from [N, C, T, H, W] to [N, T, H, W, C].
+    video_tensor = video_tensor.permute(0, 2, 3, 4, 1)
+    
+    # Concatenate all shots/clips into a single video by merging N and T:
+    # new shape: [N*T, H, W, C].
+    n, t, h, w, c = video_tensor.shape
+    video_tensor = video_tensor.reshape(n * t, h, w, c)
+    
+    # Ensure the output directory exists.
+    os.makedirs(os.path.dirname(final_save_path), exist_ok=True)
+    
+    # Write the concatenated video to a single MP4 file.
+    torchvision.io.write_video(
+        final_save_path,
+        video_tensor,
+        fps=fps,
+        video_codec='h264',
+        options={'crf': '10'}  # crf can be adjusted for quality vs. size.
+    )
+    
+    print(f"Full result video saved at: {final_save_path}")
 
-    ## save video
-    videos = [samples]
-    grid_list = []
-    for idx, video in enumerate(videos):
-        if video is None:
-            continue
-        # b,c,t,h,w
-        video = video.detach().cpu()
-        if loop: # remove the last frame
-            video = video[:,:,:-1,...]
-        video = torch.clamp(video.float(), -1., 1.)
-        n = video.shape[0]
-        for i in range(n):
-            grid = video[i,...]
-            grid = (grid + 1.0) / 2.0
-            grid = (grid * 255).to(torch.uint8).permute(1, 2, 3, 0) #thwc
-            # import pdb; pdb.set_trace()
-            grid_list.append(grid)
-
-    torchvision.io.write_video(save_path, torch.stack(grid_list, dim=0), fps=fps, video_codec='h264', options={'crf': '10'})
 
 def get_latent_z(model, videos):
     b, c, t, h, w = videos.shape

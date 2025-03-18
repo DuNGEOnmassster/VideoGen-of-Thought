@@ -10,8 +10,19 @@ weights/
 # configs
 configs/config.txt
 
+# asset
+asset/round*
+asset/seed*
+asset/story_type*
+
+# KeyFrames
+KeyFrames/
+
 # videos
 Shot_Videos/
+
+# Latex
+latex/
 
 # C extensions
 *.so

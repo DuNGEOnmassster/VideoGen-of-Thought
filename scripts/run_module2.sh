@@ -1,1 +1,0 @@
-python generate_module2.py --json_path data_ip/image_prompt_pairs.json
