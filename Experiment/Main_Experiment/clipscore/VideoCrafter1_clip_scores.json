@@ -1,0 +1,50 @@
+[
+    {
+        "video": "VideoCrafter1_artist.mp4",
+        "caption": "a story about an artist who finds redemption and reinvention after hitting rock bottom.",
+        "score": 0.2520776689052582
+    },
+    {
+        "video": "VideoCrafter1_botanist.mp4",
+        "caption": "the journey of Claire, a quiet botanist who becomes an unlikely spy in a world of secrets.",
+        "score": 0.24673394858837128
+    },
+    {
+        "video": "VideoCrafter1_chef.mp4",
+        "caption": "the story of Marco, a chef who stumbles upon ancient secrets through culinary discoveries.",
+        "score": 0.2599080204963684
+    },
+    {
+        "video": "VideoCrafter1_conservationist.mp4",
+        "caption": "The story of Emma, a wildlife conservationist's life, dedicated to saving endangered animals.",
+        "score": 0.24416173994541168
+    },
+    {
+        "video": "VideoCrafter1_cyclist.mp4",
+        "caption": "the journey of Carlos, from a young boy on his first bike to becoming a celebrated world champion cyclist.",
+        "score": 0.2525860071182251
+    },
+    {
+        "video": "VideoCrafter1_fashion_designer.mp4",
+        "caption": "the life of Olivia, an ambitious fashion designer, from her first sketches to her iconic fashion show.",
+        "score": 0.24599288403987885
+    },
+    {
+        "video": "VideoCrafter1_mary_life_2.mp4",
+        "caption": "a story of a classic American woman Mary's life, from birth to death.",
+        "score": 0.21730338037014008
+    },
+    {
+        "video": "VideoCrafter1_scientist.mp4",
+        "caption": "the life of Dr.Sarah, a scientist, dedicated to finding a cure for a rare disease.",
+        "score": 0.24865657091140747
+    },
+    {
+        "video": "VideoCrafter1_technologist.mp4",
+        "caption": "the journey of Leo, a coder who uses his skills to solve mysteries in a virtual world.",
+        "score": 0.26318618655204773
+    },
+    {
+        "total_score": 2.2306064069271088
+    }
+]

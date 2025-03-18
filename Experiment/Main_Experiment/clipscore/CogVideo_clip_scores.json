@@ -1,0 +1,50 @@
+[
+    {
+        "video": "CogVideo_artist.mp4",
+        "caption": "a story about an artist who finds redemption and reinvention after hitting rock bottom.",
+        "score": 0.2566075325012207
+    },
+    {
+        "video": "CogVideo_botanist.mp4",
+        "caption": "the journey of Claire, a quiet botanist who becomes an unlikely spy in a world of secrets.",
+        "score": 0.2321079969406128
+    },
+    {
+        "video": "CogVideo_chef.mp4",
+        "caption": "the story of Marco, a chef who stumbles upon ancient secrets through culinary discoveries.",
+        "score": 0.24992740154266357
+    },
+    {
+        "video": "CogVideo_conservationist.mp4",
+        "caption": "The story of Emma, a wildlife conservationist's life, dedicated to saving endangered animals.",
+        "score": 0.25480520725250244
+    },
+    {
+        "video": "CogVideo_cyclist.mp4",
+        "caption": "the journey of Carlos, from a young boy on his first bike to becoming a celebrated world champion cyclist.",
+        "score": 0.26670539379119873
+    },
+    {
+        "video": "CogVideo_fashion_designer.mp4",
+        "caption": "the life of Olivia, an ambitious fashion designer, from her first sketches to her iconic fashion show.",
+        "score": 0.24593818187713623
+    },
+    {
+        "video": "CogVideo_mary_life_2.mp4",
+        "caption": "a story of a classic American woman Mary's life, from birth to death.",
+        "score": 0.2242279201745987
+    },
+    {
+        "video": "CogVideo_scientist.mp4",
+        "caption": "the life of Dr.Sarah, a scientist, dedicated to finding a cure for a rare disease.",
+        "score": 0.24957115948200226
+    },
+    {
+        "video": "CogVideo_technologist.mp4",
+        "caption": "the journey of Leo, a coder who uses his skills to solve mysteries in a virtual world.",
+        "score": 0.24963699281215668
+    },
+    {
+        "total_score": 2.229527786374092
+    }
+]
