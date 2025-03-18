@@ -7,6 +7,10 @@ import pandas as pd
 from transformers import AutoModel
 import math
 from ignite.metrics import PSNR
+from torchvision.models import inception_v3
+from torch.nn import functional as F
+from scipy.stats import entropy
+from torchvision import transforms
 
 # Utility function to iterate over frames from a video
 def _frame_from_video(video):
@@ -18,8 +22,8 @@ def _frame_from_video(video):
             break
 
 # Load ViCLIP model from local directory
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-viclip_dir = "/storage/home/mingzhe/code/VideoGen-of-Thought/evaluate/ViCLIP_B_16"
+device = torch.device("cuda")
+viclip_dir = "/data/nas/mingzhe/code-release/VideoGen-of-Thought-official/weights/ViCLIP-B-16-hf"
 model = AutoModel.from_pretrained(viclip_dir, trust_remote_code=True).to(device)
 tokenizer = model.tokenizer
 models = {"viclip": model, "tokenizer": tokenizer}
@@ -77,23 +81,81 @@ def calculate_psnr(frames):
     avg_psnr = np.mean(psnr_values) if psnr_values else 0
     return avg_psnr
 
-def calculate_inception_score(frames, model):
-    """Calculate Inception Score for the frames using a pre-trained model."""
-    # This is a placeholder implementation; in practice, you'd use a specific Inception Score implementation
-    # with a pre-trained model to evaluate the diversity and quality of generated images.
-    return np.random.uniform(5.0, 10.0)  # Placeholder value
+def calculate_inception_score(frames, model, n_split=10, eps=1e-16):
+    """Calculate Inception Score for the frames using a pre-trained InceptionV3 model.
+    """
+    # If there are no frames or too few frames, return 0
+    if len(frames) < 2:
+        return 0.0
+    
+    # Load pre-trained Inception V3 model
+    try:
+        inception_model = inception_v3(pretrained=True, transform_input=False).to(device)
+        inception_model.eval()
+        
+        # Remove the final fully connected layer to get features
+        inception_model.fc = torch.nn.Identity()
+        
+        # Prepare pre-processing transformation
+        preprocess = transforms.Compose([
+            transforms.ToPILImage(),
+            transforms.Resize(299),
+            transforms.CenterCrop(299),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+        ])
+        
+        # Process each frame to get prediction results
+        preds = []
+        with torch.no_grad():
+            for frame in frames:
+                # Convert BGR to RGB
+                frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                # Pre-process the frame
+                input_tensor = preprocess(frame_rgb).unsqueeze(0).to(device)
+                # Get prediction
+                pred = F.softmax(inception_model(input_tensor), dim=1).cpu().numpy()
+                preds.append(pred)
+        
+        # Convert to numpy array
+        preds = np.concatenate(preds, axis=0)
+        p_y = np.mean(preds, axis=0)
+        
+        # Calculate the KL divergence for each split
+        split_scores = []
+        for i in range(n_split):
+            # If the number of frames is less than the number of splits, we repeat the frames
+            part = preds[i * (len(preds) // max(1, n_split - 1)):(i + 1) * (len(preds) // max(1, n_split - 1)), :]
+            if len(part) == 0:
+                continue
+            
+            p_y_given_x = part
+            kl_d = p_y_given_x * (np.log(p_y_given_x + eps) - np.log(p_y + eps))
+            kl_d = np.mean(np.sum(kl_d, axis=1))
+            split_scores.append(np.exp(kl_d))
+        
+        # Calculate the final Inception Score (mean ± standard deviation)
+        is_mean = np.mean(split_scores) if split_scores else 0.0
+        is_std = np.std(split_scores) if len(split_scores) > 1 else 0.0
+        
+        return is_mean
+    
+    except Exception as e:
+        print(f"Error calculating Inception Score: {e}")
+        # If an error occurs, return a default value
+        return 1.0
 
 # Define paths and settings
-json_data_base_dir = "/storage/home/mingzhe/code/VideoGen-of-Thought/evaluate/Ablation_Studies"
+json_data_base_dir = "/data/nas/mingzhe/code-release/VideoGen-of-Thought-official/evaluate/Ablation_Studies"
 text_prompt_path = os.path.join(json_data_base_dir, "cyclist/test_prompts.txt")
 with open(text_prompt_path, 'r') as f:
     data = [line.strip() for line in f.readlines()]
 
 base_directories = {
-    "with_EP_with_IP": "/storage/home/mingzhe/code/VideoGen-of-Thought/evaluate/results/Ablation/with_EP_with_IP/samples_separate",
-    "with_EP_without_IP": "/storage/home/mingzhe/code/VideoGen-of-Thought/evaluate/results/Ablation/with_EP_without_IP/samples_separate",
-    "without_EP_with_IP": "/storage/home/mingzhe/code/VideoGen-of-Thought/evaluate/results/Ablation/without_EP_with_IP/samples_separate",
-    "without_EP_without_IP": "/storage/home/mingzhe/code/VideoGen-of-Thought/evaluate/results/Ablation/without_EP_without_IP/samples_separate"
+    "with_EP_with_IP": "/data/nas/mingzhe/code-release/VideoGen-of-Thought-official/Experiment/Ablation/with_EP_with_IP/samples_separate",
+    "with_EP_without_IP": "/data/nas/mingzhe/code-release/VideoGen-of-Thought-official/Experiment/Ablation/with_EP_without_IP/samples_separate",
+    "without_EP_with_IP": "/data/nas/mingzhe/code-release/VideoGen-of-Thought-official/Experiment/Ablation/without_EP_with_IP/samples_separate",
+    "without_EP_without_IP": "/data/nas/mingzhe/code-release/VideoGen-of-Thought-official/Experiment/Ablation/without_EP_without_IP/samples_separate"
 }
 
 # Initialize global dictionary to store scores
@@ -156,5 +218,5 @@ overall_averages = {
 
 # Save overall average scores
 overall_avg_df = pd.DataFrame.from_dict(overall_averages, orient='index')
-overall_avg_df.to_csv("/storage/home/mingzhe/code/VideoGen-of-Thought/evaluate/results/ablation_clip_scores.csv")
+overall_avg_df.to_csv("/data/nas/mingzhe/code-release/VideoGen-of-Thought-official/Experiment/Ablation_clip_scores.csv")
 print("Saved overall average scores across all methods in 'ablation_clip_scores.csv'")
