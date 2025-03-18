@@ -1,0 +1,1 @@
+Create a file named `config.txt`, and put your GPT-4o api in it (sk-xxx)
