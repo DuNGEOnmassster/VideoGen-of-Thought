@@ -6,6 +6,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/videogen_of_thought.py \
     --user_input "a story of a classic American woman Mary's life, from birth to death." \
     --story_name "Mary" \
     --story_type 1 \
+    --base_path "asset/round3" \
     --seed 0 \
     --num_shot 30 \
     --save_individual
