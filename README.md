@@ -153,7 +153,7 @@ We provide detailed multi-shot evaluation tools under ``evaluate/code/``, and th
 
 ## 👍 Acknowledgement
 
-This project wouldn't be possible without the following open-sourced repositories: [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter), [Kolor](https://github.com/Kwai-Kolors/Kolors.git), [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafter.git), [CogVideoX](https://github.com/THUDM/CogVideo), [EasyAnimate](https://github.com/aigc-apps/EasyAnimate), [VideoCrafterV1/V2](https://github.com/AILab-CVC/VideoCrafter.git), [FIFO-Diffusion](https://github.com/jjihwan/FIFO-Diffusion_public.git). Also appreciate for the development of LLMs, and thanks [@Shenghai](https://github.com/SHYuanBest), [@Xianfeng](https://github.com/XianfengWu01), and [@Horald](https://github.com/HaroldChen19) for their help.
+This project wouldn't be possible without the following open-sourced repositories: [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter), [Kolor](https://github.com/Kwai-Kolors/Kolors.git), [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafter.git), [CogVideoX](https://github.com/THUDM/CogVideo), [EasyAnimate](https://github.com/aigc-apps/EasyAnimate), [VideoCrafterV1/V2](https://github.com/AILab-CVC/VideoCrafter.git), [FIFO-Diffusion](https://github.com/jjihwan/FIFO-Diffusion_public.git). Also appreciate for the development of LLMs, and thanks [@Shenghai](https://github.com/SHYuanBest), [@Xianfeng](https://github.com/XianfengWu01), and [@Harold](https://github.com/HaroldChen19) for their help.
 
 
 ## ✏️ Citation
