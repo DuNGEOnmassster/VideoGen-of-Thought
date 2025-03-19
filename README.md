@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ### Download Pretrained Weights
 
-We appriciate the amazing open-source work by [Kolor](https://github.com/Kwai-Kolors/Kolors.git) and [DynamiCrafter](https://github.com/Doubiiu/DynamiCrafter.git), for the current version of *VGoT*, you can directly download the pretrained weights through:
+For the current version of *VGoT*, you can directly download the pretrained weights through:
 
 ```bash
 sh download_weights.sh
