@@ -14,11 +14,11 @@ Official implementation of *VideoGen-of-Thought: Step-by-step generating multi-s
 
 ## 📣 News
 
-* ⏳⏳⏳ Release the latest version of arxiv paper
+* `[2025.03.20]`  🔥 We release the latest arXiv paper for VGoT, and you can click [here](https://arxiv.org/abs/2412.02259) to see more details.
 
 * `[2025.03.19]`  We publish official code and detailed instruction & evaluation
 
-* `[2024.12.03]`  🔥 We release the arXiv paper for VGoT, and you can click [here](https://arxiv.org/abs/2412.02259) to see more details.
+* `[2024.12.03]`  🔥 We release the first version of arXiv paper for VGoT, and you can click [here](https://arxiv.org/abs/2412.02259v1) to see more details.
 
 
 ## Abstract
@@ -106,8 +106,6 @@ Don't forget to create a file ``configs/config.txt`` to place your GPT-4o token,
 
 For the full *VGoT* generation, you can directly process:
 
-You can directly process:
-
 ```bash
 sh run_vgot.sh
 ```
@@ -160,11 +158,9 @@ This project wouldn't be possible without the following open-sourced repositorie
 
 If you find our paper and code useful in your research, please consider giving a star 🌟 and citation ✏️.
 
-- [ ] Release V2 arxiv and update information here
-
 ```Bibtex
-@article{zheng2024videogen,
-  title={VideoGen-of-Thought: A Collaborative Framework for Multi-Shot Video Generation},
+@article{zheng2024videogenofthought,
+  title={VideoGen-of-Thought: Step-by-step generating multi-shot video with minimal manual intervention},
   author={Zheng, Mingzhe and Xu, Yongqi and Huang, Haojian and Ma, Xuran and Liu, Yexin and Shu, Wenjie and Pang, Yatian and Tang, Feilong and Chen, Qifeng and Yang, Harry and others},
   journal={arXiv preprint arXiv:2412.02259},
   year={2024}
