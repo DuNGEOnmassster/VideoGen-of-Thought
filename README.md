@@ -158,10 +158,12 @@ This project wouldn't be possible without the following open-sourced repositorie
 
 If you find our paper and code useful in your research, please consider giving a star 🌟 and citation ✏️.
 
+Since we modified the title, in case wrong information, please follow the original title for your kindly citation and we will update it when google scholar system automatically synchronize it 🙏.
+
 ```Bibtex
 @article{zheng2024videogenofthought,
-  title={VideoGen-of-Thought: Step-by-step generating multi-shot video with minimal manual intervention},
-  author={Zheng, Mingzhe and Xu, Yongqi and Huang, Haojian and Ma, Xuran and Liu, Yexin and Shu, Wenjie and Pang, Yatian and Tang, Feilong and Chen, Qifeng and Yang, Harry and others},
+  title={VideoGen-of-Thought: A Collaborative Framework for Multi-Shot Video Generation},
+  author={Zheng, Mingzhe and Xu, Yongqi and Huang, Haojian and Ma, Xuran and Liu, Yexin and Shu, Wenjie and Pang, Yatian and Tang, Feilong and Chen, Qifeng and Yang, Harry and Lim Sernam},
   journal={arXiv preprint arXiv:2412.02259},
   year={2024}
 }
