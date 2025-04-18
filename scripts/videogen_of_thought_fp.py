@@ -425,7 +425,8 @@ def depart_script_generation(args):
         print(f"Inferred story type: {story_type}")
     
     # Set up output directory for generated files based on story type
-    RESULT_DIR = os.path.join('asset', f'story_type{story_type}', story_name)
+    # RESULT_DIR = os.path.join('asset', f'story_type{story_type}', story_name)
+    RESULT_DIR = args.prompt_path
     os.makedirs(RESULT_DIR, exist_ok=True)
     
     # Update args with the result directory
@@ -536,7 +537,12 @@ def avatar_generation(args):
     for idx, item in image_prompt_dict.items():
         ip_image_path = item['ip_image_path']
         prompt = item['prompt']
-        
+
+        if not args.overwrite_visuals and os.path.exists(ip_image_path):
+            print(f"Avatar {idx} exists: {ip_image_path}. Skipping generation (overwrite_visuals=False).")
+            continue
+
+        print(f"Generating Avatar {idx}: {ip_image_path}")
         image = pipe(
             prompt=prompt,
             height=1024,
@@ -593,7 +599,18 @@ def keyframe_generation(args):
     for idx, item in image_prompt_dict.items():
         ip_img_path = item['ip_image_path']
         prompt = item['prompt']
+        output_keyframe_path = f'{args.keyframe_path}/sample_ip_{idx}.jpg'
+
+        if not args.overwrite_visuals and os.path.exists(output_keyframe_path):
+            print(f"Keyframe {idx} exists: {output_keyframe_path}. Skipping generation (overwrite_visuals=False).")
+            continue
         
+        # Ensure input avatar image exists
+        if not os.path.exists(ip_img_path):
+             print(f"Error: Input avatar image not found for keyframe {idx}: {ip_img_path}. Skipping.")
+             continue
+
+        print(f"Generating Keyframe {idx}: {output_keyframe_path}")
         ip_img = Image.open(ip_img_path)
         pipe.set_ip_adapter_scale([0.5])  # Example scale, adjust as needed
         image = pipe(
@@ -616,6 +633,7 @@ def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
     """
     Generates video shots using FramePack I2V for each keyframe and prompt.
     Loads models ONCE at the beginning.
+    Optionally saves individual shots or a combined final video.
     """
     print("\n--- Initializing FramePack Models for Shot Generation (Loading ONCE) ---")
 
@@ -699,19 +717,31 @@ def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
     start_time = time.time()
     os.makedirs(output_dir, exist_ok=True)
 
+    all_shot_latents_list = [] # List to store latents of each shot (on CPU)
+
     for idx, (keyframe_path, prompt) in enumerate(tqdm(zip(keyframe_paths, prompts), total=num_shots, desc="Generating Shots (FramePack)")):
         shot_start_time = time.time()
         base_filename = os.path.splitext(os.path.basename(keyframe_path))[0]
-        output_filename = os.path.join(output_dir, f"{base_filename}.mp4")
+        individual_output_filename = os.path.join(output_dir, f"{base_filename}.mp4") # Path for individual shot
 
-        if os.path.exists(output_filename):
-            # print(f"Shot {idx+1}/{num_shots} already exists: {output_filename}. Skipping.") # Make tqdm show progress
-            continue
+        # --- Skip logic based on overwrite_shots ---
+        should_skip = False
+        if not args.overwrite_shots and os.path.exists(individual_output_filename):
+            should_skip = True
+            print(f"Shot {idx+1}/{num_shots} exists: {individual_output_filename}. Skipping generation (overwrite_shots=False).")
 
+        if should_skip:
+             if not args.save_individual:
+                 # If only final video is needed, add placeholder even if skipping generation
+                 all_shot_latents_list.append(None)
+             continue # Skip the rest of the loop for this shot
+
+
+
+        # If we reach here, we need to generate the shot (either overwrite=True or file doesn't exist)
         try:
             # --- Per-Shot Processing ---
-            # Models are already loaded and on GPU. No loading/unloading needed here.
-            torch.cuda.empty_cache() # Clear cache before starting work on a new shot
+            torch.cuda.empty_cache()
 
             # 1. Load and preprocess the keyframe image
             input_image = Image.open(keyframe_path).convert('RGB')
@@ -824,24 +854,27 @@ def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
                 )
                 generated_latents = generated_latents.to(cpu, dtype=torch.float32) # Move results to CPU
 
-                # Prepend start latent (which is on CPU)
                 if is_last_section:
                     generated_latents = torch.cat([start_latent, generated_latents], dim=2)
 
                 current_section_latent_frames = generated_latents.shape[2]
                 total_generated_latent_frames += current_section_latent_frames
-
-                # Update history latents (on CPU)
                 history_latents = torch.cat([generated_latents, history_latents], dim=2)
 
-                # Decode and Save (only at the end)
                 if is_last_section:
-                    # VAE is already on GPU
-                    real_history_latents = history_latents[:, :, :total_generated_latent_frames, :, :]
-                    # Move latents to GPU for decoding
-                    history_pixels = vae_decode(real_history_latents.to(vae.device, dtype=vae.dtype), vae).cpu() # Decode on GPU, result to CPU
-                    save_bcthw_as_mp4(history_pixels, output_filename, fps=30)
-                    break
+                    # Get the complete latents for THIS shot
+                    current_shot_latents = history_latents[:, :, :total_generated_latent_frames, :, :].clone() # Clone to avoid issues later
+                    all_shot_latents_list.append(current_shot_latents.cpu()) # Store on CPU
+
+                    if args.save_individual:
+                        # Save individual shot regardless of overwrite flag (since we decided not to skip)
+                        print(f"    Decoding and saving individual shot {idx+1}...")
+                        history_pixels = vae_decode(current_shot_latents.to(vae.device, dtype=vae.dtype), vae).cpu()
+                        save_bcthw_as_mp4(history_pixels, individual_output_filename, fps=30)
+                        print(f"    Saved individual shot: {individual_output_filename}")
+                        del history_pixels
+                        torch.cuda.empty_cache()
+                    break # Exit inner sampling loop
 
         except Exception as e:
             print(f"\nError generating shot {idx+1} ({keyframe_path}): {e}")
@@ -852,16 +885,50 @@ def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
 
         # Clear potentially large tensors from this shot iteration
         del llama_vec, clip_l_pooler, llama_vec_n, clip_l_pooler_n, llama_attention_mask, llama_attention_mask_n
-        del start_latent, image_encoder_last_hidden_state, history_latents, history_pixels, real_history_latents
-        del clean_latents_pre, clean_latents_post, clean_latents_2x, clean_latents_4x, clean_latents
-        del clean_latents_2x_gpu, clean_latents_4x_gpu, generated_latents
+        del start_latent, image_encoder_last_hidden_state, history_latents # history_pixels might not exist if not saving individually
+        if 'current_shot_latents' in locals(): del current_shot_latents # Delete if it was created
+        if 'generated_latents' in locals(): del generated_latents
+        if 'clean_latents_pre' in locals(): del clean_latents_pre, clean_latents_post, clean_latents_2x, clean_latents_4x, clean_latents
+        if 'clean_latents_2x_gpu' in locals(): del clean_latents_2x_gpu, clean_latents_4x_gpu
         torch.cuda.empty_cache() # Clean cache after each shot
+
+    # --- Final Processing: Combine and Decode if not saving individually ---
+    if not args.save_individual:
+        print("\n--- Combining and Decoding Final Video ---")
+        valid_latents = [lat for lat in all_shot_latents_list if lat is not None]
+        if not valid_latents:
+            print("No valid latents generated or found. Cannot create final video.")
+        else:
+            print(f"Concatenating latents from {len(valid_latents)} shots...")
+            try:
+                # Concatenate along the time dimension (dim=2)
+                final_concatenated_latents = torch.cat(valid_latents, dim=2)
+                print(f"Final latent shape: {final_concatenated_latents.shape}")
+
+                # Decode the full sequence
+                # VAE should still be on GPU from the load-once strategy
+                print("Decoding final concatenated latents...")
+                final_pixels = vae_decode(final_concatenated_latents.to(vae.device, dtype=vae.dtype), vae).cpu()
+
+                # Save the final video
+                final_save_path = os.path.join(output_dir, f"{args.story_name}_final_combined.mp4") # Use story name for combined video
+                print(f"Saving final combined video to {final_save_path}...")
+                save_bcthw_as_mp4(final_pixels, final_save_path, fps=30)
+                print("Final combined video saved.")
+                del final_pixels # Clean up
+
+            except Exception as e:
+                print(f"Error during final video concatenation or decoding: {e}")
+                traceback.print_exc()
+            finally:
+                 del final_concatenated_latents # Clean up concatenated latents
+                 torch.cuda.empty_cache()
 
 
     # --- Final Cleanup ---
     print("\nUnloading FramePack models...")
-    # Delete models and clear cache
     del text_encoder, text_encoder_2, tokenizer, tokenizer_2, vae, feature_extractor, image_encoder, transformer
+    del all_shot_latents_list # Clear the list of latents
     torch.cuda.empty_cache()
 
     end_time = time.time()
@@ -880,6 +947,9 @@ def parse_args():
     parser.add_argument('--story_type', type=str, default=None, help='Type of story: 1 (character life), 2 (multi-character), 3 (flexible)')
     parser.add_argument('--use_exist_prompt', type=str, default=None, help='Path to existing prompts dir. If provided, script generation will be skipped.')
     parser.add_argument("--base_path", type=str, default="asset", help="Base directory for saving generated assets (scripts, avatars, keyframes, shots)")
+    parser.add_argument('--overwrite_script', action='store_true', help="Overwrite existing script files (short description, avatar prompts, keyframe prompts).")
+    parser.add_argument('--overwrite_visuals', action='store_true', help="Overwrite existing visual files (avatar images, keyframe images).")
+    parser.add_argument('--overwrite_shots', action='store_true', default=True, help="Overwrite existing shot video files (default: True).")
 
     # --- Avatar/Keyframe Generation Args (Kolors/IP-Adapter based) ---
     parser.add_argument('--avatar_json_path', type=str, default=None, help='Path to the JSON file for avatar prompts/paths (auto-derived if not use_exist_prompt).')
@@ -889,9 +959,9 @@ def parse_args():
 
     # --- Shot Generation Args (FramePack based) ---
     parser.add_argument("--shot_save_path", type=str, default=None, help="Directory to save the final generated video shots (auto-derived if not use_exist_prompt)")
-    parser.add_argument('--fp_hf_model_dir', type=str, default='/data/nas/mingzhe/pretrained_models/pretrained/hunyuanvideo-community/HunyuanVideo', help="FramePack: Directory for base HunyuanVideo models (tokenizers, text encoders, VAE).")
-    parser.add_argument('--fp_framepack_model_dir', type=str, default='/data/nas/mingzhe/pretrained_models/pretrained/lllyasviel/FramePackI2V_HY', help="FramePack: Directory for FramePack Transformer model.")
-    parser.add_argument('--fp_siglip_model_dir', type=str, default='/data/nas/mingzhe/pretrained_models/pretrained/lllyasviel/flux_redux_bfl', help="FramePack: Directory for Siglip models (image encoder).")
+    parser.add_argument('--fp_hf_model_dir', type=str, default='"./weights/HunyuanVideo"', help="FramePack: Directory for base HunyuanVideo models (tokenizers, text encoders, VAE).")
+    parser.add_argument('--fp_framepack_model_dir', type=str, default='./weights/FramePackI2V_HY', help="FramePack: Directory for FramePack Transformer model.")
+    parser.add_argument('--fp_siglip_model_dir', type=str, default='./weights/flux_redux_bfl', help="FramePack: Directory for Siglip models (image encoder).")
     parser.add_argument('--fp_shot_duration_seconds', type=float, default=4.0, help="FramePack: Target duration for each generated video shot in seconds.")
     parser.add_argument('--fp_steps', type=int, default=25, help="FramePack: Number of diffusion steps per shot.")
     parser.add_argument('--fp_gs', type=float, default=10.0, help="FramePack: Distilled CFG Scale.")
@@ -903,6 +973,7 @@ def parse_args():
     parser.add_argument('--fp_latent_window_size', type=int, default=9, help=argparse.SUPPRESS) # Hide internal param
     parser.add_argument('--fp_cfg', type=float, default=1.0, help=argparse.SUPPRESS) # Hide internal param
     parser.add_argument('--fp_rs', type=float, default=0.0, help=argparse.SUPPRESS) # Hide internal param
+    parser.add_argument("--save_individual", action='store_true', help="Save each generated shot video individually.")
 
     args = parser.parse_args()
 
@@ -998,58 +1069,51 @@ def main():
 
     # --- Pipeline Stages ---
 
-    # 1. Script Generation (if not using existing prompts)
-    if not args.use_exist_prompt:
-        print("\n--- Stage 1: Generating Script ---")
-        # This function needs args.prompt_path to save files correctly
-        script_content = depart_script_generation(args)
-        print("Script generation completed successfully!")
-        print(f"Generated {args.num_shot} shots script for story: {args.story_name}")
-    else:
+    # 1. Script Generation
+    script_files_exist = check_existing_prompts(args.prompt_path) # Check if all script JSONs/TXTs exist
+    if args.use_exist_prompt:
         print("\n--- Stage 1: Skipping Script Generation (using existing prompts) ---")
-        if not check_existing_prompts(args.prompt_path):
+        if not script_files_exist:
              print(f"Warning: Missing some expected files in {args.prompt_path}. Subsequent steps might fail.")
+    elif script_files_exist and not args.overwrite_script:
+        print(f"\n--- Stage 1: Skipping Script Generation (existing script files found in {args.prompt_path} and overwrite_script=False) ---")
+    else:
+        # Generate script only if not using existing, or if files don't exist, or if overwrite_script is True
+        print("\n--- Stage 1: Generating Script ---")
+        if script_files_exist and args.overwrite_script:
+             print(f"  (overwrite_script=True, regenerating script files in {args.prompt_path})")
+        try:
+            script_content = depart_script_generation(args)
+            print("Script generation completed successfully!")
+            print(f"Generated {args.num_shot} shots script for story: {args.story_name}")
+        except Exception as e:
+             print(f"Error during script generation: {e}")
+             traceback.print_exc()
+             print("Skipping subsequent stages due to script generation error.")
+             return # Exit if script generation fails
 
     # 2. Avatar Generation (using Kolors)
     print("\n--- Stage 2: Generating Avatars (using Kolors) ---")
     if not os.path.exists(args.avatar_json_path):
         print(f"Error: Avatar prompt file not found at {args.avatar_json_path}. Skipping avatar generation.")
     else:
+        # Avatar generation logic will now check overwrite flag internally
         try:
-            avatar_generation(args) # Assumes Kolors models are loaded inside or globally
-            print(f"Avatar generation completed successfully!")
+            avatar_generation(args) # Pass args to the function
+            print(f"Avatar generation process finished.")
         except Exception as e:
             print(f"Error during avatar generation: {e}")
             traceback.print_exc()
-
 
     # 3. Keyframe Generation (using Kolors IP-Adapter)
     print("\n--- Stage 3: Generating Keyframes (using Kolors IP-Adapter) ---")
     if not os.path.exists(args.keyframe_json_path):
          print(f"Error: Keyframe prompt file not found at {args.keyframe_json_path}. Skipping keyframe generation.")
     else:
+        # Keyframe generation logic will now check overwrite flag internally
         try:
-             # Check if keyframes already exist to potentially skip
-            with open(args.keyframe_json_path, 'r', encoding='utf-8') as f:
-                keyframe_data = json.load(f)
-            num_keyframes_expected = len(keyframe_data)
-            all_exist = True
-            if num_keyframes_expected == 0:
-                 print("Warning: Keyframe JSON is empty. No keyframes to generate.")
-                 all_exist = False # Treat as not existing
-            else:
-                for i in range(num_keyframes_expected):
-                     kf_path = os.path.join(args.keyframe_path, f"sample_ip_{i}.jpg")
-                     if not os.path.exists(kf_path):
-                         all_exist = False
-                         break
-
-            if all_exist:
-                print(f"All {num_keyframes_expected} keyframes already exist in {args.keyframe_path}. Skipping generation.")
-            else:
-                print(f"Generating {num_keyframes_expected} keyframes...")
-                keyframe_generation(args) # Assumes Kolors models are loaded inside or globally
-                print(f"Keyframe generation completed successfully! Keyframes saved to {args.keyframe_path}")
+            keyframe_generation(args) # Pass args to the function
+            print(f"Keyframe generation process finished.")
         except Exception as e:
             print(f"Error during keyframe generation: {e}")
             traceback.print_exc()
@@ -1057,7 +1121,6 @@ def main():
 
     # 4. Shot Generation (using FramePack I2V)
     print("\n--- Stage 4: Generating Shots (using FramePack I2V) ---")
-    # Initial clear cache before starting the whole stage
     torch.cuda.empty_cache()
     if not os.path.exists(args.keyframe_json_path):
          print(f"Error: Keyframe prompt file not found at {args.keyframe_json_path}. Skipping shot generation.")
@@ -1078,6 +1141,7 @@ def main():
                 if missing_keyframes:
                     print(f"Error: Missing keyframe files needed for shot generation: {missing_keyframes}. Skipping shot generation.")
                 else:
+                     # Shot generation logic will now check overwrite flag internally
                      generate_shots_framepack(args, keyframe_paths_for_shots, prompts_for_shots, args.shot_save_path)
 
         except Exception as e:
