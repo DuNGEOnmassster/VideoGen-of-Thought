@@ -59,7 +59,7 @@ conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=
 # 1.2. Install pip dependencies, we have already provided paired PyTorch and xformers in our requirements.
 pip install -r requirements.txt
 
-# 2. For *VGoT* with FramePack
+# 2. For VGoT with FramePack
 # 2.1. Create conda environment
 conda create -n vgot_fp python=3.10
 conda activate vgot_fp

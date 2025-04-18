@@ -429,6 +429,11 @@ def depart_script_generation(args):
     RESULT_DIR = args.prompt_path
     os.makedirs(RESULT_DIR, exist_ok=True)
     
+    
+    # Update args with the result directory
+    args.prompt_path = RESULT_DIR
+
+
     # Update args with the result directory
     args.prompt_path = RESULT_DIR
 
@@ -959,7 +964,7 @@ def parse_args():
 
     # --- Shot Generation Args (FramePack based) ---
     parser.add_argument("--shot_save_path", type=str, default=None, help="Directory to save the final generated video shots (auto-derived if not use_exist_prompt)")
-    parser.add_argument('--fp_hf_model_dir', type=str, default='"./weights/HunyuanVideo"', help="FramePack: Directory for base HunyuanVideo models (tokenizers, text encoders, VAE).")
+    parser.add_argument('--fp_hf_model_dir', type=str, default='./weights/HunyuanVideo', help="FramePack: Directory for base HunyuanVideo models (tokenizers, text encoders, VAE).")
     parser.add_argument('--fp_framepack_model_dir', type=str, default='./weights/FramePackI2V_HY', help="FramePack: Directory for FramePack Transformer model.")
     parser.add_argument('--fp_siglip_model_dir', type=str, default='./weights/flux_redux_bfl', help="FramePack: Directory for Siglip models (image encoder).")
     parser.add_argument('--fp_shot_duration_seconds', type=float, default=4.0, help="FramePack: Target duration for each generated video shot in seconds.")
