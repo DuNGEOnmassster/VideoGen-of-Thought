@@ -14,9 +14,11 @@ Official implementation of *VideoGen-of-Thought: Step-by-step generating multi-s
 
 ## 📣 News
 
+* `[2025.04.19]`  🔔 We now support the latest version of *VGoT* with [FramePack](https://github.com/lllyasviel/FramePack.git) as i2v base model to implement *VGoT* algorithm, achieving better visual quality.
+
 * `[2025.03.20]`  🔥 We release the latest arXiv paper for VGoT, and you can click [here](https://arxiv.org/abs/2412.02259) to see more details.
 
-* `[2025.03.19]`  We publish official code and detailed instruction & evaluation
+* `[2025.03.19]`  🔔 We publish official code and detailed instruction & evaluation
 
 * `[2024.12.03]`  🔥 We release the first version of arXiv paper for VGoT, and you can click [here](https://arxiv.org/abs/2412.02259v1) to see more details.
 
@@ -43,7 +45,8 @@ We recommend the requirements as follows.
 git clone --depth=1 https://github.com/DuNGEOnmassster/VideoGen-of-Thought.git
 cd VideoGen-of-Thought
 
-# 1. Create conda environment
+# 1. For the original version of *VGoT*
+# 1.1. Create conda environment
 conda create -n VideoGen-of-Thought python=3.10
 conda activate VideoGen-of-Thought
 
@@ -53,8 +56,19 @@ conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=
 # CUDA 12.1
 conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=12.1 -c pytorch -c nvidia
 
-# 2. Install pip dependencies, we have already provided paired PyTorch and xformers in our requirements.
+# 1.2. Install pip dependencies, we have already provided paired PyTorch and xformers in our requirements.
 pip install -r requirements.txt
+
+# 2. For *VGoT* with FramePack
+# 2.1. Create conda environment
+conda create -n vgot_fp python=3.10
+conda activate vgot_fp
+
+# (Optional) Install PyTorch and other dependencies using pip, we test on cuda 12.4 and this will automatically install in requirements_fp.txt
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+
+# 2.2. Install pip dependencies, the key difference is that we have to use transformers==4.46.2, and the original version based on DynamiCrafter requires transformers==4.42.4.
+pip install -r requirements_fp.txt
 ```
 
 ### Download Pretrained Weights
@@ -87,6 +101,30 @@ Once ready, the weights will be organized in this format:
 ├──── 📄 config.json
 ├──── ...
 ├── 📂 ViCLIP-B-16-hf/
+├──── ...
+├── 📂 HunyuanVideo/
+├──── 📂 scheduler/
+├──── 📂 text_encoder/
+├──── 📂 text_encoder_2/
+├──── 📂 tokenizer/
+├──── 📂 tokenizer_2/
+├──── 📂 transformer/
+├──── 📂 vae/
+├──── 📄 config.json
+├──── 📄 model_index.json
+├──── ...
+├── 📂 FramePackI2V_HY/
+├──── 📄 config.json
+├──── 📄 diffusion_pytorch_model-00001-of-00003.safetensors
+├──── 📄 diffusion_pytorch_model-00002-of-00003.safetensors
+├──── 📄 diffusion_pytorch_model-00003-of-00003.safetensors
+├──── 📄 diffusion_pytorch_model.safetensors.index.json
+├──── ...
+├── 📂 flux_redux_bfl/
+├──── 📂 feature_extractor/
+├──── 📂 image_encoder/
+├──── 📂 image_embedder/
+├──── 📄 model_index.json
 ├──── ...
 ```
 
@@ -134,6 +172,22 @@ sh test_cross_shot_propagation.sh
 
 where you will find we bring avatars to life from the storylines, and enable the identity-preserving portraits be maintained in the KeyFrames for each shots.
 
+### VGoT with FramePack
+
+What's more, you can directly process:
+
+```bash
+conda activate vgot_fp
+sh run_vgot_fp.sh
+```
+
+to process the full generation with [FramePack](https://github.com/lllyasviel/FramePack.git) as i2v base model to implement *VGoT* algorithm, achieving better performance and lower memory usage.
+
+## Memory Usage
+
+We test the memory usage on a single H100 (80GB) GPU, the original version of VideoGen-of-Thought (*VGoT*) requires ``~12GB`` of GPU memory during keyframe generation, and ``~60GB`` of GPU memory for shot video generation. 
+
+And for the latest version of *VGoT*, we provide a new script ``run_vgot_fp.sh`` to process the full generation with [FramePack](https://github.com/lllyasviel/FramePack.git) as i2v base model to implement *VGoT* algorithm, which requires ``~69GB`` of GPU memory before optimization, and ``~44GB`` of GPU memory after optimization.
 
 ## Evaluation
 
