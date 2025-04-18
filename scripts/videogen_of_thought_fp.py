@@ -38,7 +38,7 @@ from collections import OrderedDict
 import datetime
 import time
 import random
-# from utils.utils import * # Keep existing utils if they don't conflict
+from utils.utils import *
 
 # --- Add FramePack specific imports ---
 from diffusers import AutoencoderKLHunyuanVideo
@@ -615,118 +615,105 @@ def keyframe_generation(args):
 def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
     """
     Generates video shots using FramePack I2V for each keyframe and prompt.
+    Loads models ONCE at the beginning.
     """
-    print("\n--- Initializing FramePack Models for Shot Generation ---")
+    print("\n--- Initializing FramePack Models for Shot Generation (Loading ONCE) ---")
 
     # Check CUDA
     if not torch.cuda.is_available():
         print("CUDA is not available. Exiting shot generation.")
         return
 
-    # Determine VRAM mode
-    free_mem_gb = get_cuda_free_memory_gb(gpu)
-    high_vram = free_mem_gb > args.fp_high_vram_threshold # Use threshold from args
-    print(f'Free VRAM {free_mem_gb} GB')
-    print(f'High-VRAM Mode: {high_vram}')
+    # --- Load FramePack Models (Load ONCE to GPU) ---
+    text_encoder = None
+    text_encoder_2 = None
+    tokenizer = None
+    tokenizer_2 = None
+    vae = None
+    feature_extractor = None
+    image_encoder = None
+    transformer = None
 
-    # --- Load FramePack Models ---
     try:
-        print("Loading FramePack models...")
-        text_encoder = LlamaModel.from_pretrained(args.fp_hf_model_dir, subfolder='text_encoder', torch_dtype=torch.bfloat16).cpu()
-        text_encoder_2 = CLIPTextModel.from_pretrained(args.fp_hf_model_dir, subfolder='text_encoder_2', torch_dtype=torch.bfloat16).cpu()
-        
-        # --- Modified Tokenizer Loading ---
-        # Use AutoTokenizer instead of specific classes
+        # Clear cache before loading potentially large models
+        print("Clearing CUDA cache before loading models...")
+        torch.cuda.empty_cache()
+
+        print("Loading FramePack models to CPU first...")
+        # Load to CPU first to check availability before large GPU allocation
+        text_encoder = LlamaModel.from_pretrained(args.fp_hf_model_dir, subfolder='text_encoder', torch_dtype=torch.float16).cpu()
+        text_encoder_2 = CLIPTextModel.from_pretrained(args.fp_hf_model_dir, subfolder='text_encoder_2', torch_dtype=torch.float16).cpu()
+
         print(f"Loading tokenizer from: {os.path.join(args.fp_hf_model_dir, 'tokenizer')}")
         tokenizer = AutoTokenizer.from_pretrained(args.fp_hf_model_dir, subfolder='tokenizer', use_fast=True)
         print(f"Loading tokenizer_2 from: {os.path.join(args.fp_hf_model_dir, 'tokenizer_2')}")
-        tokenizer_2 = AutoTokenizer.from_pretrained(args.fp_hf_model_dir, subfolder='tokenizer_2', use_fast=True) # Assuming CLIP uses fast too if available
-        # --- End Modified Tokenizer Loading ---
-        
-        vae = AutoencoderKLHunyuanVideo.from_pretrained(args.fp_hf_model_dir, subfolder='vae', torch_dtype=torch.float16).cpu()
+        tokenizer_2 = AutoTokenizer.from_pretrained(args.fp_hf_model_dir, subfolder='tokenizer_2', use_fast=True)
 
+        vae = AutoencoderKLHunyuanVideo.from_pretrained(args.fp_hf_model_dir, subfolder='vae', torch_dtype=torch.float16).cpu()
         feature_extractor = SiglipImageProcessor.from_pretrained(args.fp_siglip_model_dir, subfolder='feature_extractor')
         image_encoder = SiglipVisionModel.from_pretrained(args.fp_siglip_model_dir, subfolder='image_encoder', torch_dtype=torch.float16).cpu()
-
         transformer = HunyuanVideoTransformer3DModelPacked.from_pretrained(args.fp_framepack_model_dir, torch_dtype=torch.bfloat16).cpu()
 
+        print("Moving FramePack models to GPU...")
+        # Now move all to GPU
+        text_encoder.to(gpu)
+        text_encoder_2.to(gpu)
+        image_encoder.to(gpu)
+        vae.to(gpu)
+        transformer.to(gpu)
+
+        print("Setting eval mode and configurations...")
         vae.eval()
         text_encoder.eval()
         text_encoder_2.eval()
         image_encoder.eval()
         transformer.eval()
 
-        if not high_vram:
-            print("Enabling VAE slicing and tiling for low VRAM.")
-            vae.enable_slicing()
-            vae.enable_tiling()
+        # Enable VAE slicing/tiling regardless of detected VRAM, as it's generally safer for stability
+        print("Enabling VAE slicing and tiling.")
+        vae.enable_slicing()
+        vae.enable_tiling()
 
         transformer.high_quality_fp32_output_for_inference = True
         print('transformer.high_quality_fp32_output_for_inference = True')
 
-        # Set dtypes
-        transformer.to(dtype=torch.bfloat16)
-        vae.to(dtype=torch.float16)
-        image_encoder.to(dtype=torch.float16)
-        text_encoder.to(dtype=torch.float16)
-        text_encoder_2.to(dtype=torch.float16)
-
-        # Disable gradients
+        # Disable gradients (already done on CPU, but good practice)
         vae.requires_grad_(False)
         text_encoder.requires_grad_(False)
         text_encoder_2.requires_grad_(False)
         image_encoder.requires_grad_(False)
         transformer.requires_grad_(False)
 
-        # Move models based on VRAM - deferring detailed moves to within the loop for low VRAM
-        if high_vram:
-            print("Moving all models to GPU for high VRAM.")
-            text_encoder.to(gpu)
-            text_encoder_2.to(gpu)
-            image_encoder.to(gpu)
-            vae.to(gpu)
-            transformer.to(gpu)
-        else:
-             print("Low VRAM mode: Models will be loaded/offloaded as needed.")
-             # Install swap installer for the transformer, which is the largest
-             DynamicSwapInstaller.install_model(transformer, device=gpu)
-
-        print("FramePack models loaded successfully.")
+        print("FramePack models loaded and moved to GPU successfully.")
 
     except Exception as e:
-        print(f"Error loading FramePack models: {e}")
+        print(f"Error loading or moving FramePack models: {e}")
         traceback.print_exc()
+        # Attempt cleanup even if loading failed
+        del text_encoder, text_encoder_2, tokenizer, tokenizer_2, vae, feature_extractor, image_encoder, transformer
+        torch.cuda.empty_cache()
         return # Cannot proceed without models
 
     # --- Loop through keyframes and prompts ---
     num_shots = len(keyframe_paths)
     start_time = time.time()
-    os.makedirs(output_dir, exist_ok=True) # Ensure output dir exists
+    os.makedirs(output_dir, exist_ok=True)
 
     for idx, (keyframe_path, prompt) in enumerate(tqdm(zip(keyframe_paths, prompts), total=num_shots, desc="Generating Shots (FramePack)")):
         shot_start_time = time.time()
-        # print(f"\n--- Generating Shot {idx+1}/{num_shots} using FramePack ---")
-        # print(f"  Keyframe: {keyframe_path}")
-        # print(f"  Prompt: {prompt[:100]}...") # Print truncated prompt
-
-        # Generate unique output filename for this shot
         base_filename = os.path.splitext(os.path.basename(keyframe_path))[0]
         output_filename = os.path.join(output_dir, f"{base_filename}.mp4")
 
-        # Skip if already generated
         if os.path.exists(output_filename):
-            print(f"Shot {idx+1}/{num_shots} already exists: {output_filename}. Skipping.")
+            # print(f"Shot {idx+1}/{num_shots} already exists: {output_filename}. Skipping.") # Make tqdm show progress
             continue
 
         try:
             # --- Per-Shot Processing ---
-
-            # Clean GPU if low VRAM
-            if not high_vram:
-                unload_complete_models(text_encoder, text_encoder_2, image_encoder, vae)
+            # Models are already loaded and on GPU. No loading/unloading needed here.
+            torch.cuda.empty_cache() # Clear cache before starting work on a new shot
 
             # 1. Load and preprocess the keyframe image
-            # print("  Preprocessing keyframe...")
             input_image = Image.open(keyframe_path).convert('RGB')
             input_image_np = np.array(input_image)
             H, W, C = input_image_np.shape
@@ -736,124 +723,78 @@ def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
             input_image_pt = input_image_pt.permute(2, 0, 1)[None, :, None] # B C F H W
 
             # 2. Encode prompt (and negative prompt)
-            if not high_vram:
-                # Load text encoders TO GPU explicitly before encoding
-                # print("  Loading text encoders to GPU (Low VRAM)...")
-                load_model_as_complete(text_encoder, target_device=gpu)
-                load_model_as_complete(text_encoder_2, target_device=gpu)
-            # In high_vram mode, models are already on GPU
-
-            # Call encode_prompt_conds - Models should now be fully on GPU
-            # Assumes encode_prompt_conds internally moves tokenized inputs if needed,
-            # or that the models now correctly handle inputs from CPU.
+            # Models are on GPU, encode_prompt_conds should work
             llama_vec, clip_l_pooler = encode_prompt_conds(prompt, text_encoder, text_encoder_2, tokenizer, tokenizer_2)
-
-            # Handle negative prompt encoding similarly
-            if args.fp_cfg == 1.0: # CFG=1 means no negative prompt needed
+            if args.fp_cfg == 1.0:
                 llama_vec_n, clip_l_pooler_n = torch.zeros_like(llama_vec), torch.zeros_like(clip_l_pooler)
             else:
-                # No need to reload models here if high_vram or if they were just loaded for positive prompt
                 llama_vec_n, clip_l_pooler_n = encode_prompt_conds(args.fp_n_prompt, text_encoder, text_encoder_2, tokenizer, tokenizer_2)
 
             llama_vec, llama_attention_mask = crop_or_pad_yield_mask(llama_vec, length=512)
             llama_vec_n, llama_attention_mask_n = crop_or_pad_yield_mask(llama_vec_n, length=512)
 
-            # Unload text encoders AFTER use if low VRAM
-            if not high_vram:
-                 # print("  Unloading text encoders (Low VRAM)...")
-                 unload_complete_models(text_encoder, text_encoder_2)
-
             # 3. VAE encode image
-            # print("  VAE encoding...")
-            if not high_vram:
-                load_model_as_complete(vae, target_device=gpu)
-            # Ensure input is on the correct device and dtype for VAE
             start_latent = vae_encode(input_image_pt.to(vae.device, dtype=vae.dtype), vae) # B C F(1) H W
 
             # 4. CLIP Vision encode image
-            # print("  CLIP Vision encoding...")
-            if not high_vram:
-                load_model_as_complete(image_encoder, target_device=gpu)
             image_encoder_output = hf_clip_vision_encode(input_image_np_resized, feature_extractor, image_encoder)
             image_encoder_last_hidden_state = image_encoder_output.last_hidden_state
 
-            # Unload VAE and Image Encoder if low VRAM before loading transformer fully
-            if not high_vram:
-                unload_complete_models(vae, image_encoder)
-
-            # 5. Dtype conversion and move to device for transformer inputs
-            llama_vec = llama_vec.to(transformer.dtype)
-            llama_vec_n = llama_vec_n.to(transformer.dtype)
-            clip_l_pooler = clip_l_pooler.to(transformer.dtype)
-            clip_l_pooler_n = clip_l_pooler_n.to(transformer.dtype)
-            image_encoder_last_hidden_state = image_encoder_last_hidden_state.to(transformer.dtype)
+            # 5. Dtype conversion (Inputs to transformer)
+            # Make sure they are on the correct device (GPU) before casting dtype
+            llama_vec = llama_vec.to(gpu, dtype=transformer.dtype)
+            llama_vec_n = llama_vec_n.to(gpu, dtype=transformer.dtype)
+            clip_l_pooler = clip_l_pooler.to(gpu, dtype=transformer.dtype)
+            clip_l_pooler_n = clip_l_pooler_n.to(gpu, dtype=transformer.dtype)
+            image_encoder_last_hidden_state = image_encoder_last_hidden_state.to(gpu, dtype=transformer.dtype)
+            # start_latent needs to be float32 for history buffer on CPU later
+            start_latent = start_latent.to(cpu, dtype=torch.float32)
 
             # 6. Prepare for FramePack sampling loop
-            # print("  Starting FramePack sampling...")
-            # Use the main seed + shot index for per-shot variation
             current_seed = args.seed + idx
             rnd = torch.Generator(gpu).manual_seed(current_seed)
             total_latent_sections = int(max(round((args.fp_shot_duration_seconds * 30) / (args.fp_latent_window_size * 4)), 1))
-            num_frames_per_step = args.fp_latent_window_size * 4 - 3 # Frames per sampling step
-            # print(f"    Target duration: {args.fp_shot_duration_seconds}s, Latent sections: {total_latent_sections}, Seed: {current_seed}")
+            num_frames_per_step = args.fp_latent_window_size * 4 - 3
 
-            # History buffer (CPU) - Reinitialize for each shot
             history_latents = torch.zeros(size=(1, 16, 1 + 2 + 16, height // 8, width // 8), dtype=torch.float32).cpu()
-            history_pixels = None # Will store the final decoded pixels for this shot
+            history_pixels = None
             total_generated_latent_frames = 0
 
-            # Padding strategy
             latent_paddings = list(reversed(range(total_latent_sections)))
-            if total_latent_sections > 4 and not args.fp_disable_padding_trick: # Add arg to disable trick if needed
+            if total_latent_sections > 4 and not args.fp_disable_padding_trick:
                 latent_paddings = [3] + [2] * (total_latent_sections - 3) + [1, 0]
-                # print(f"    Using special padding sequence: {latent_paddings}")
 
             # --- FramePack Inner Sampling Loop ---
             for section_idx, latent_padding in enumerate(latent_paddings):
                 is_last_section = latent_padding == 0
                 latent_padding_size = latent_padding * args.fp_latent_window_size
-                # print(f"    Section {section_idx+1}/{total_latent_sections} (Padding: {latent_padding}, Last: {is_last_section})")
 
-                # Prepare indices and conditioning latents
-                indices = torch.arange(0, sum([1, latent_padding_size, args.fp_latent_window_size, 1, 2, 16])).unsqueeze(0)
+                # Prepare indices and conditioning latents (ensure devices are correct)
+                indices = torch.arange(0, sum([1, latent_padding_size, args.fp_latent_window_size, 1, 2, 16])).unsqueeze(0).to(gpu) # Indices on GPU
                 clean_latent_indices_pre, _, latent_indices, clean_latent_indices_post, clean_latent_2x_indices, clean_latent_4x_indices = \
                     indices.split([1, latent_padding_size, args.fp_latent_window_size, 1, 2, 16], dim=1)
                 clean_latent_indices = torch.cat([clean_latent_indices_pre, clean_latent_indices_post], dim=1)
 
-                clean_latents_pre = start_latent.to(history_latents.device, dtype=history_latents.dtype)
-                # Ensure history access is within bounds, though it should be correct
+                # Prepare clean latents - move to GPU and cast dtype just before use
+                clean_latents_pre = start_latent.to(gpu, dtype=torch.bfloat16) # Use start_latent (from CPU)
                 hist_access_idx = min(history_latents.shape[2], 1 + 2 + 16)
+                # History latents are on CPU, move parts to GPU for conditioning
                 clean_latents_post, clean_latents_2x, clean_latents_4x = history_latents[:, :, :hist_access_idx, :, :].split([1, 2, 16], dim=2)
-                clean_latents = torch.cat([clean_latents_pre, clean_latents_post], dim=2)
-
-                # Ensure Transformer is loaded for low VRAM
-                if not high_vram:
-                    # print("      Moving Transformer to GPU...")
-                    # DynamicSwapInstaller handles this automatically when layers are accessed
-                    # We might still want explicit memory preservation if needed
-                    move_model_to_device_with_memory_preservation(transformer, target_device=gpu, preserved_memory_gb=args.fp_gpu_memory_preservation)
-
+                clean_latents = torch.cat([clean_latents_pre, clean_latents_post.to(gpu, dtype=torch.bfloat16)], dim=2)
+                clean_latents_2x_gpu = clean_latents_2x.to(gpu, dtype=torch.bfloat16)
+                clean_latents_4x_gpu = clean_latents_4x.to(gpu, dtype=torch.bfloat16)
 
                 # Configure TeaCache
-                # print(f"      Using TeaCache: {args.fp_use_teacache}")
                 if args.fp_use_teacache:
                     transformer.initialize_teacache(enable_teacache=True, num_steps=args.fp_steps)
                 else:
                     transformer.initialize_teacache(enable_teacache=False)
 
-                # Sampling Callback (simple progress)
-                def callback(d):
-                    # This callback might be too verbose inside tqdm, consider removing or simplifying
-                    # current_step = d['i'] + 1
-                    # percentage = int(100.0 * current_step / args.fp_steps)
-                    # print(f"\r        Sampling Step: {current_step}/{args.fp_steps} ({percentage}%)", end='')
-                    # if current_step == args.fp_steps: print() # Newline
-                    pass
+                def callback(d): pass # Keep callback simple
 
                 # Run Sampling
-                # Make sure all conditioning inputs are on the GPU
                 generated_latents = sample_hunyuan(
-                    transformer=transformer,
+                    transformer=transformer, # Already on GPU
                     sampler='unipc',
                     width=width,
                     height=height,
@@ -862,77 +803,66 @@ def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
                     distilled_guidance_scale=args.fp_gs,
                     guidance_rescale=args.fp_rs,
                     num_inference_steps=args.fp_steps,
-                    generator=rnd,
-                    prompt_embeds=llama_vec.to(gpu),
-                    prompt_embeds_mask=llama_attention_mask.to(gpu),
-                    prompt_poolers=clip_l_pooler.to(gpu),
-                    negative_prompt_embeds=llama_vec_n.to(gpu),
-                    negative_prompt_embeds_mask=llama_attention_mask_n.to(gpu),
-                    negative_prompt_poolers=clip_l_pooler_n.to(gpu),
+                    generator=rnd, # GPU generator
+                    prompt_embeds=llama_vec, # Already on GPU/bfloat16
+                    prompt_embeds_mask=llama_attention_mask.to(gpu), # Ensure mask is on GPU
+                    prompt_poolers=clip_l_pooler, # Already on GPU/bfloat16
+                    negative_prompt_embeds=llama_vec_n, # Already on GPU/bfloat16
+                    negative_prompt_embeds_mask=llama_attention_mask_n.to(gpu), # Ensure mask is on GPU
+                    negative_prompt_poolers=clip_l_pooler_n, # Already on GPU/bfloat16
                     device=gpu,
-                    dtype=torch.bfloat16,
-                    image_embeddings=image_encoder_last_hidden_state.to(gpu),
-                    latent_indices=latent_indices.to(gpu),
-                    clean_latents=clean_latents.to(gpu, dtype=torch.bfloat16),
-                    clean_latent_indices=clean_latent_indices.to(gpu),
-                    clean_latents_2x=clean_latents_2x.to(gpu, dtype=torch.bfloat16),
-                    clean_latent_2x_indices=clean_latent_2x_indices.to(gpu),
-                    clean_latents_4x=clean_latents_4x.to(gpu, dtype=torch.bfloat16),
-                    clean_latent_4x_indices=clean_latent_4x_indices.to(gpu),
+                    dtype=torch.bfloat16, # Transformer internal dtype
+                    image_embeddings=image_encoder_last_hidden_state, # Already on GPU/bfloat16
+                    latent_indices=latent_indices, # Already on GPU
+                    clean_latents=clean_latents, # Already on GPU/bfloat16
+                    clean_latent_indices=clean_latent_indices, # Already on GPU
+                    clean_latents_2x=clean_latents_2x_gpu, # Prepared above
+                    clean_latent_2x_indices=clean_latent_2x_indices.to(gpu), # Ensure on GPU
+                    clean_latents_4x=clean_latents_4x_gpu, # Prepared above
+                    clean_latent_4x_indices=clean_latent_4x_indices.to(gpu), # Ensure on GPU
                     callback=callback,
                 )
                 generated_latents = generated_latents.to(cpu, dtype=torch.float32) # Move results to CPU
 
-                # Prepend start latent only for the very first section generated (last in loop)
+                # Prepend start latent (which is on CPU)
                 if is_last_section:
-                    # print("      Prepending start latent to the final generated section.")
-                    generated_latents = torch.cat([start_latent.cpu(), generated_latents], dim=2)
+                    generated_latents = torch.cat([start_latent, generated_latents], dim=2)
 
                 current_section_latent_frames = generated_latents.shape[2]
                 total_generated_latent_frames += current_section_latent_frames
-                # print(f"      Generated {current_section_latent_frames} latent frames. Total: {total_generated_latent_frames}")
 
-                # Update history latents (store on CPU) - Prepend new latents
+                # Update history latents (on CPU)
                 history_latents = torch.cat([generated_latents, history_latents], dim=2)
-                # Optional: Trim history_latents if it grows too large and causes CPU memory issues
-                # max_history_len = ... calculation based on max lookback needed ...
-                # history_latents = history_latents[:, :, :max_history_len, :, :]
 
-
-                # Decode and Save (only at the end of the inner loop for the whole shot)
+                # Decode and Save (only at the end)
                 if is_last_section:
-                    # print("    Decoding final latents for the shot...")
-                    if not high_vram:
-                        # Offload transformer before loading VAE
-                        offload_model_from_device_for_memory_preservation(transformer, target_device=gpu, preserved_memory_gb=max(args.fp_gpu_memory_preservation, 8))
-                        load_model_as_complete(vae, target_device=gpu)
-
-                    # Get all relevant latents from history for decoding
+                    # VAE is already on GPU
                     real_history_latents = history_latents[:, :, :total_generated_latent_frames, :, :]
-                    # print(f"      Decoding {real_history_latents.shape[2]} total latent frames...")
+                    # Move latents to GPU for decoding
                     history_pixels = vae_decode(real_history_latents.to(vae.device, dtype=vae.dtype), vae).cpu() # Decode on GPU, result to CPU
-
-                    # Unload VAE if low VRAM
-                    if not high_vram:
-                         unload_complete_models(vae)
-
-                    # print(f"    Saving video with {history_pixels.shape[2]} frames to {output_filename}")
-                    save_bcthw_as_mp4(history_pixels, output_filename, fps=30) # FramePack uses FPS 30
-                    break # Exit inner sampling loop for this shot
+                    save_bcthw_as_mp4(history_pixels, output_filename, fps=30)
+                    break
 
         except Exception as e:
             print(f"\nError generating shot {idx+1} ({keyframe_path}): {e}")
             traceback.print_exc()
-            # Continue to the next shot
+            if 'out of memory' in str(e).lower():
+                print("Attempting to clear cache after OOM...")
+                torch.cuda.empty_cache() # Try to recover for next shot
 
-        # shot_end_time = time.time()
-        # print(f"  Shot {idx+1} finished in {shot_end_time - shot_start_time:.2f} seconds.")
+        # Clear potentially large tensors from this shot iteration
+        del llama_vec, clip_l_pooler, llama_vec_n, clip_l_pooler_n, llama_attention_mask, llama_attention_mask_n
+        del start_latent, image_encoder_last_hidden_state, history_latents, history_pixels, real_history_latents
+        del clean_latents_pre, clean_latents_post, clean_latents_2x, clean_latents_4x, clean_latents
+        del clean_latents_2x_gpu, clean_latents_4x_gpu, generated_latents
+        torch.cuda.empty_cache() # Clean cache after each shot
+
 
     # --- Final Cleanup ---
-    if not high_vram:
-        print("\nUnloading potentially remaining FramePack models...")
-        # Ensure everything is unloaded
-        unload_complete_models(text_encoder, text_encoder_2, image_encoder, vae, transformer)
+    print("\nUnloading FramePack models...")
+    # Delete models and clear cache
+    del text_encoder, text_encoder_2, tokenizer, tokenizer_2, vae, feature_extractor, image_encoder, transformer
+    torch.cuda.empty_cache()
 
     end_time = time.time()
     print(f"\n--- FramePack Shot Generation Finished ({num_shots} shots attempted) ---")
@@ -955,40 +885,33 @@ def parse_args():
     parser.add_argument('--avatar_json_path', type=str, default=None, help='Path to the JSON file for avatar prompts/paths (auto-derived if not use_exist_prompt).')
     parser.add_argument('--keyframe_json_path', type=str, default=None, help='Path to the JSON file for keyframe image-prompt pairs (auto-derived if not use_exist_prompt).')
     parser.add_argument('--keyframe_path', type=str, default=None, help='Directory to save the generated keyframe images (auto-derived if not use_exist_prompt).')
-    # Seed used by Avatar/Keyframe generation and potentially FramePack base seed
     parser.add_argument('--seed', type=int, default=3407, help='Base random seed')
 
     # --- Shot Generation Args (FramePack based) ---
     parser.add_argument("--shot_save_path", type=str, default=None, help="Directory to save the final generated video shots (auto-derived if not use_exist_prompt)")
-    # FramePack Model Paths
     parser.add_argument('--fp_hf_model_dir', type=str, default='/data/nas/mingzhe/pretrained_models/pretrained/hunyuanvideo-community/HunyuanVideo', help="FramePack: Directory for base HunyuanVideo models (tokenizers, text encoders, VAE).")
     parser.add_argument('--fp_framepack_model_dir', type=str, default='/data/nas/mingzhe/pretrained_models/pretrained/lllyasviel/FramePackI2V_HY', help="FramePack: Directory for FramePack Transformer model.")
     parser.add_argument('--fp_siglip_model_dir', type=str, default='/data/nas/mingzhe/pretrained_models/pretrained/lllyasviel/flux_redux_bfl', help="FramePack: Directory for Siglip models (image encoder).")
-    # FramePack Generation Parameters
     parser.add_argument('--fp_shot_duration_seconds', type=float, default=4.0, help="FramePack: Target duration for each generated video shot in seconds.")
     parser.add_argument('--fp_steps', type=int, default=25, help="FramePack: Number of diffusion steps per shot.")
     parser.add_argument('--fp_gs', type=float, default=10.0, help="FramePack: Distilled CFG Scale.")
     parser.add_argument('--fp_n_prompt', type=str, default="low quality, worst quality, blurry, motion blur, text, watermark, signature, bad anatomy, bad hands", help="FramePack: Negative text prompt (used if fp_cfg != 1.0).")
-    parser.add_argument('--fp_gpu_memory_preservation', type=float, default=8.0, help="FramePack: GPU memory preserved during inference for low VRAM (GB).")
     parser.add_argument('--fp_use_teacache', action='store_true', default=True, help="FramePack: Enable TeaCache.")
     parser.add_argument('--fp_no_teacache', action='store_false', dest='fp_use_teacache', help="FramePack: Disable TeaCache.")
     parser.add_argument('--fp_resolution', type=int, default=640, help="FramePack: Resolution bucket base size (e.g., 640 finds nearest bucket like 640x368, 512x512, etc.).")
-    parser.add_argument('--fp_high_vram_threshold', type=float, default=60.0, help="FramePack: VRAM threshold in GB to enable high-VRAM mode (loads all models at once).")
     parser.add_argument('--fp_disable_padding_trick', action='store_true', help="FramePack: Disable the special padding sequence for videos longer than 4 sections.")
-    # FramePack Fixed/Internal Parameters (usually not changed by user)
     parser.add_argument('--fp_latent_window_size', type=int, default=9, help=argparse.SUPPRESS) # Hide internal param
     parser.add_argument('--fp_cfg', type=float, default=1.0, help=argparse.SUPPRESS) # Hide internal param
     parser.add_argument('--fp_rs', type=float, default=0.0, help=argparse.SUPPRESS) # Hide internal param
 
     args = parser.parse_args()
 
-    # --- Auto-derive paths if not using existing prompts ---
+    # --- Auto-derive paths (unchanged from previous version) ---
     if not args.use_exist_prompt:
         if not args.story_name:
-            # Story name generation requires API key, handle earlier or raise error here if needed
              if not args.user_input:
                  raise ValueError("Cannot derive paths: Need --story_name or --user_input when not using --use_exist_prompt")
-             # Assume story name is generated in main() before this point if needed
+             # Need to generate story_name before path derivation, handled in main()
 
         # Construct base path dynamically based on other args
         # Ensure story_type is resolved if None initially
@@ -1003,10 +926,9 @@ def parse_args():
         if args.keyframe_path is None:
             args.keyframe_path = os.path.join(base_path, 'KeyFrames')
         if args.shot_save_path is None:
-            args.shot_save_path = os.path.join(base_path, 'Shot_Videos_FP') # Append _FP
-        args.prompt_path = base_path # Directory holding the json files
+            args.shot_save_path = os.path.join(base_path, 'Shot_Videos_FP')
+        args.prompt_path = base_path
     else:
-        # If using existing prompts, ensure paths are set correctly
         base_path = args.use_exist_prompt
         if args.avatar_json_path is None:
             args.avatar_json_path = os.path.join(base_path, 'avatar_prompt.json')
@@ -1016,7 +938,7 @@ def parse_args():
             args.keyframe_path = os.path.join(base_path, 'KeyFrames')
         if args.shot_save_path is None:
             args.shot_save_path = os.path.join(base_path, 'Shot_Videos_FP')
-        args.prompt_path = base_path # Redundant but clear
+        args.prompt_path = base_path
 
     return args
 
@@ -1031,7 +953,7 @@ def check_existing_prompts(path):
 
 
 def main():
-    args = parse_args() # Parse args first to potentially derive story_name/paths
+    args = parse_args() # Parse args first
 
     # --- Setup & Validation ---
     set_seed(args.seed)
@@ -1133,14 +1055,15 @@ def main():
             traceback.print_exc()
 
 
-    # 4. Shot Generation (using FramePack I2V) - Added Section
+    # 4. Shot Generation (using FramePack I2V)
     print("\n--- Stage 4: Generating Shots (using FramePack I2V) ---")
+    # Initial clear cache before starting the whole stage
+    torch.cuda.empty_cache()
     if not os.path.exists(args.keyframe_json_path):
          print(f"Error: Keyframe prompt file not found at {args.keyframe_json_path}. Skipping shot generation.")
     elif not os.path.isdir(args.keyframe_path):
          print(f"Error: Keyframes directory not found at {args.keyframe_path}. Skipping shot generation.")
     else:
-        # Load prompts and construct keyframe paths for FramePack
         try:
             with open(args.keyframe_json_path, 'r', encoding='utf-8') as f:
                 keyframe_data = json.load(f)
@@ -1149,15 +1072,12 @@ def main():
                  print("Error: Keyframe JSON data is empty. Cannot generate shots.")
             else:
                 prompts_for_shots = [item['prompt'] for item in keyframe_data]
-                # Assuming keyframes are named sample_ip_0.jpg, sample_ip_1.jpg, etc.
                 keyframe_paths_for_shots = [os.path.join(args.keyframe_path, f"sample_ip_{idx}.jpg") for idx in range(len(prompts_for_shots))]
 
-                # Verify required keyframes exist before starting generation
                 missing_keyframes = [p for p in keyframe_paths_for_shots if not os.path.exists(p)]
                 if missing_keyframes:
                     print(f"Error: Missing keyframe files needed for shot generation: {missing_keyframes}. Skipping shot generation.")
                 else:
-                     # Call the new FramePack generation function
                      generate_shots_framepack(args, keyframe_paths_for_shots, prompts_for_shots, args.shot_save_path)
 
         except Exception as e:

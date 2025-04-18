@@ -16,12 +16,10 @@ from diffusers.utils import load_image
 from diffusers import AutoencoderKL, EulerDiscreteScheduler
 
 from PIL import Image
-# from models.kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256 import StableDiffusionXLPipeline
 from pipelines.pipeline_stable_diffusion_xl_chatglm_256 import StableDiffusionXLPipeline
+from pipelines.pipeline_stable_diffusion_xl_chatglm_256_ipadapter import StableDiffusionXLPipeline as StableDiffusionXLPipeline_ipadapter
 from models.kolors.models.modeling_chatglm import ChatGLMModel
 from models.kolors.models.tokenization_chatglm import ChatGLMTokenizer
-# from models.kolors.pipelines.pipeline_stable_diffusion_xl_chatglm_256_ipadapter import StableDiffusionXLPipeline as StableDiffusionXLPipeline_ipadapter
-from pipelines.pipeline_stable_diffusion_xl_chatglm_256_ipadapter import StableDiffusionXLPipeline as StableDiffusionXLPipeline_ipadapter
 from models.kolors.models.unet_2d_condition import UNet2DConditionModel
 from models.lvdm.models.samplers.ddim import DDIMSampler
 from models.lvdm.models.samplers.ddim_multiplecond import DDIMSampler as DDIMSampler_multicond
@@ -37,7 +35,6 @@ import datetime
 import time
 import random
 from utils.utils import *
-import math
 
 # Global model cache to avoid reloading
 MODEL_CACHE = {
@@ -112,7 +109,8 @@ def get_system_prompts(args, story_name, avatar_paths):
     [!!!Ensure the narrative is logically sound, showing appropriate character and plot development.]"""
 
     # Number of life stages to be generated based on shot count
-    num_stages = min(6, max(3, num_shot // 5))
+    # num_stages = min(6, max(3, num_shot // 5))
+    num_stages = min(10, max(6, num_shot // 5))
     
     system_prompt_2 = f"""You are a professional character concept artist and fashion designer. You have received a narrative with {num_shot} short shot descriptions.
     
@@ -408,7 +406,8 @@ def depart_script_generation(args):
         print(f"Inferred story type: {story_type}")
     
     # Set up output directory for generated files based on story type
-    RESULT_DIR = os.path.join('asset', f'story_type{story_type}', story_name)
+    # RESULT_DIR = os.path.join('asset', f'story_type{story_type}', story_name)
+    RESULT_DIR = args.base_path
     os.makedirs(RESULT_DIR, exist_ok=True)
     
     # Update args with the result directory
@@ -570,6 +569,7 @@ def prepare_keyframe_model():
 def keyframe_generation(args):
     set_seed(args.seed)
     pipe = prepare_keyframe_model()
+    # import pdb; pdb.set_trace()
     image_prompt_dict = load_keyframe_image_prompt_pairs(args.keyframe_json_path)
     os.makedirs(args.keyframe_path, exist_ok=True)
 
@@ -788,7 +788,7 @@ def generate_shots(args, gpu_num, gpu_no, short_desc_path):
 
     shot_video_list = [model.decode_first_stage(shot) for shot in batch_latents_list]
 
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
 
     final_output = torch.stack(shot_video_list).flatten(0, 1)
     final_save_path = os.path.join(args.shot_save_path, "final_output.mp4")
@@ -805,8 +805,11 @@ def parse_args():
     parser.add_argument('--avatar_json_path', type=str, default=None, help='Path to the JSON file with image-path and prompt pairs.')
     parser.add_argument('--keyframe_json_path', type=str, default=None, help='Path to the JSON file with image-path and prompt pairs.')
     parser.add_argument('--keyframe_path', type=str, default=None, help='Directory to save the generated images.')
+    parser.add_argument('--prompt_path', type=str, default=None, help='Directory to save the generated shots.')
     parser.add_argument('--seed', type=int, default=3407, help='Random seed')
     parser.add_argument('--use_exist_prompt', type=str, default=None, help='Path to existing prompts. If provided, script generation will be skipped.')
+
+    parser.add_argument("--base_path", type=str, default="asset", help="base path")
 
     parser.add_argument("--shot_save_path", type=str, default=None, help="results saving path")
     parser.add_argument("--ckpt_path", type=str, default="weights/DynamiCrafter/model.ckpt", help="checkpoint path")
@@ -927,6 +930,7 @@ def main():
             raise FileNotFoundError(f"Missing required files in {args.use_exist_prompt}")
         
         # Set path parameters
+        args.prompt_path = args.use_exist_prompt
         args.avatar_json_path = os.path.join(args.use_exist_prompt, 'avatar_prompt.json')
         args.keyframe_json_path = os.path.join(args.use_exist_prompt, 'image_prompt_pairs.json')
         args.keyframe_path = os.path.join(args.use_exist_prompt, 'KeyFrames')
@@ -935,7 +939,9 @@ def main():
     else:
         # Process regular path
         if args.story_name:
-            base_path = f"asset/seed{args.seed}/{args.seed}/story_type{args.story_type}/{args.story_name}"
+            base_path = f"{args.base_path}/seed{args.seed}/story_type{args.story_type}/{args.story_name}"
+            args.base_path = base_path
+            args.prompt_path = base_path
             args.avatar_json_path = os.path.join(base_path, 'avatar_prompt.json')
             args.keyframe_json_path = os.path.join(base_path, 'image_prompt_pairs.json')
             args.keyframe_path = os.path.join(base_path, 'KeyFrames')
