@@ -2,22 +2,28 @@
 
 # Type 1: Character Life Stories (5 examples)
 mkdir -p asset/story_type1
-CUDA_VISIBLE_DEVICES=0 python scripts/videogen_of_thought.py \
-    --user_input "a story of a classic American woman Mary's life, from birth to death." \
-    --story_name "Mary" \
-    --story_type 1 \
-    --base_path "asset/round3" \
-    --seed 0 \
-    --num_shot 30 \
-    --save_individual
-
 # CUDA_VISIBLE_DEVICES=0 python scripts/videogen_of_thought.py \
-#     --user_input "the journey of a boy named Alex who grows up in a small fishing village and becomes a renowned marine biologist." \
-#     --story_name "Alex" \
+#     --user_input "a story of a classic American woman Mary's life, from birth to death." \
+#     --story_name "Mary" \
 #     --story_type 1 \
+#     --base_path "asset/round3" \
 #     --seed 0 \
-#     --num_shot 25 \
+#     --num_shot 30 \
 #     --save_individual
+
+# CUDA_VISIBLE_DEVICES=1 python scripts/videogen_of_thought.py \
+#     --use_exist_prompt asset/round3/seed0/story_type1/Mary \
+#     --seed 0 \
+#     --num_shot 30 \
+#     --save_individual
+
+CUDA_VISIBLE_DEVICES=1 python scripts/videogen_of_thought.py \
+    --user_input "the journey of a boy named Alex who grows up in a small fishing village and becomes a renowned marine biologist." \
+    --story_name "Alex" \
+    --story_type 1 \
+    --seed 0 \
+    --num_shot 25 \
+    --save_individual
 
 # CUDA_VISIBLE_DEVICES=0 python scripts/videogen_of_thought.py \
 #     --user_input "an immigrant's story of moving to a new country, struggling, and eventually finding success as an entrepreneur." \
