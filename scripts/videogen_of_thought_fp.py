@@ -898,36 +898,35 @@ def generate_shots_framepack(args, keyframe_paths, prompts, output_dir):
         torch.cuda.empty_cache() # Clean cache after each shot
 
     # --- Final Processing: Combine and Decode if not saving individually ---
-    if not args.save_individual:
-        print("\n--- Combining and Decoding Final Video ---")
-        valid_latents = [lat for lat in all_shot_latents_list if lat is not None]
-        if not valid_latents:
-            print("No valid latents generated or found. Cannot create final video.")
-        else:
-            print(f"Concatenating latents from {len(valid_latents)} shots...")
-            try:
-                # Concatenate along the time dimension (dim=2)
-                final_concatenated_latents = torch.cat(valid_latents, dim=2)
-                print(f"Final latent shape: {final_concatenated_latents.shape}")
+    print("\n--- Combining and Decoding Final Video ---")
+    valid_latents = [lat for lat in all_shot_latents_list if lat is not None]
+    if not valid_latents:
+        print("No valid latents generated or found. Cannot create final video.")
+    else:
+        print(f"Concatenating latents from {len(valid_latents)} shots...")
+        try:
+            # Concatenate along the time dimension (dim=2)
+            final_concatenated_latents = torch.cat(valid_latents, dim=2)
+            print(f"Final latent shape: {final_concatenated_latents.shape}")
 
-                # Decode the full sequence
-                # VAE should still be on GPU from the load-once strategy
-                print("Decoding final concatenated latents...")
-                final_pixels = vae_decode(final_concatenated_latents.to(vae.device, dtype=vae.dtype), vae).cpu()
+            # Decode the full sequence
+            # VAE should still be on GPU from the load-once strategy
+            print("Decoding final concatenated latents...")
+            final_pixels = vae_decode(final_concatenated_latents.to(vae.device, dtype=vae.dtype), vae).cpu()
 
-                # Save the final video
-                final_save_path = os.path.join(output_dir, f"{args.story_name}_final_combined.mp4") # Use story name for combined video
-                print(f"Saving final combined video to {final_save_path}...")
-                save_bcthw_as_mp4(final_pixels, final_save_path, fps=30)
-                print("Final combined video saved.")
-                del final_pixels # Clean up
+            # Save the final video
+            final_save_path = os.path.join(output_dir, f"{args.story_name}_final_combined.mp4") # Use story name for combined video
+            print(f"Saving final combined video to {final_save_path}...")
+            save_bcthw_as_mp4(final_pixels, final_save_path, fps=30)
+            print("Final combined video saved.")
+            del final_pixels # Clean up
 
-            except Exception as e:
-                print(f"Error during final video concatenation or decoding: {e}")
-                traceback.print_exc()
-            finally:
-                 del final_concatenated_latents # Clean up concatenated latents
-                 torch.cuda.empty_cache()
+        except Exception as e:
+            print(f"Error during final video concatenation or decoding: {e}")
+            traceback.print_exc()
+        finally:
+                del final_concatenated_latents # Clean up concatenated latents
+                torch.cuda.empty_cache()
 
 
     # --- Final Cleanup ---
