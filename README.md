@@ -1,18 +1,20 @@
-# VideoGen-of-Thought (VGoT)
+<div align=center>
+<img src="./assets/teaser/Illustration.png" width="800px">
+</div>
+<h2 align="center"> <a href="https://arxiv.org/abs/2412.02259">[NeurIPS 2025 NextVid Workshop Oral✨] VideoGen-of-Thought: Step-by-step generating multi-shot video with minimal manual intervention</a></h2>
 
+<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.  </h2>
+
+<h5 align="center">
+  
 Official implementation of *VideoGen-of-Thought: Step-by-step generating multi-shot video with minimal manual intervention*, old version titled: *VideoGen-of-Thought: A Collaborative Framework for Multi-Shot Video Generation*
-
-<p align="center">
-<img src="./assets/teaser/Illustration.png" width="800px"/>
-<br>
-<b>Illustration of <i>VideoGen-of-Thought (VGoT)</i>.</b>
-</p>
-
 
 [![Demo Video of VideoGen-of-Thought](assets/teaser/Demo-Video-V1-Header.png)](https://www.youtube.com/watch?v=O3UBlwqQKnw)<p align="center"><b>Demo Video of <i>VGoT</i> V1, V2 TBD.</b>
 </p>
 
 ## 📣 News
+
+* `[2025.09.22]`  🎉 Breaking News, *VGoT* has been accepted by [NeurIPS 2025 NextVid Workshop](https://what-makes-good-video.github.io/) as Oral!
 
 * `[2025.04.19]`  🔔 We now support the latest version of *VGoT* with [FramePack](https://github.com/lllyasviel/FramePack.git) as i2v base model to implement *VGoT* algorithm, achieving better visual quality.
 
